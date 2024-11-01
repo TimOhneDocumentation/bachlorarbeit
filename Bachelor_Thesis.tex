@@ -1,0 +1,402 @@
+\documentclass[12pt,twoside,a4paper,BCOR=12mm,chapterprefix=true]{scrbook}
+
+\pdfsuppresswarningpagegroup=1 %suppress multiple page groups warning of pdflatex
+% --------------------------------------
+% Packages
+% --------------------------------------
+
+\usepackage[top=31mm, left=25mm, right=25mm, bottom=30mm, headsep=8mm, footskip=12mm]{geometry}
+\usepackage[english]{babel}    		
+\usepackage[utf8]{inputenc}         		% use of unicode (non ASCII) characters eg: ä, ö, ü
+\usepackage{graphicx}						% simple use of graphics
+\graphicspath{{Images/}}			    
+\usepackage{siunitx}  						% SI-units
+\usepackage{amsmath}  						% handling of mathematical formulas (center)
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{scrlayer-scrpage}       		% for headers
+\usepackage{float}							% force placement of figure at place in code with argument H		
+\usepackage{color}
+\usepackage{listings}
+\usepackage{transparent}
+\usepackage{enumitem} 						% control layout of \itemize (no indent)
+\setitemize{leftmargin=*}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}						% multi rows for tabulars	 
+\usepackage{multicol}  						% multi cols for tabulars
+\usepackage{setspace}						% enables different line spacings
+\usepackage{pdfpages}						% include pdf-documents in latex
+\usepackage[Sonny]{fncychap}  				% chapter heading styles. There are Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup.
+ 	% Displays the document in two columns, odd-numbered pages to the right								
+\usepackage{braket} 						% bra-ket notation
+%\usepackage{tabu} 							% Tabellen-Paket: Abstand zwischen Text und Linie
+\usepackage{lipsum}							% for Lorem ipsum ... dummy text
+\usepackage{scrhack}
+\usepackage[titletoc]{appendix}
+\usepackage[version=4]{mhchem}
+%subfigure is deprecated, use subcaption instead
+\usepackage{subcaption}
+% \usepackage{layouts}						% use only to get textwidth for export of figures
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage[style=alphabetic, backend=biber, backref, firstinits=true, maxbibnames=40,maxalphanames=1]{biblatex} % Include the biblatex package
+\renewcommand*{\labelalphaothers}{}
+\addbibresource{BibTeX/bibliography.bib} % Specify the bibliography file
+
+\usepackage[colorlinks,linkcolor=black,citecolor=tumblauTitel,urlcolor=black]{hyperref} 									% refs with hyperlinks and colour, autoref etc
+\usepackage[nameinlink]{cleveref}
+% \hypersetup{pdfpagelayout=TwoColumnRight}
+\usepackage{duckuments}
+
+% --------------------------------------
+% Biber settings
+% --------------------------------------
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=doi, final]
+      \step[fieldset=issn, null]
+      \step[fieldset=url, null]
+      \step[fieldset=eprint, null]
+    }
+  }
+}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=doi, final]
+      \step[fieldset=urldate, null]
+    }
+  }
+}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=language, null]
+    }
+  }
+}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldset=note, null]
+    }
+  }
+}
+
+
+% --------------------------------------
+% Code Patch
+% --------------------------------------
+
+% color def
+
+\definecolor{darkred}{rgb}{0.6,0.0,0.0}
+\definecolor{darkgreen}{rgb}{0,0.50,0}
+\definecolor{lightblue}{rgb}{0.0,0.42,0.91}
+\definecolor{orange}{rgb}{0.99,0.48,0.13}
+\definecolor{grass}{rgb}{0.18,0.80,0.18}
+\definecolor{pink}{rgb}{0.97,0.15,0.45}
+
+% listings
+
+
+% General Setting of listings
+\lstset{
+  aboveskip=1em,
+  breaklines=true,
+  abovecaptionskip=-6pt,
+  captionpos=b,
+  escapeinside={\%*}{*)},
+  frame=single,
+  numbers=left,
+  numbersep=15pt,
+  numberstyle=\tiny,
+}
+% 0. Basic Color Theme
+\lstdefinestyle{colored}{ %
+  basicstyle=\ttfamily,
+  backgroundcolor=\color{white},
+  commentstyle=\color{green}\itshape,
+  keywordstyle=\color{blue}\bfseries\itshape,
+  stringstyle=\color{red},
+}
+% 1. General Python Keywords List
+\lstdefinelanguage{PythonPlus}[]{Python}{
+  morekeywords=[1]{,as,assert,nonlocal,with,yield,self,True,False,None,} % Python builtin
+  morekeywords=[2]{,__init__,__add__,__mul__,__div__,__sub__,__call__,__getitem__,__setitem__,__eq__,__ne__,__nonzero__,__rmul__,__radd__,__repr__,__str__,__get__,__truediv__,__pow__,__name__,__future__,__all__,}, % magic methods
+  morekeywords=[3]{,object,type,isinstance,copy,deepcopy,zip,enumerate,reversed,list,set,len,dict,tuple,range,xrange,append,execfile,real,imag,reduce,str,repr,}, % common functions
+  morekeywords=[4]{,Exception,NameError,IndexError,SyntaxError,TypeError,ValueError,OverflowError,ZeroDivisionError,}, % errors
+  morekeywords=[5]{,ode,fsolve,sqrt,exp,sin,cos,arctan,arctan2,arccos,pi, array,norm,solve,dot,arange,isscalar,max,sum,flatten,shape,reshape,find,any,all,abs,plot,linspace,legend,quad,polyval,polyfit,hstack,concatenate,vstack,column_stack,empty,zeros,ones,rand,vander,grid,pcolor,eig,eigs,eigvals,svd,qr,tan,det,logspace,roll,min,mean,cumsum,cumprod,diff,vectorize,lstsq,cla,eye,xlabel,ylabel,squeeze,}, % numpy / math
+}
+% 2. New Language based on Python
+\lstdefinelanguage{PyBrIM}[]{PythonPlus}{
+  emph={d,E,a,Fc28,Fy,Fu,D,des,supplier,Material,Rectangle,PyElmt},
+}
+% 3. Extended theme
+\lstdefinestyle{colorEX}{
+  basicstyle=\ttfamily,
+  backgroundcolor=\color{white},
+  commentstyle=\color{darkgreen}\slshape,
+  keywordstyle=\color{blue}\bfseries\itshape,
+  keywordstyle=[2]\color{blue}\bfseries,
+  keywordstyle=[3]\color{grass},
+  keywordstyle=[4]\color{red},
+  keywordstyle=[5]\color{orange},
+  stringstyle=\color{darkred},
+  emphstyle=\color{pink}\underbar,
+}
+
+%--------------------------------------
+% Layout
+%--------------------------------------
+
+\setlength{\parindent}{0pt} 				% set paragraph indent to 0
+
+%--------------------------------------
+% Typeface (Schriftbild)
+%--------------------------------------
+%\renewcommand{\familydefault}{\sfdefault}	% serif free font
+\onehalfspacing       						% 1,5-line spacing
+%\setlength{\parindent}{0pt} 				% set paragraph indent to 0
+
+% --------------------------------------
+
+\clubpenalty = 10000 						% no clubs (Schusterjungen)
+\widowpenalty = 10000 						% no widows (Hurenkinder)
+\displaywidowpenalty = 10000				% no widows before formulas
+
+% --------------------------------------
+% Captions
+% --------------------------------------
+
+\setkomafont{caption}{\itshape}				% Font for caption
+\setkomafont{captionlabel}{\upshape}		% Font "Figure#"
+%\setcapindent{0.cm}						% indent for captions
+\renewcommand{\textfraction}{0.15} 			% minimum amount of text on page for figure/table ... placement by float 
+\renewcommand{\topfraction}{.85}     		% maximum percentage of page that can be used for figures/tables ...
+
+% --------------------------------------
+
+\raggedbottom
+
+% --------------------------------------
+% Header
+% --------------------------------------
+
+\pagestyle{scrheadings} 					% normal header
+%\renewcommand*{\chaptermarkformat}{%
+%\chapappifchapterprefix{\ }\thechapter\autodot: }  %places a ":" after Chapter# 
+\KOMAoptions{headsepline=0.6pt:\textwidth}			% Line 0.6pt and as wide as the text
+\renewcommand{\headfont} 					% Normal font in header
+
+% --------------------------------------
+% Font for captions	
+% --------------------------------------
+
+\setkomafont{caption}{\rmfamily}			% Changes "Sonny" (sf-family) to rm-family
+\setkomafont{chapter}{\rmfamily\large\bfseries}
+\setkomafont{chapterentry}{\rmfamily\large\bfseries}
+%\RedeclareSectionCommand[tocnumwidth=1.5em]{chapter} % would make
+\setkomafont{section}{\rmfamily\large\bfseries}
+\setkomafont{subsection}{\rmfamily\large\bfseries}
+\setkomafont{paragraph}{\rmfamily\large\bfseries}
+\ChNameVar{\Large}
+\ChTitleVar{\Large}
+
+% --------------------------------------
+% Own definitions
+% --------------------------------------
+
+% changes autoref for chapter to uppercase (also needed for section, subsection etc)
+%\addto\extrasenglish{%
+%	\renewcommand{\chapterautorefname}{Chapter}%
+%}
+
+\sisetup{separate-uncertainty=true}
+
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\subsectionautorefname}{Section}
+\renewcommand{\subsubsectionautorefname}{Section}
+
+%\addto\extrasenglish{ 	\renewcommand{\sectionautorefname}{Section} 	\let\subsectionautorefname\sectionautorefname 	\let\subsubsectionautorefname\sectionautorefname }
+
+
+
+% --------------------------------------
+
+\definecolor{cblau}{rgb}{0.69,0.89,1.0}		% blue
+\definecolor{tumblauTitel}{cmyk}{1.0,0.43,.0,.1} % Tum-blue
+
+% --------------------------------------
+
+\newcommand{\moly}{$\text{MoS}_2$}
+\newcommand{\woly}{$\text{WS}_2$}
+\newcommand{\molyd}{$\text{MoS}_2~$}
+\newcommand{\wolyd}{$\text{WS}_2~$}
+\newcommand{\HS}{$\text{MoS}_2$/$\text{WS}_2$}
+\newcommand{\HSd}{$\text{MoS}_2$/$\text{WS}_2~$}
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\etald}{$\textit{et al.}~$}
+\newcommand{\dr}{$\Delta\text{R}/\text{R}~$}
+\newcommand{\Fd}{$\vec{F}~$}
+\newcommand{\F}{$\vec{F}$}
+\newcommand{\pd}{$\vec{p}~$}
+\newcommand{\p}{$\vec{p}$}
+\newcommand{\kit}{$\textit{\textbf{k}}$}
+\newcommand{\kitm}{\textit{\textbf{k}}}
+\newcommand{\itm}[1]{\textit{\textbf{#1}}}
+
+% --------------------------------------
+
+\newcommand{\muW}[1]{\SI{#1}{\micro\watt}}
+\newcommand{\K}[1]{\SI{#1}{\kelvin}}
+\newcommand{\nm}[1]{\SI{#1}{\nano\meter}}
+\newcommand{\V}[1]{\SI{#1}{\volt}}
+\newcommand{\eV}[1]{\SI{#1}{\electronvolt}}
+\newcommand{\mum}[1]{\SI{#1}{\micro\meter}}
+\newcommand{\meV}[1]{\SI{#1}{\milli\electronvolt}}
+\newcommand{\cm}[1]{\SI{#1}{\centi\meter^{-1}}}
+\newcommand{\muWmum}[1]{\SI{#1}{\micro\watt\per\micro\meter^{2}}}
+\newcommand{\kWcm}[1]{\SI{#1}{\kilo\watt\per\centi\meter^{2}}}
+\newcommand{\percent}[1]{\SI{#1}{\percent}}
+\newcommand{\meVV}[1]{\SI[per-mode=symbol]{#1}{\milli\electronvolt\per\volt}}
+\newcommand{\angstrom}[1]{\SI{#1}{\angstrom}}
+\newcommand{\ns}[1]{\SI{#1}{\nano\second}}
+\newcommand{\um}[1]{\SI{#1}{\micro\meter}}
+
+
+% --------------------------------------
+
+\DeclareSIUnit{\nothing}{\relax}
+
+%relative wavenumber
+\DeclareSIUnit{\rel}{rel}
+%celcius
+\DeclareSIUnit{\celcius}{\degreeCelsius}
+
+% --------------------------------------
+% Back references
+% --------------------------------------
+
+
+% --------------------------------------
+
+\input{Chapters/cover} 
+
+% --------------------------------
+%   DOCUMENT
+% --------------------------------
+
+\begin{document}
+\selectlanguage{english}
+\pagenumbering{Roman} 						% roman numbers for abstract and toc
+
+% --------------------------------------
+
+\frontmatter								% roman page numbering
+\maketitle
+
+% --------------------------------
+%   Include abstracts
+% --------------------------------
+
+\newpage
+\include{Chapters/abstracteng}
+\selectlanguage{german}
+\include{Chapters/abstractger}
+\selectlanguage{english}
+
+% --------------------------------
+%   TABLE OF CONTENTS
+% --------------------------------
+
+\tableofcontents
+
+% --------------------------------------
+
+\mainmatter									% arabic page numbering
+
+% --------------------------------
+%   INTRODUCTION
+% --------------------------------
+
+\include{Chapters/introduction}
+
+% -------------------------------
+%   Descripton of theory
+% -------------------------------
+
+\include{Chapters/theoretical}
+
+% -------------------------------
+%   Descripton of experimental part
+% -------------------------------
+
+\include{Chapters/experimental}
+
+
+
+% -------------------------------
+%   Descripton of dicussion
+% -------------------------------
+\include{Chapters/results}
+\include{Chapters/discussion}
+
+% -------------------------------
+%   Conclusion and Outlook
+% -------------------------------
+
+\include{Chapters/conclusion}
+
+% -------------------------------
+%   Appendix
+% -------------------------------
+
+\begin{appendices}							% start of appendix: numbering in capsize letters
+	
+\include{Chapters/appendix}
+	
+\end{appendices}
+\newpage
+\normalsize
+
+% -------------------------------
+%   List of Figures
+% -------------------------------
+
+%\listoffigures
+\newpage
+
+% -------------------------------
+%   Bibliography
+% -------------------------------
+
+% \addcontentsline{toc}{chapter}{Bibliography}
+% \bibliography{BibTeX/bibliography}
+% \bibliographystyle{unsrt} % Standard
+% \pagestyle{plain}
+
+\printbibliography
+
+% -------------------------------
+%   Acknowledgement
+% -------------------------------
+
+\include{Chapters/acknowledgement}
+\clearpage
+
+% -------------------------------
+%   Affidavit (Eidesstattliche Erklärung)
+% -------------------------------
+
+\selectlanguage{german}
+\include{Chapters/statement}
+
+% --------------------------------------
+
+\end{document}
