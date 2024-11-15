@@ -1,18 +1,5 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'Bachelor_Thesis.blg'
-[49] biber:340> INFO - === Do Okt 31, 2024, 14:26:17
-[59] Biber.pm:419> INFO - Reading 'Bachelor_Thesis.bcf'
-[93] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
-[99] Biber.pm:4419> INFO - Processing section 0
-[105] Biber.pm:4610> INFO - Looking for bibtex file 'BibTeX/bibliography.bib' for section 0
-[109] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[109] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[109] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
-[109] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[109] bbl.pm:660> INFO - Writing 'Bachelor_Thesis.bbl' with encoding 'UTF-8'
-[110] bbl.pm:763> INFO - Output to Bachelor_Thesis.bbl
-[110] Biber.pm:131> WARN - Data source 'BibTeX/bibliography.bib' is empty, ignoring
-[110] Biber.pm:131> WARN - I didn't find a database entry for 'gross_festkorperphysik_2018' (section 0)
-[110] Biber.pm:131> WARN - I didn't find a database entry for 'fox_optical_2010' (section 0)
-[110] Biber.pm:131> WARN - I didn't find a database entry for 'fox_quantum_2006' (section 0)
-[110] Biber.pm:133> INFO - WARNINGS: 4
+[1] Config.pm:308> INFO - This is Biber 2.20
+[2] Config.pm:311> INFO - Logfile is 'Bachelor_Thesis.blg'
+[340] biber-MSWIN64:340> INFO - === 
+[880] Utils.pm:410> ERROR - Cannot find 'Bachelor_Thesis.bcf'!
+[880] Biber.pm:136> INFO - ERRORS: 1
