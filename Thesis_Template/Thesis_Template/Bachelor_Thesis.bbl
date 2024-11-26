@@ -108,8 +108,139 @@
       \verb https://cds.cern.ch/record/2676885
       \endverb
     \endentry
+    \entry{Amber2022Status}{report}{}{}
+      \name{author}{2}{}{%
+        {{hash=5e74e50371b65f7ebd2aab5f4772fb51}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={J\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7f5f1c63af4b64e50cc68db09e340b9b}{%
+           family={Denisov},
+           familyi={D\bibinitperiod},
+           given={O},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{fullhash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{fullhashraw}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{bibnamehash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{authorbibnamehash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{authornamehash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{authorfullhash}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \strng{authorfullhashraw}{d4b6dcccdadbb36e0e99762d630bf91c}
+      \field{labelalpha}{Fri22}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{AMBER Status Report 2022}}
+      \field{type}{techreport}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2810822
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2810822
+      \endverb
+    \endentry
+    \entry{Karlseminar}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a047029a5997410e88009268d82f74a0}{%
+           family={KARL},
+           familyi={K\bibinitperiod},
+           given={Eichhorn},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{a047029a5997410e88009268d82f74a0}
+      \strng{fullhash}{a047029a5997410e88009268d82f74a0}
+      \strng{fullhashraw}{a047029a5997410e88009268d82f74a0}
+      \strng{bibnamehash}{a047029a5997410e88009268d82f74a0}
+      \strng{authorbibnamehash}{a047029a5997410e88009268d82f74a0}
+      \strng{authornamehash}{a047029a5997410e88009268d82f74a0}
+      \strng{authorfullhash}{a047029a5997410e88009268d82f74a0}
+      \strng{authorfullhashraw}{a047029a5997410e88009268d82f74a0}
+      \field{labelalpha}{KAR}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+    \endentry
+    \entry{discoveryProton}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ff5c4aa5ed94d2e4c2c2f2a43438966f}{%
+           family={Peake},
+           familyi={P\bibinitperiod},
+           given={Barrie\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{fullhash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{fullhashraw}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{bibnamehash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{authorbibnamehash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{authornamehash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{authorfullhash}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \strng{authorfullhashraw}{ff5c4aa5ed94d2e4c2c2f2a43438966f}
+      \field{labelalpha}{Pea89}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Chemical Education}
+      \field{number}{9}
+      \field{title}{The discovery of the electron, proton, and neutron}
+      \field{volume}{66}
+      \field{year}{1989}
+      \field{pages}{738}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1021/ed066p738
+      \endverb
+    \endentry
+    \entry{Amber2024Status}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=e5d953ca1a8ffafcbb9ef4bf45d75c26}{%
+           family={The\bibnamedelimb AMBER\bibnamedelima Collaboration},
+           familyi={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={CERN\bibnamedelima SPS},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{fullhash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{fullhashraw}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{bibnamehash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{authorbibnamehash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{authornamehash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{authorfullhash}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \strng{authorfullhashraw}{e5d953ca1a8ffafcbb9ef4bf45d75c26}
+      \field{labelalpha}{The24}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{AMBER Status Report 2024}}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2907624
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2907624
+      \endverb
+    \endentry
   \enddatalist
-  \missing{Werner Heisenberg}
 \endrefsection
 \endinput
 
