@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  25 NOV 2024 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  25 NOV 2024 19:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1089,7 +1089,15 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Bachelor_Thesis.bbl' found.
- (./Bachelor_Thesis.bbl)
+ (./Bachelor_Thesis.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                Werner Heisenberg
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 295.
 Package biblatex Info: Reference segment=0 on input line 295.
 Package hyperref Info: Link coloring ON on input line 295.
@@ -1237,26 +1245,34 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-File: Images/E18Logo.png Graphic file (type png)
-<use Images/E18Logo.png>
-Package pdftex.def Info: Images/E18Logo.png  used on input line 19.
-(pdftex.def)             Requested size: 364.19667pt x 364.24408pt.
+<Images/PreviousmeausrementsProtonradius.png, id=88, 355.82938pt x 172.14313pt>
+File: Images/PreviousmeausrementsProtonradius.png Graphic file (type png)
+<use Images/PreviousmeausrementsProtonradius.png>
+Package pdftex.def Info: Images/PreviousmeausrementsProtonradius.png  used on input line 15.
+(pdftex.def)             Requested size: 364.19667pt x 176.19829pt.
 
 
 [3]
-File: Images/E18Logo.png Graphic file (type png)
-<use Images/E18Logo.png>
-Package pdftex.def Info: Images/E18Logo.png  used on input line 30.
-(pdftex.def)             Requested size: 364.19667pt x 364.24408pt.
+<Images/OverviewSetupAmber.png, id=100, 616.3025pt x 389.95688pt>
+File: Images/OverviewSetupAmber.png Graphic file (type png)
+<use Images/OverviewSetupAmber.png>
+Package pdftex.def Info: Images/OverviewSetupAmber.png  used on input line 49.
+(pdftex.def)             Requested size: 546.29153pt x 345.686pt.
+
+Overfull \hbox (91.04742pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 1152) in paragraph at lines 50--50
+[][]|\OT1/cmr/m/n/12 Gen-eral setup of the Am-ber ex-per-i-ment with new de-tec-tors for PR-
+ []
 
 
 
-[4])
+[4 <./Images/PreviousmeausrementsProtonradius.png>])
 
-[5]
+[5 <./Images/OverviewSetupAmber.png>]
 \openout2 = `Chapters/experimental.aux'.
 
  (./Chapters/experimental.tex
@@ -1395,35 +1411,39 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <12> not available
 
 [15]
 
-LaTeX Warning: Empty bibliography on input line 384.
-
-\openout2 = `Chapters/acknowledgement.aux'.
-
-(./Chapters/acknowledgement.tex
-
 [16
 
 
 
 
-
-])
+]
 
 [17]
-\openout2 = `Chapters/statement.aux'.
+\openout2 = `Chapters/acknowledgement.aux'.
 
- (./Chapters/statement.tex
+ (./Chapters/acknowledgement.tex
 
 [18
 
 
 
+])
+
+[19]
+\openout2 = `Chapters/statement.aux'.
+
+ (./Chapters/statement.tex
+
+[20
+
+
+
 
 
 
 ])
 
-[19] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/abstractger.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
+[21] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/abstractger.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1435,27 +1455,25 @@ LaTeX Warning: There were undefined references.
 Package rerunfilecheck Info: File `Bachelor_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Bachelor_Thesis
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
 Package logreq Info: Writing requests to 'Bachelor_Thesis.run.xml'.
 \openout1 = `Bachelor_Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37024 strings out of 473577
- 763085 string characters out of 5732224
- 1863401 words of memory out of 5000000
- 59379 multiletter control sequences out of 15000+600000
- 566075 words of font info for 66 fonts, out of 8000000 for 9000
+ 37098 strings out of 473577
+ 765119 string characters out of 5732224
+ 1867981 words of memory out of 5000000
+ 59446 multiletter control sequences out of 15000+600000
+ 566723 words of font info for 68 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,20n,109p,11005b,2064s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Bachelor_Thesis.pdf (27 pages, 149534 bytes).
+ 108i,20n,109p,11005b,2135s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Bachelor_Thesis.pdf (29 pages, 348995 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 140 words of extra memory for PDF output out of 10000 (max. 10000000)
 

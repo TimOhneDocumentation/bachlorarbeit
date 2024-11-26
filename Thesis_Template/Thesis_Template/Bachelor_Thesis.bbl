@@ -16,5 +16,100 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{intentAmber}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=95d1d1a46103d6cd31a090e031d1a445}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5d64b2fd2ecaf4804924b5b407dfd23a}{%
+           family={Aidala},
+           familyi={A\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c38958a06c0b208a6cd71c7b65cf86e2}{%
+           family={Akhunzyanov},
+           familyi={A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9078ce6de8c93a0e0dffbb55633c691}
+      \strng{fullhash}{489a12cc283b561a51565411cd8f7f9f}
+      \strng{fullhashraw}{489a12cc283b561a51565411cd8f7f9f}
+      \strng{bibnamehash}{489a12cc283b561a51565411cd8f7f9f}
+      \strng{authorbibnamehash}{489a12cc283b561a51565411cd8f7f9f}
+      \strng{authornamehash}{d9078ce6de8c93a0e0dffbb55633c691}
+      \strng{authorfullhash}{489a12cc283b561a51565411cd8f7f9f}
+      \strng{authorfullhashraw}{489a12cc283b561a51565411cd8f7f9f}
+      \field{labelalpha}{Ada19}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{hep-ex}
+      \field{eprinttype}{arXiv}
+      \field{title}{Letter of Intent: A New QCD facility at the M2 beam line of the CERN SPS (COMPASS++/AMBER)}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1808.00848
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1808.00848
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1808.00848
+      \endverb
+    \endentry
+    \entry{ProposalAmber}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=266084cc424e019def1c6a530012bc2b}{%
+           family={B.Adams},
+           familyi={B\bibinitperiod},
+           given={et\bibnamedelima al.},
+           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           suffix={C.\bibnamedelimi A.\bibnamedelimi Aidala},
+           suffixi={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {CERN}%
+      }
+      \list{location}{1}{%
+        {Geneva}%
+      }
+      \strng{namehash}{266084cc424e019def1c6a530012bc2b}
+      \strng{fullhash}{266084cc424e019def1c6a530012bc2b}
+      \strng{fullhashraw}{266084cc424e019def1c6a530012bc2b}
+      \strng{bibnamehash}{266084cc424e019def1c6a530012bc2b}
+      \strng{authorbibnamehash}{266084cc424e019def1c6a530012bc2b}
+      \strng{authornamehash}{266084cc424e019def1c6a530012bc2b}
+      \strng{authorfullhash}{266084cc424e019def1c6a530012bc2b}
+      \strng{authorfullhashraw}{266084cc424e019def1c6a530012bc2b}
+      \field{labelalpha}{BAd19}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{COMPASS++/AMBER: Proposal for Measurements at the M2 beam line of the CERN SPS Phase-1: 2022-2024}}
+      \field{type}{techreport}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/2676885
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/2676885
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{Werner Heisenberg}
+\endrefsection
 \endinput
 
