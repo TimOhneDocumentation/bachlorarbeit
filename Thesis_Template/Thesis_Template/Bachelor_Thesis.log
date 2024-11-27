@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  26 NOV 2024 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  27 NOV 2024 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -959,10 +959,10 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/abstractger.aux (c:/texlive/2024/texmf-dist/tex/generic/babel/locale/de/babel-german.tex
+ (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux) (c:/texlive/2024/texmf-dist/tex/generic/babel/locale/de/babel-german.tex
 Package babel Info: Importing basic data for german
 (babel)             from babel-de.ini. Reported on input line 25.
-)) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
+))
 \openout1 = `Bachelor_Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 295.
@@ -1153,37 +1153,21 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 309.
  (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3]
-\openout2 = `Chapters/abstractger.aux'.
-
- (./Chapters/abstractger.tex
 
 [4
 
 
 
 
+] (./Bachelor_Thesis.toc
 
-])
-
-[5]
-
-[6
-
-
-
-
-] (./Bachelor_Thesis.toc)
+[5])
 \tf@toc=\write5
 \openout5 = `Bachelor_Thesis.toc'.
 
 
 
-[7]
-
-[8
-
-
-]
+[6]
 \openout2 = `Chapters/introduction.aux'.
 
  (./Chapters/introduction.tex
@@ -1200,8 +1184,15 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              that will remove this deprecated code.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 3--27
+
+ []
+
+
 
 [1
+
+
 
 
 
@@ -1223,11 +1214,14 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-<Images/PreviousmeausrementsProtonradius.png, id=94, 355.82938pt x 172.14313pt>
+<Images/PreviousmeausrementsProtonradius.png, id=100, 355.82938pt x 172.14313pt>
 File: Images/PreviousmeausrementsProtonradius.png Graphic file (type png)
 <use Images/PreviousmeausrementsProtonradius.png>
 Package pdftex.def Info: Images/PreviousmeausrementsProtonradius.png  used on input line 13.
 (pdftex.def)             Requested size: 364.19667pt x 176.19829pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 [3
@@ -1238,44 +1232,37 @@ Package pdftex.def Info: Images/PreviousmeausrementsProtonradius.png  used on in
 
 ]
 
+pdfTeX warning: pdflatex.exe (file ./Images/NEWPRMsetup.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<Images/NEWPRMsetup.pdf, id=115, 312.9803pt x 226.19908pt>
+File: Images/NEWPRMsetup.pdf Graphic file (type pdf)
+<use Images/NEWPRMsetup.pdf>
+Package pdftex.def Info: Images/NEWPRMsetup.pdf  used on input line 54.
+(pdftex.def)             Requested size: 312.97952pt x 226.19852pt.
+
+
 [4 <./Images/PreviousmeausrementsProtonradius.png>]
-<Images/OverviewSetupAmber.png, id=119, 616.3025pt x 389.95688pt>
-File: Images/OverviewSetupAmber.png Graphic file (type png)
-<use Images/OverviewSetupAmber.png>
-Package pdftex.def Info: Images/OverviewSetupAmber.png  used on input line 59.
-(pdftex.def)             Requested size: 364.19667pt x 230.44742pt.
 
-Underfull \hbox (badness 5924) in paragraph at lines 60--60
-[][]|\OT1/cmr/m/n/12 Gen-eral setup of the Am-ber ex-per-i-ment with new de-tec-tors for
- []
-
-
-
-[5 <./Images/OverviewSetupAmber.png>]
-File: Images/E18Logo.png Graphic file (type png)
-<use Images/E18Logo.png>
-Package pdftex.def Info: Images/E18Logo.png  used on input line 80.
-(pdftex.def)             Requested size: 364.19667pt x 364.24408pt.
-File: Images/E18Logo.png Graphic file (type png)
-<use Images/E18Logo.png>
-Package pdftex.def Info: Images/E18Logo.png  used on input line 87.
-(pdftex.def)             Requested size: 364.19667pt x 364.24408pt.
+[5 <./Images/NEWPRMsetup.pdf>]
+<Images/UFTmodel.png, id=178, 781.92125pt x 723.20187pt>
+File: Images/UFTmodel.png Graphic file (type png)
+<use Images/UFTmodel.png>
+Package pdftex.def Info: Images/UFTmodel.png  used on input line 80.
+(pdftex.def)             Requested size: 364.19667pt x 336.84819pt.
+<Images/SFH_somelayers.JPEG, id=181, 1541.76pt x 2055.68pt>
+File: Images/SFH_somelayers.JPEG Graphic file (type jpg)
+<use Images/SFH_somelayers.JPEG>
+Package pdftex.def Info: Images/SFH_somelayers.JPEG  used on input line 87.
+(pdftex.def)             Requested size: 364.19667pt x 485.59424pt.
 
 
-[6{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}])
+[6{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Images/UFTmodel.png>]
 
-[7]
+[7 <./Images/SFH_somelayers.JPEG>])
+
+[8]
 \openout2 = `Chapters/experimental.aux'.
 
  (./Chapters/experimental.tex
-
-[8
-
-
-
-
-
-]
 chapter 3.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1288,14 +1275,40 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
+<Images/SideViewElectronics.PNG, id=208, 1759.57375pt x 973.6375pt>
+File: Images/SideViewElectronics.PNG Graphic file (type png)
+<use Images/SideViewElectronics.PNG>
+Package pdftex.def Info: Images/SideViewElectronics.PNG  used on input line 7.
+(pdftex.def)             Requested size: 409.71692pt x 226.71007pt.
+
+
+[9
+
+
+
+
+
+ <./Images/SideViewElectronics.PNG>]
+<Images/E18Logo.PNG, id=222, 183.8067pt x 183.8067pt>
+File: Images/E18Logo.PNG Graphic file (type png)
+<use Images/E18Logo.PNG>
+Package pdftex.def Info: Images/E18Logo.PNG  used on input line 24.
+(pdftex.def)             Requested size: 273.14923pt x 273.18517pt.
+
+
+[10 <./Images/E18Logo.png>]
+File: Images/E18Logo.PNG Graphic file (type png)
+<use Images/E18Logo.PNG>
+Package pdftex.def Info: Images/E18Logo.PNG  used on input line 34.
+(pdftex.def)             Requested size: 273.14923pt x 273.18517pt.
 )
 
-[9]
-\openout2 = `Chapters/results.aux'.
+[11]
+\openout2 = `Chapters/development.aux'.
 
- (./Chapters/results.tex
+ (./Chapters/development.tex
 
-[10
+[12
 
 
 
@@ -1316,12 +1329,12 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[11]
-\openout2 = `Chapters/discussion.aux'.
+[13]
+\openout2 = `Chapters/results.aux'.
 
- (./Chapters/discussion.tex
+ (./Chapters/results.tex
 
-[12
+[14
 
 
 
@@ -1342,12 +1355,12 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[13]
-\openout2 = `Chapters/conclusion.aux'.
+[15]
+\openout2 = `Chapters/discussion.aux'.
 
- (./Chapters/conclusion.tex
+ (./Chapters/discussion.tex
 
-[14
+[16
 
 
 
@@ -1368,12 +1381,38 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[15]
+[17]
+\openout2 = `Chapters/conclusion.aux'.
+
+ (./Chapters/conclusion.tex
+
+[18
+
+
+
+
+
+]
+chapter 7.
+
+Class scrbook Warning: Redefinition of \@makechapterhead detected.
+(scrbook)              Note: KOMA-Script does use styles for commands like
+(scrbook)              \chapter. Currently it internally still provides and
+(scrbook)              uses \@makechapterhead, but a completely different
+(scrbook)              definition compared to the standard classes.
+(scrbook)              So redefining or using internal \@makechapterhead
+(scrbook)              by users or package authors may already break
+(scrbook)              KOMA-Script and will not work with a coming version,
+(scrbook)              that will remove this deprecated code.
+
+)
+
+[19]
 \openout2 = `Chapters/appendix.aux'.
 
  (./Chapters/appendix.tex
 
-[16
+[20
 
 
 
@@ -1401,41 +1440,41 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 4.
 )
 
-[17]
-
-[18
-
-
-
-
-]
-
-[19]
-\openout2 = `Chapters/acknowledgement.aux'.
-
- (./Chapters/acknowledgement.tex
-
-[20
-
-
-
-])
-
 [21]
-\openout2 = `Chapters/statement.aux'.
-
- (./Chapters/statement.tex
 
 [22
 
 
 
 
+]
+
+[23]
+
+[24]
+\openout2 = `Chapters/acknowledgement.aux'.
+
+ (./Chapters/acknowledgement.tex)
+
+[25
+
+
+
+]
+\openout2 = `Chapters/statement.aux'.
+
+ (./Chapters/statement.tex
+
+[26
+
+
+
+
 
 
 ])
 
-[23] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/abstractger.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
+[27] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
@@ -1454,18 +1493,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37272 strings out of 473361
- 768473 string characters out of 5725029
- 1870681 words of memory out of 5000000
- 59816 multiletter control sequences out of 15000+600000
+ 37349 strings out of 473361
+ 770338 string characters out of 5725029
+ 1874272 words of memory out of 5000000
+ 59879 multiletter control sequences out of 15000+600000
  567737 words of font info for 71 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,20n,109p,10973b,2123s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,20n,109p,10973b,2785s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Bachelor_Thesis.pdf (31 pages, 367153 bytes).
+Output written on Bachelor_Thesis.pdf (33 pages, 2639071 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 487 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

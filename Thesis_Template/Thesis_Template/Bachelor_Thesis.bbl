@@ -53,6 +53,7 @@
       \field{labelalpha}{Ada19}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{hep-ex}
@@ -70,14 +71,22 @@
       \endverb
     \endentry
     \entry{ProposalAmber}{report}{}{}
-      \name{author}{1}{}{%
-        {{hash=266084cc424e019def1c6a530012bc2b}{%
-           family={B.Adams},
-           familyi={B\bibinitperiod},
-           given={et\bibnamedelima al.},
-           giveni={e\bibinitperiod\bibinitdelim a\bibinitperiod},
-           suffix={C.\bibnamedelimi A.\bibnamedelimi Aidala},
-           suffixi={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      \name{author}{3}{}{%
+        {{hash=95d1d1a46103d6cd31a090e031d1a445}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5d64b2fd2ecaf4804924b5b407dfd23a}{%
+           family={Aidala},
+           familyi={A\bibinitperiod},
+           given={C.\bibnamedelimi A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {CERN}%
@@ -85,17 +94,18 @@
       \list{location}{1}{%
         {Geneva}%
       }
-      \strng{namehash}{266084cc424e019def1c6a530012bc2b}
-      \strng{fullhash}{266084cc424e019def1c6a530012bc2b}
-      \strng{fullhashraw}{266084cc424e019def1c6a530012bc2b}
-      \strng{bibnamehash}{266084cc424e019def1c6a530012bc2b}
-      \strng{authorbibnamehash}{266084cc424e019def1c6a530012bc2b}
-      \strng{authornamehash}{266084cc424e019def1c6a530012bc2b}
-      \strng{authorfullhash}{266084cc424e019def1c6a530012bc2b}
-      \strng{authorfullhashraw}{266084cc424e019def1c6a530012bc2b}
-      \field{labelalpha}{BAd19}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \strng{namehash}{3f5180ede356c1be715921e1047209b0}
+      \strng{fullhash}{3f5180ede356c1be715921e1047209b0}
+      \strng{fullhashraw}{3f5180ede356c1be715921e1047209b0}
+      \strng{bibnamehash}{3f5180ede356c1be715921e1047209b0}
+      \strng{authorbibnamehash}{3f5180ede356c1be715921e1047209b0}
+      \strng{authornamehash}{3f5180ede356c1be715921e1047209b0}
+      \strng{authorfullhash}{3f5180ede356c1be715921e1047209b0}
+      \strng{authorfullhashraw}{3f5180ede356c1be715921e1047209b0}
+      \field{labelalpha}{Ada19}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{COMPASS++/AMBER: Proposal for Measurements at the M2 beam line of the CERN SPS Phase-1: 2022-2024}}
@@ -107,6 +117,216 @@
       \verb{url}
       \verb https://cds.cern.ch/record/2676885
       \endverb
+    \endentry
+    \entry{ConfrancePaperDAQ}{article}{}{}
+      \name{author}{32}{}{%
+        {{hash=8cbca03352d7892882dff89fc3a3f78b}{%
+           family={Alexeev},
+           familyi={A\bibinitperiod},
+           given={Maxim},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b31aac74c0b9b2d0593cef6c304a26fd}{%
+           family={Alice},
+           familyi={A\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f7281234353f7c7eb3101c3efa1f54fc}{%
+           family={Amoroso},
+           familyi={A\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=469da1f8ec671210410e244f6b11c604}{%
+           family={Bajzek},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a997e17317367d88add341cb7144b832}{%
+           family={Chiosso},
+           familyi={C\bibinitperiod},
+           given={Michela},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4e26b2ca6340d870ca2078dd5659e341}{%
+           family={Denisov},
+           familyi={D\bibinitperiod},
+           given={Oleg},
+           giveni={O\bibinitperiod}}}%
+        {{hash=cfdb9ce10b7f4fb00c8489636b992e38}{%
+           family={Dreisbach},
+           familyi={D\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=59e293912741828d00714dc8e830e368}{%
+           family={Eichhorn},
+           familyi={E\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0e597cb6bbc03e47a8ed664c5c00aee8}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5a52c457cd85b15bfea7f7efd59bd8c1}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=459b141c0d925f425fe484dc13e8ddbe}{%
+           family={Argos},
+           familyi={A\bibinitperiod},
+           given={Carlos\bibnamedelima García},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6aa946e0ad3bc060dcfacc8559fcf56e}{%
+           family={Giordano},
+           familyi={G\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=23fdb15e0d2718d6bfc5cf3c6f7ee26d}{%
+           family={Hoffmann},
+           familyi={H\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0eb2c3ca2010ca3fa326d800a2746aaa}{%
+           family={Jedele},
+           familyi={J\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a586ee2f9952ec375de7148ec067a9e5}{%
+           family={Kiselev},
+           familyi={K\bibinitperiod},
+           given={Oleg},
+           giveni={O\bibinitperiod}}}%
+        {{hash=4521dc3ecc2970f4c7ae4067442311a2}{%
+           family={Klenze},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8da45e7d0fa9336fa3d8dd4adaad8000}{%
+           family={Konorov},
+           familyi={K\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b58690fc8b8c4217c7dc9a8016847e63}{%
+           family={Löher},
+           familyi={L\bibinitperiod},
+           given={Bastian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c9a55d2d6fe2942de5fd3c362a7558b1}{%
+           family={Losekamm},
+           familyi={L\bibinitperiod},
+           given={Martin\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=dcdda3b59dd3f7c791ca6819931d8da5}{%
+           family={Panzieri},
+           familyi={P\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod}}}%
+        {{hash=837297b3611b8105272d80cf42d1daf8}{%
+           family={Paul},
+           familyi={P\bibinitperiod},
+           given={Stephan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=30dc07d1e7fa0109caa6a82ea76f959b}{%
+           family={Pires},
+           familyi={P\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=299f0f6359a2b7af19d7593c138de458}{%
+           family={Pöschl},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1a00642508024e11dd5f2d8be0057bda}{%
+           family={Rodríguez-Sánchez},
+           familyi={R\bibinithyphendelim S\bibinitperiod},
+           given={Jose\bibnamedelima Luis},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=8e274e368e604a9b5be9ec377ead9d43}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Luke},
+           giveni={L\bibinitperiod}}}%
+        {{hash=63bedd28d12241016a9f57043648eae9}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Christian\bibnamedelima Joachim},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=60c66288e0bc56b1033e4f6bffd4a0db}{%
+           family={Seitz},
+           familyi={S\bibinitperiod},
+           given={Bjoern},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6202fe40809a25fbf6bcd7e5bf29c71d}{%
+           family={Sosio},
+           familyi={S\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d2c37ee116d86bc16a10b65eb02142e1}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c2a51c4fa578e148fc6421085457b793}{%
+           family={Tornqvist},
+           familyi={T\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6e7debb2d2685f725842d96c4542d998}{%
+           family={Veit},
+           familyi={V\bibinitperiod},
+           given={Benjamin\bibnamedelima Moritz},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d0787fe41ea53b43a6ccc993304170fe}{%
+           family={Visinka},
+           familyi={V\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{594761140d3a0b195dc03dcb8e81e95e}
+      \strng{fullhash}{fe578d7493858d4992c537524acaedc2}
+      \strng{fullhashraw}{fe578d7493858d4992c537524acaedc2}
+      \strng{bibnamehash}{fe578d7493858d4992c537524acaedc2}
+      \strng{authorbibnamehash}{fe578d7493858d4992c537524acaedc2}
+      \strng{authornamehash}{594761140d3a0b195dc03dcb8e81e95e}
+      \strng{authorfullhash}{fe578d7493858d4992c537524acaedc2}
+      \strng{authorfullhashraw}{fe578d7493858d4992c537524acaedc2}
+      \field{labelalpha}{Ale24}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{PoS}
+      \field{title}{{Design and Testing of a new Tracking System for the Proton Charge Radius Measurement with the AMBER Experiment at CERN}}
+      \field{volume}{VERTEX2023}
+      \field{year}{2024}
+      \field{pages}{049}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.22323/1.448.0049
+      \endverb
+    \endentry
+    \entry{InternalcommunicationKarl}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=59e293912741828d00714dc8e830e368}{%
+           family={Eichhorn},
+           familyi={E\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{59e293912741828d00714dc8e830e368}
+      \strng{fullhash}{59e293912741828d00714dc8e830e368}
+      \strng{fullhashraw}{59e293912741828d00714dc8e830e368}
+      \strng{bibnamehash}{59e293912741828d00714dc8e830e368}
+      \strng{authorbibnamehash}{59e293912741828d00714dc8e830e368}
+      \strng{authornamehash}{59e293912741828d00714dc8e830e368}
+      \strng{authorfullhash}{59e293912741828d00714dc8e830e368}
+      \strng{authorfullhashraw}{59e293912741828d00714dc8e830e368}
+      \field{labelalpha}{Eic24}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{howpublished}{Private Communication}
+      \field{month}{11}
+      \field{year}{2024}
     \endentry
     \entry{Amber2022Status}{report}{}{}
       \name{author}{2}{}{%
@@ -150,26 +370,29 @@
       \verb https://cds.cern.ch/record/2810822
       \endverb
     \endentry
-    \entry{Karlseminar}{misc}{}{}
+    \entry{InternalcommunicationIgor}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=a047029a5997410e88009268d82f74a0}{%
-           family={KARL},
+        {{hash=8da45e7d0fa9336fa3d8dd4adaad8000}{%
+           family={Konorov},
            familyi={K\bibinitperiod},
-           given={Eichhorn},
-           giveni={E\bibinitperiod}}}%
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
       }
-      \strng{namehash}{a047029a5997410e88009268d82f74a0}
-      \strng{fullhash}{a047029a5997410e88009268d82f74a0}
-      \strng{fullhashraw}{a047029a5997410e88009268d82f74a0}
-      \strng{bibnamehash}{a047029a5997410e88009268d82f74a0}
-      \strng{authorbibnamehash}{a047029a5997410e88009268d82f74a0}
-      \strng{authornamehash}{a047029a5997410e88009268d82f74a0}
-      \strng{authorfullhash}{a047029a5997410e88009268d82f74a0}
-      \strng{authorfullhashraw}{a047029a5997410e88009268d82f74a0}
-      \field{labelalpha}{KAR}
+      \strng{namehash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{fullhash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{fullhashraw}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{bibnamehash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{authorbibnamehash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{authornamehash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{authorfullhash}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \strng{authorfullhashraw}{8da45e7d0fa9336fa3d8dd4adaad8000}
+      \field{labelalpha}{Kon24}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
+      \field{howpublished}{Private Communication}
+      \field{month}{10}
+      \field{year}{2024}
     \endentry
     \entry{discoveryProton}{article}{}{}
       \name{author}{1}{}{%
