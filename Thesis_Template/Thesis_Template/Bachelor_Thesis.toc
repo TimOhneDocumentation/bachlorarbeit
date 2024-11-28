@@ -18,13 +18,13 @@
 \contentsline {subsection}{\numberline {3.2.1}Signal proccesing of the Citiroc1A}{12}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Configuration of the Citiroc1A}{13}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}The slow control register}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}The probe register}{15}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Development of the FPGA firmware for CITIROC ASIC}{17}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Results}{19}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{23}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conclusion}{23}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Outlook}{23}{section.7.2}%
-\contentsline {chapter}{Appendix \numberline {A}\ Code}{25}{appendix.a.A}%
+\contentsline {subsection}{\numberline {3.3.2}The probe register}{19}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Development of the FPGA firmware for CITIROC ASIC}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Results}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Discussion}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusion}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{27}{section.7.2}%
+\contentsline {chapter}{Appendix \numberline {A}\ Code}{29}{appendix.a.A}%
 \babel@toc {english}{}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

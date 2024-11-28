@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  28 NOV 2024 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.31)  28 NOV 2024 23:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1307,10 +1307,10 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-<Images/SideViewElectronics.PNG, id=218, 1759.57375pt x 973.6375pt>
+<Images/SideViewElectronics.PNG, id=216, 1759.57375pt x 973.6375pt>
 File: Images/SideViewElectronics.PNG Graphic file (type png)
 <use Images/SideViewElectronics.PNG>
-Package pdftex.def Info: Images/SideViewElectronics.PNG  used on input line 9.
+Package pdftex.def Info: Images/SideViewElectronics.PNG  used on input line 10.
 (pdftex.def)             Requested size: 409.71692pt x 226.71007pt.
 
 
@@ -1321,103 +1321,213 @@ Package pdftex.def Info: Images/SideViewElectronics.PNG  used on input line 9.
 
 
  <./Images/SideViewElectronics.PNG>]
-<Images/E18Logo.PNG, id=232, 183.8067pt x 183.8067pt>
+<Images/E18Logo.PNG, id=230, 183.8067pt x 183.8067pt>
 File: Images/E18Logo.PNG Graphic file (type png)
 <use Images/E18Logo.PNG>
-Package pdftex.def Info: Images/E18Logo.PNG  used on input line 26.
+Package pdftex.def Info: Images/E18Logo.PNG  used on input line 27.
 (pdftex.def)             Requested size: 273.14923pt x 273.18517pt.
 
 
 [10 <./Images/E18Logo.png>]
 File: Images/E18Logo.PNG Graphic file (type png)
 <use Images/E18Logo.PNG>
-Package pdftex.def Info: Images/E18Logo.PNG  used on input line 37.
+Package pdftex.def Info: Images/E18Logo.PNG  used on input line 38.
 (pdftex.def)             Requested size: 273.14923pt x 273.18517pt.
 
 
 [11]
-<Images/TRIGER.PNG, id=256, 531.9875pt x 370.38374pt>
+<Images/TRIGER.PNG, id=255, 531.9875pt x 370.38374pt>
 File: Images/TRIGER.PNG Graphic file (type png)
 <use Images/TRIGER.PNG>
-Package pdftex.def Info: Images/TRIGER.PNG  used on input line 56.
+Package pdftex.def Info: Images/TRIGER.PNG  used on input line 57.
 (pdftex.def)             Requested size: 364.19667pt x 253.57004pt.
-<Images/HighGain.PNG, id=259, 244.41313pt x 143.53625pt>
+<Images/HighGain.PNG, id=258, 244.41313pt x 143.53625pt>
 File: Images/HighGain.PNG Graphic file (type png)
 <use Images/HighGain.PNG>
-Package pdftex.def Info: Images/HighGain.PNG  used on input line 63.
+Package pdftex.def Info: Images/HighGain.PNG  used on input line 64.
 (pdftex.def)             Requested size: 364.19667pt x 213.88678pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images/CitirocConfigHighqual.png, id=268, 751.80875pt x 356.83313pt>
+<Images/CitirocConfigHighqual.png, id=267, 751.80875pt x 356.83313pt>
 File: Images/CitirocConfigHighqual.png Graphic file (type png)
 <use Images/CitirocConfigHighqual.png>
-Package pdftex.def Info: Images/CitirocConfigHighqual.png  used on input line 85.
+Package pdftex.def Info: Images/CitirocConfigHighqual.png  used on input line 86.
 (pdftex.def)             Requested size: 364.19667pt x 172.8624pt.
 
 
 [12 <./Images/TRIGER.png>]
-Overfull \hbox (67.00664pt too wide) in alignment at lines 96--99
+<Images/BitwriteSlowControl.png, id=279, 610.78188pt x 373.89688pt>
+File: Images/BitwriteSlowControl.png Graphic file (type png)
+<use Images/BitwriteSlowControl.png>
+Package pdftex.def Info: Images/BitwriteSlowControl.png  used on input line 97.
+(pdftex.def)             Requested size: 364.19667pt x 222.95349pt.
+
+
+[13 <./Images/HighGain.png> <./Images/CitirocConfigHighqual.png>]
+Overfull \hbox (3.86076pt too wide) in paragraph at lines 112--112
+[]|\OT1/cmr/bx/n/12 Default| 
+ []
+
+
+Overfull \hbox (39.63762pt too wide) in alignment at lines 108--113
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (67.00664pt too wide) in alignment at lines 99--102
+Overfull \hbox (3.86076pt too wide) in paragraph at lines 116--116
+[]|\OT1/cmr/bx/n/12 Default| 
+ []
+
+
+Overfull \hbox (39.63762pt too wide) in alignment at lines 113--117
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (67.00664pt too wide) in alignment at lines 102--105
+Overfull \hbox (39.63762pt too wide) in alignment at lines 117--121
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (67.00664pt too wide) in alignment at lines 105--107
+Overfull \hbox (39.63762pt too wide) in alignment at lines 121--124
  [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 111--111
-[]|\OT1/cmr/m/n/12 Common 10-bit thresh-old (not
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]|\OT1/cmr/m/n/12 Channel-dependent 4-bit
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 116--116
-[]|\OT1/cmr/m/n/12 Common 10-bit thresh-old (not
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\OT1/cmr/m/n/12 Channel-dependent 4-
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 131--131
-[]|\OT1/cmr/m/n/12 High-gain preamp set-ting for
+Underfull \hbox (badness 4846) in paragraph at lines 132--132
+\OT1/cmr/m/n/12 bit thresh-old for charge
  []
 
 
-Overfull \hbox (67.00664pt too wide) in alignment at lines 107--142
+Underfull \hbox (badness 1292) in paragraph at lines 137--137
+[]|\OT1/cmr/m/n/12 Enable charge dis-crim-i-na-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/12 channel[]discriminator[]mask
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]|\OT1/cmr/m/n/12 track[]and[]hold[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/12 track[]and[]hold[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
+[]|\OT1/cmr/m/n/12 track[]and[]hold[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--158
+[]|\OT1/cmr/m/n/12 track[]and[]hold[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--162
+[]|\OT1/cmr/m/n/12 peak[]detector[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\OT1/cmr/m/n/12 peak[]detector[]power
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--178
+[]|\OT1/cmr/m/n/12 Enable low gain slow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]|\OT1/cmr/m/n/12 shaper
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]|\OT1/cmr/m/n/12 Enable high gain slow
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]|\OT1/cmr/m/n/12 shaper
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 196--196
+\OT1/cmr/m/n/12 (check what makes sense
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 197--197
+[]|\OT1/cmr/m/n/12 Enable chan-nel 0 in-put
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 200--200
+[]|\OT1/cmr/m/n/12 Enable chan-nel 31 in-put
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/12 Enable charge thresh-old
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\OT1/cmr/m/n/12 Power pulse for charge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\OT1/cmr/m/n/12 Enable time thresh-old
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
+[]|\OT1/cmr/m/n/12 Power pulse for de-bug
+ []
+
+
+Overfull \hbox (39.63762pt too wide) in alignment at lines 124--244
  [] [] [] [] [] 
  []
 
-
-
-[13 <./Images/HighGain.png> <./Images/CitirocConfigHighqual.png>] [14]
-<Images/ProbeRegister.png, id=302, 381.425pt x 327.2225pt>
+[14 <./Images/BitwriteSlowControl.png>] [15] [16] [17]
+<Images/ProbeRegister.png, id=315, 381.425pt x 327.2225pt>
 File: Images/ProbeRegister.png Graphic file (type png)
 <use Images/ProbeRegister.png>
-Package pdftex.def Info: Images/ProbeRegister.png  used on input line 148.
+Package pdftex.def Info: Images/ProbeRegister.png  used on input line 250.
 (pdftex.def)             Requested size: 364.19667pt x 312.45238pt.
 
-Overfull \hbox (41.3666pt too wide) in paragraph at lines 160--169
+
+[18]
+Overfull \hbox (41.3666pt too wide) in paragraph at lines 262--271
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 )
 
-[15 <./Images/ProbeRegister.png>]
+[19 <./Images/ProbeRegister.png>]
 
-[16]
+[20]
 \openout2 = `Chapters/development.aux'.
 
  (./Chapters/development.tex
@@ -1435,7 +1545,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[17
+[21
 
 
 
@@ -1446,7 +1556,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
  (./Chapters/results.tex
 
-[18
+[22
 
 
 
@@ -1467,12 +1577,12 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[19]
+[23]
 \openout2 = `Chapters/discussion.aux'.
 
  (./Chapters/discussion.tex
 
-[20
+[24
 
 
 
@@ -1493,12 +1603,12 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[21]
+[25]
 \openout2 = `Chapters/conclusion.aux'.
 
  (./Chapters/conclusion.tex
 
-[22
+[26
 
 
 
@@ -1519,12 +1629,12 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[23]
+[27]
 \openout2 = `Chapters/appendix.aux'.
 
  (./Chapters/appendix.tex
 
-[24
+[28
 
 
 
@@ -1552,9 +1662,9 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 4.
 )
 
-[25]
+[29]
 
-[26
+[30
 
 
 
@@ -1565,39 +1675,39 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <12> not available
 
 
 
-[27]
-
-[28
-
-
-]
-
-[29]
-\openout2 = `Chapters/acknowledgement.aux'.
-
- (./Chapters/acknowledgement.tex
-
-[30
-
-
-
-])
-
 [31]
-\openout2 = `Chapters/statement.aux'.
-
- (./Chapters/statement.tex
 
 [32
 
 
+]
+
+[33]
+\openout2 = `Chapters/acknowledgement.aux'.
+
+ (./Chapters/acknowledgement.tex
+
+[34
+
+
+
+])
+
+[35]
+\openout2 = `Chapters/statement.aux'.
+
+ (./Chapters/statement.tex
+
+[36
+
+
 
 
 
 
 ])
 
-[33] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
+[37] (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/discussion.aux) (./Chapters/conclusion.aux) (./Chapters/appendix.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -1609,18 +1719,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37386 strings out of 473577
- 770703 string characters out of 5732224
- 1877908 words of memory out of 5000000
- 59687 multiletter control sequences out of 15000+600000
+ 37402 strings out of 473577
+ 771135 string characters out of 5732224
+ 1982008 words of memory out of 5000000
+ 59698 multiletter control sequences out of 15000+600000
  567737 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,109p,11005b,3588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Bachelor_Thesis.pdf (39 pages, 3011297 bytes).
+Output written on Bachelor_Thesis.pdf (43 pages, 3104885 bytes).
 PDF statistics:
- 623 PDF objects out of 1000 (max. 8388607)
- 503 compressed objects within 6 object streams
- 92 named destinations out of 1000 (max. 500000)
- 284 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 642 PDF objects out of 1000 (max. 8388607)
+ 517 compressed objects within 6 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
