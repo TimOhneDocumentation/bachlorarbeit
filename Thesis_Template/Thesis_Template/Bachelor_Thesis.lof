@@ -1,0 +1,23 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Previous measurements of the proton radius from electron proton scattering experiments and the Lamb shift in muonic and ordinary hydrogen, the measurements differ from each other by five standard deviations. \blx@tocontentsinit {0}\autocite {ProposalAmber} }}{4}{figure.caption.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces General setup of the Amber experiment with new detectors for PRM. \blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{5}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH). \blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{6}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Scintillating fiber hodoscope (SFH) with some of the scintillating fibers of the four layres installed.The frontend electronics are not attached.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{7}{figure.caption.4}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers. The SiPM arrays transform the incoming photons into electric signals, that are then transferred to the frontend electronics by the PCB interposer.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the power supply.\blx@tocontentsinit {0}\autocite {InternalcommunicationIgor}}}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces General ASIC block scheme of the Citiroc1A. \blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{12}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces BLABLABLUB\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces BLABLABLUB\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{15}{figure.caption.11}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\babel@toc {english}{}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

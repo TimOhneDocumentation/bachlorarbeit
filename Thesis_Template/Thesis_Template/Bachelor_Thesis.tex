@@ -20,6 +20,10 @@
 \usepackage{listings}
 \usepackage{transparent}
 \usepackage{enumitem} 						% control layout of \itemize (no indent)
+%\usepackage{tikz}              % for drawing figures
+\usepackage{graphicx} % For diagrams
+\usepackage{booktabs} % For nicer tables
+\usepackage{longtable} % For tables that span multiple pages
 \setitemize{leftmargin=*}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{multirow}						% multi rows for tabulars	 
@@ -39,7 +43,7 @@
 % \usepackage{layouts}						% use only to get textwidth for export of figures
 \usepackage{csquotes}
 \usepackage{listings}
-\usepackage[style=alphabetic, backend=biber, backref, firstinits=true, maxbibnames=40,maxalphanames=1]{biblatex} % Include the biblatex package
+\usepackage[style=numeric, backend=biber, backref, maxbibnames=5,maxalphanames=1]{biblatex} % Include the biblatex package
 \renewcommand*{\labelalphaothers}{}
 \addbibresource{BibTeX/bibliography.bib} % Specify the bibliography file
 
@@ -370,7 +374,7 @@
 %   List of Figures
 % -------------------------------
 
-%\listoffigures
+\listoffigures
 \newpage
 
 % -------------------------------
@@ -395,7 +399,7 @@
 %   Affidavit (Eidesstattliche Erklärung)
 % -------------------------------
 
-\selectlanguage{german}
+%\selectlanguage{german}
 \include{Chapters/statement}
 
 % --------------------------------------

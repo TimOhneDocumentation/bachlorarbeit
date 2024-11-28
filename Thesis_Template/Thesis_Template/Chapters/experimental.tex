@@ -1,12 +1,14 @@
 \chapter{Frontend electronic of the scintillating fiber hodoscope}\label{cha:frontend}
 %the sidevieve hast to be updates
 %citroc picute has to be included ans described witharrowas and refreces to the figure have to be included in the text
+%slow shaper fater then fast shaper
+%table of slow control register has to be checked
 \section{Overview of the frontend electronics}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{SideViewElectronics.PNG}
     \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.
-     The SiPM arrays transform the incoming photons into  electric signals that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl}}
+     The SiPM arrays transform the incoming photons into  electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl}}
     \label{fig:SideviewModelElectronics}
     \end{figure}
 \subsection{Proccesing of the SFH signal}
@@ -22,12 +24,13 @@ There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{E18Logo.PNG}
-    \caption{The analog frontend electronics (FEE) PCB with the six CITIROC1A ASICs, on the left cite you can see the region where the power supply is connected.The output of the CITIROC1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
+    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
 The analog frontend electronics (FEE) PCB, shown in figure \ref{fig:FEE}, together with the iFTDC form the heart of the frontend electronics.
-It contains six CITIROC1A ASICs, which are used to amplify and process the signals,32 by each CITIROC1A ASIC , from the SiPM arrays.The output of the CITIROC1A is then transmitted to the iFTDC over three flex PCBs.
-The power supply is connected to the FEE PCB on the left side.Two CITIROC1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
+The FEE PCB incorporates six Citiroc1A ASICs, which are designed to amplify and process the signals from the SiPM arrays.
+ Each Citiroc1A ASIC handles 32 signals. The output of the Citiroc1A is then transmitted to the iFTDC over three flex PCBs.
+The power supply is connected to the FEE PCB on the left side as shown in \ref{fig:FEE}. Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
 \subsection{The iFTDC}
 \begin{figure}[H]
     \centering
@@ -36,9 +39,145 @@ The power supply is connected to the FEE PCB on the left side.Two CITIROC1A ASIC
     \label{fig:iFTDC}
 \end{figure}
 
-The iFTDC is a FPGA based time-to-digital converter depicted in figure \ref{fig:iFTDC}.It is made up out of three Artix-7 FPGA, who each control two CITIROC1A ASICs.
-The FPGA handels the readout as well as the configuration of the CITIROC1A ASICs\autocite{InternalcommunicationIgor}.
-The focus of this thesis is the devolopment of FPGA firmware for the configuration of the CITIROC1A ASICs, but a provisional readout firmware will also be developed.
+The iFTDC, depicted in figure \ref{fig:iFTDC} is a FPGA based time-to-digital converter. It consists of three Artix-7 FPGA, who each control two Citiroc1A ASICs.
+The FPGA handels the readout as well as the configuration of the Citiroc1A ASICs\autocite{InternalcommunicationIgor}.
 \newline
 INSERT: here stil hast to be includes how ethernet works how ipbus works and how jtag is implemented ans stuff analong this line 
-\section{The CITIROC1A ASIC}
+\section{The Citiroc1A ASIC}
+The Citiroc1A ASIC is a frontend application-specific integrated circuit developed by Weeroc for the readout of SiPM detectors.
+It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a photoelectron.\autocite{datasheetCITIROC}
+\newline
+The Citiroc1A ASIC is controlled and readout by the Artix-7 FPGA on the iFTDC, each FPGA controlling two Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
+The focus of this thesis is the development of the FPGA firmware for the control of the Citiroc1A ASICs,
+ but a provesional readout firmware for testing the configuration of the Citiroc1A will also be developed.
+\subsection{Signal proccesing of the Citiroc1A}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{TRIGER.PNG}
+    \caption{General ASIC block scheme of the Citiroc1A. \autocite{datasheetCITIROC}}
+    \label{fig:CITIROC1A_TRIGEER}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{HighGain.PNG}
+    \caption{High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps.\autocite{datasheetCITIROC}}
+    \label{HighGain}
+\end{figure}
+The general block scheme of the Citiroc1A is shown in figure \ref{fig:CITIROC1A_TRIGEER}.
+\newline
+The Citiroc1A allows for the fine tuning of the SiPM bias voltage for each channel via the 8-bit input DAC.
+\newline	
+The input signals are amplified with a variable high or low gain, configurable for every channel as depicted in figure \ref{HighGain}. 
+The PRM experiment requires the maximal high gain of 62.\autocite{InternalcommunicationIgor}
+\newline
+The amplified signals are then shaped by either the slow (ssh) or fast shaper (fsh) as shown in figure \ref{fig:CITIROC1A_TRIGEER}. 
+The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\second} peaking time, which is needed for the time precision of the SFH.
+\newline
+The ASIC has two discriminators, the charge discriminator and the time discriminator. In this thesis we will only look at the time discriminator,
+ since it provides the time information.
+The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every individual channel as shown in figure \ref{fig:CITIROC1A_TRIGEER} \autocite{datasheetCITIROC}.
+
+
+\section{Configuration of the Citiroc1A}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{CitirocConfigHighqual.png}
+    \caption{BLABLABLUB\autocite{datasheetCITIROC}}
+    \label{fig:CITIROC1A_config}
+\end{figure}
+The configuration of the Citiroc1A is achievied by the FPGA via the five signals shown in figure \ref{fig:CITIROC1A_config}.
+The SELECT signal allowes the choice between configuring the slow control, for SELECT = 1  or the probe register, for SELECT = 0.\autocite{datasheetCITIROC}
+
+\subsection{The slow control register}
+The slow control register is used to set values for internal variables like the high gain for a channel or the time discriminator threshold.
+It also allowes for the FPGA to turn of spesific stages of the Citiroc1A, like the slow shaper or the time discriminator.
+The register is 1144 bits long, a full list of all the register that can be set is shown in table \ref{tab:slow_control_register}.
+\begin{longtable}{|l|l|l|l|p{6cm}|}
+    \caption{Configurable registers of the slow control register\autocite{InternalcommunicationKarl} \label{tab:slow_control_register}} \\ \hline
+    \textbf{Parameter} & \textbf{Bits} & \textbf{Default} & \textbf{Range} & \textbf{Description} \\ \hline
+    \endfirsthead
+    \caption*{\textbf{Table \ref{tab:slow_control_register}} Continued: Configurable registers of the slow control register\autocite{InternalcommunicationKarl}} \\ \hline
+    \textbf{Parameter} & \textbf{Bits} & \textbf{Default} & \textbf{Range} & \textbf{Description} \\ \hline
+    \endhead
+    \hline
+    \multicolumn{5}{r}{\textit{Continued on next page...}} \\ \hline
+    \endfoot
+    \hline
+    \endlastfoot
+    
+    \textbf{Channel Thresholds (Time)} & & & & \\ \hline
+    ch\_0                & 4  & 0  & 0       & Channel-dependent 4-bit threshold for time discriminator. \\ \hline
+    ...                  &    &    &         & Common 10-bit threshold (not detailed here). \\ \hline
+    ch\_31               & 4  & 0  &         & \\ \hline
+    
+    \textbf{Channel Thresholds (Charge)} & & & & \\ \hline
+    ch\_0                & 4  & 0  & 128     & Channel-dependent 4-bit threshold for charge discriminator. \\ \hline
+    ...                  &    &    &         & Common 10-bit threshold (not detailed here). \\ \hline
+    ch\_31               & 4  & 0  &         & \\ \hline
+    
+    \textbf{Discriminator Power} & & & & \\ \hline
+    discriminator\_charge\_en  & 1  & 0  & 256     & Enable charge discriminator. \\ \hline
+    discriminator\_time\_en    & 1  & 1  &         & Enable time discriminator. \\ \hline
+    discriminator\_latched\_output & 1 & 0 & 1   & 1: latched, 0: direct output. \\ \hline
+    
+    \textbf{Amplifier and Shaper} & & & & \\ \hline
+    high\_gain\_pp       & 1  & 0  &         & High gain post-processing. \\ \hline
+    low\_gain\_en        & 1  & 0  &         & Enable low gain path. \\ \hline
+    low\_gain\_slow\_shaper\_time\_const & 3 & 0 & See table & Low-gain shaper time constant. \\ \hline
+    
+    \textbf{Pre-Amplification} & & & & \\ \hline
+    low\_gain\_weak\_bias & 1  & 0  &         & 0: normal bias, 1: weak bias. \\ \hline
+    ch\_0\_hg            & 6  & 62 & 619     & High-gain preamp setting for ch\_0. \\ \hline
+    ch\_0\_disable       & 1  & 0  &         & 1 disables preamp for ch\_0. \\ \hline
+    
+    \textbf{Threshold DACs} & & & & \\ \hline
+    charge\_dac\_en      & 1  & 0  & 1103    & Enable charge threshold DAC. \\ \hline
+    time\_threshold      & 10 &    &         & 54V bias: ~200 for 1 cell minimum, ~250 for 2 cell minimum. \\ \hline
+    
+    \textbf{Output and Debugging} & & & & \\ \hline
+    digital\_output\_en  & 1  & 1  &         & Enable digital multiplexed output. \\ \hline
+    trigger\_polarity    & 1  & 0  &         & 0: positive (rising edge), 1: negative (falling edge). \\ \hline
+    
+    \end{longtable}
+
+
+\subsection{The probe register}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{ProbeRegister.png}
+    \caption{BLABLABLUB\autocite{datasheetCITIROC}}
+    \label{fig:CITIROC1A_proberegiseter}
+\end{figure}
+The probe register is used for routing internal signals to several output pins for debugging purposes.
+It's functionality is ilustrated in figure \ref{fig:CITIROC1A_proberegiseter}.
+The register consists of 256 bits and is written similarly to the slow control register,
+ with the difference that the bits are directly written into the Citiroc1A without requiring a rising edge on load\_sc.
+\newline
+The internal signals for each channel that can be routed to the output pins are shown in table \ref{tab:probe_register}. 
+ \begin{table}[h!]
+    \centering
+    \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{Signal Source} & \textbf{Description}                   & \textbf{Output Pin}        \\ \midrule
+    High and low gain preamplifier, & Outputs of preamplifiers and shapers & \texttt{out\_probe}        \\
+    slow and fast shapers                                                   &                          \\ \midrule
+    \texttt{PeakSensing\_modeb\_LG} & Internal peak-sensing signal for low gain & \texttt{digital\_probe}    \\
+    \texttt{PeakSensing\_modeb\_HG} & Internal peak-sensing signal for high gain & \texttt{digital\_probe}    \\ \midrule
+    Output of input DAC            & DAC output voltage (\SI{5}{\volt})  & \texttt{out\_probe\_dac\_5\_V} \\ \bottomrule
+    \end{tabular}
+    \caption{Internal signal routing to output pins for each channel.}
+    \label{tab:probe_register}
+\end{table}
+\newline
+Only one signal source can be routed to one output pin at a time, without potentially causing a short circuit.
+
+
+
+
+
+
+
+
+ 
+

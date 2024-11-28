@@ -1,9 +1,9 @@
-\chapter{Theoretical concepts and AMBER overview}\label{cha:theory}
+\chapter{Theoretical concepts and overview of AMBER}\label{cha:theory}
 
 
 \section{Measurment of the charge radius of the proton (PRM)}\label{sec:proton_radius}
 The proton is a baryon, a composite particle made up of one down quark and  two up quarks.
-From this follows that the proton is not a point particle,but has an internal sturucture.
+From this follows that the proton is not a point particle, but has an internal sturucture.
 \newline
 The internal structure can be discribed by the structure functions of the proton, 
 the electric and magnetic form factors $G_E$ and $G_M$ \autocite{ProposalAmber}.	
@@ -60,18 +60,18 @@ The general setup of the PRM experiment, with focus on the new detectors needed 
 %INSERT: MAYBE FLUX;ENERGY Maybe include detetor specs 
 
 The incoming muon beam with an energy of \SI{100} {\giga\electronvolt}\autocite{ProposalAmber} and an beam rate of $2 \times 10^6$\autocite{ConfrancePaperDAQ} particles per second is scattered on a pressurized hydrogen gas target, located in the Time Projection Chamber (TPC), 
-which also acts as the detector for the recoil path of the proton.
+which also acts as the detector for the recoil path of the scattered proton.
 %INSERT: should i included precicion values and other characteristics of the detectors
 \newline
 The reconstruction of the path of the muon is achieved through the usage of two detector types,
-combined into one unified tracking station (UTS) as shown in figure \ref{UTSpicture}.
+ combined into one unified tracking station (UTS) as shown in figure \ref{UTSpicture}.
 \newline
-Each UTS consists of three layers of pixilized silicon detectors (ALPIDEs),for precises positional measurments (spacial resolution of about 8 µm \autocite{Amber2022Status}) of the incoming and scattered muons, 
+Each UTS consists of three layers of pixilized silicon detectors (ALPIDEs), for precises positional measurments (spacial resolution of about 8 µm \autocite{Amber2022Status}) of the incoming and scattered muons, 
 but lacking the time resolution(\SI{5} {\micro\second}\autocite{Amber2022Status}) required for the PRM experiment.
 For this reason each UTS includes a scintillating fiber hodoscope (SFH),the detector of intrest for this thesis,
  which provides the time precision(\SI{300} {\pico\second}\Autocite{Amber2022Status}) for the measurment.
  \newline
-Four of these unified tracking stations,two before and two after the active target, are placed in the beamline as shown in \ref{fig:amber_setup}.
+Four of these unified tracking stations, two before and two after the active target, are placed in the beamline as shown in \ref{fig:amber_setup}.
 The measurment of the momentum of the scattered moun is done by existing COMPASS detectors located after the, 
 for the PRM newly included, detectors\autocite{ProposalAmber}.
 
@@ -88,10 +88,14 @@ for the PRM newly included, detectors\autocite{ProposalAmber}.
 	\caption{Scintillating fiber hodoscope (SFH) with some of the scintillating fibers of the four layres installed.The frontend electronics are not attached.\autocite{InternalcommunicationKarl}}
 	\label{SFHpicture}
 \end{figure}
-The scintillating fiber hodoscope shown in figure \ref{SFHpicture}, the detector for which the FPGA driven frontend electronics are developed in this thesis,
-is used to measure the precise timing(\SI{300}{\pico\second}\Autocite{Amber2022Status}) of the incoming and scattered muons.Every SFH contains four layers of scintillating fibers, two in x and two in y direction.
+The scintillating fiber hodoscope shown in figure \ref{SFHpicture}, 
+the detector for which the FPGA driven frontend electronics are developed in this thesis,
+is used to measure the precise timing(\SI{300}{\pico\second}\Autocite{Amber2022Status}) of the incoming and scattered muons. 
+Every SFH contains four layers of scintillating fibers, two in x and two in y direction.
 Each layer is made up of 192\autocite{Amber2022Status}, 500 $\mu m$ thick\autocite{Amber2024Status} fibers, in total 768\autocite{Amber2022Status} fibers per SFH. 
 When charged particels, muons in this case, pass through a scintillating fiber they excite the scintillating material, 
-which then emits photons.Both ends of every fiber are conected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal, that is then proccesed by the frontend electronics.
+which then emits photons. Both ends of every fiber are conected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
+ that is then proccesed by the frontend electronics.
 
 \section{Field Programmable Gate Arrays (FPGAs)}\label{sec:FPGA}
+hallo  \autocite{InternalcommunicationIgor}
