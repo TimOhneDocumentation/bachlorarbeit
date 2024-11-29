@@ -17,6 +17,7 @@
 \usepackage{scrlayer-scrpage}       		% for headers
 \usepackage{float}							% force placement of figure at place in code with argument H		
 \usepackage{color}
+\usepackage{xcolor}
 \usepackage{listings}
 \usepackage{transparent}
 \usepackage{enumitem} 						% control layout of \itemize (no indent)
@@ -24,6 +25,7 @@
 \usepackage{graphicx} % For diagrams
 \usepackage{booktabs} % For nicer tables
 \usepackage{longtable} % For tables that span multiple pages
+\usepackage{svg} % For including svg files
 \setitemize{leftmargin=*}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{multirow}						% multi rows for tabulars	 
@@ -363,8 +365,9 @@
 % -------------------------------
 
 \begin{appendices}							% start of appendix: numbering in capsize letters
-	
+  \include{Chapters/appendixB}
 \include{Chapters/appendix}
+
 	
 \end{appendices}
 \newpage

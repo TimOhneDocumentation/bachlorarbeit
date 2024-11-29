@@ -2905,6 +2905,46 @@
       \verb https://cds.cern.ch/record/2810822
       \endverb
     \endentry
+    \entry{Heisenberg1958}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=93ed8b754e9b3f332468bbbfa56e7602}{%
+           family={Heisenberg},
+           familyi={H\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=0c39c71a26139bf1d264c24f90528e6f}{%
+           family={Anshen},
+           familyi={A\bibinitperiod},
+           given={Ruth\bibnamedelima Nanda},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amherst, N.Y.}%
+      }
+      \list{publisher}{1}{%
+        {Prometheus Books}%
+      }
+      \strng{namehash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{fullhash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{fullhashraw}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{bibnamehash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{authorbibnamehash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{authornamehash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{authorfullhash}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{authorfullhashraw}{93ed8b754e9b3f332468bbbfa56e7602}
+      \strng{editorbibnamehash}{0c39c71a26139bf1d264c24f90528e6f}
+      \strng{editornamehash}{0c39c71a26139bf1d264c24f90528e6f}
+      \strng{editorfullhash}{0c39c71a26139bf1d264c24f90528e6f}
+      \strng{editorfullhashraw}{0c39c71a26139bf1d264c24f90528e6f}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Physics and Philosophy: The Revolution in Modern Science}
+      \field{year}{1958}
+    \endentry
     \entry{InternalcommunicationIgor}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=8da45e7d0fa9336fa3d8dd4adaad8000}{%
@@ -2927,6 +2967,69 @@
       \field{howpublished}{Private Communication}
       \field{month}{10}
       \field{year}{2024}
+    \endentry
+    \entry{IPBUS_article}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=13bc9d84ca8c112a26dad869ce19b3b6}{%
+           family={Larrea},
+           familyi={L\bibinitperiod},
+           given={C.\bibnamedelimi Ghabrous},
+           giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4c1f9f6688731abdec9556d3130dd514}{%
+           family={Harder},
+           familyi={H\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7d805ae3b13112e086e5351a61c8e388}{%
+           family={Newbold},
+           familyi={N\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a5676f102d79ad7e38e46bafae0c463b}{%
+           family={Sankey},
+           familyi={S\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e9c56b56a7502b3e527fb202cce8bc88}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9133461f4aefe05c0560d11e66b71a7b}{%
+           family={Thea},
+           familyi={T\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=af003993ce9c19980d69bf7efba17fce}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{64c3a0993b976592ffb8a614d29b0233}
+      \strng{fullhash}{9ed544252f6a9d0beafa1484ce04fea2}
+      \strng{fullhashraw}{9ed544252f6a9d0beafa1484ce04fea2}
+      \strng{bibnamehash}{64c3a0993b976592ffb8a614d29b0233}
+      \strng{authorbibnamehash}{64c3a0993b976592ffb8a614d29b0233}
+      \strng{authornamehash}{64c3a0993b976592ffb8a614d29b0233}
+      \strng{authorfullhash}{9ed544252f6a9d0beafa1484ce04fea2}
+      \strng{authorfullhashraw}{9ed544252f6a9d0beafa1484ce04fea2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The ATCA and μTCA standards include industry-standard data pathway technologies such as Gigabit Ethernet which can be used for control communication, but no specific hardware control protocol is defined. The IPbus suite of software and firmware implements a reliable high-performance control link for particle physics electronics, and has successfully replaced VME control in several large projects. In this paper, we outline the IPbus control system architecture, and describe recent developments in the reliability, scalability and performance of IPbus systems, carried out in preparation for deployment of μTCA-based CMS upgrades before the LHC 2015 run. We also discuss plans for future development of the IPbus suite.}
+      \field{journaltitle}{Journal of Instrumentation}
+      \field{month}{2}
+      \field{number}{02}
+      \field{title}{IPbus: a flexible Ethernet-based control system for xTCA hardware}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{C02019}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/10/02/C02019
+      \endverb
     \endentry
     \entry{discoveryProton}{article}{}{}
       \name{author}{1}{}{%

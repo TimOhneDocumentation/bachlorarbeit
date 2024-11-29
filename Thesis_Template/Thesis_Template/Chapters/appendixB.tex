@@ -1,0 +1,213 @@
+\chapter{Configurable registers of the Citiroc1A ASIC}\label{cha:Citiroc1A_register}
+
+\begin{longtable}{|p{6cm}|p{1cm}|p{1.4cm}|p{1.8cm}|p{5cm}|}
+    
+    \caption{Configurable registers of the slow control register\autocite{InternalcommunicationKarl} \label{tab:slow_control_register}} \\ \hline
+    \hline
+\textbf{Field} & \textbf{Bits} & \textbf{Default} & \textbf{Position} & \textbf{Description} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{Field} & \textbf{Bits} & \textbf{Default} & \textbf{Position } & \textbf{Description} \\ \hline
+\endhead
+
+\hline
+\multicolumn{5}{r}{{Configurable registers of the slow control register continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+% channel_thr_time
+\multicolumn{5}{|l|}{\textcolor{red}{Register:channel\_thr\_time}} \\ \hline
+ch\_0       & 4  & 0 & 0   & Channel-dependent 4-bit threshold for time discriminator. \\ \hline
+ $\vdots$ & &   &  & \\ \hline % Vertical dots for skipped channels
+%\multicolumn{5}{|l|}{\emph{See below for common 10-bit threshold.}} \\ \hline
+ch\_31      & 4  & 0 & -   & - \\ \hline
+\multicolumn{5}{|l|}{\textcolor{red}{Register:channel\_thr\_charge }} \\ \hline
+% channel_thr_charge
+ch\_0     & 4  & 0 & 128 & Channel-dependent 4-bit threshold for charge discriminator. \\ \hline
+%\multicolumn{5}{|l|}{\emph{See below for common 10-bit threshold.}} \\ \hline
+$\vdots$ & &   &  & \\ \hline % Vertical dots for skipped channels
+ ch\_31    & 4  & 0 & -   & - \\ \hline
+
+% discriminator_power
+\multicolumn{5}{|l|}{\textcolor{red}{Register:discriminator\_power}} \\ \hline
+discriminator\_charge\_en      & 1  & 0 & 256 & Enable charge discriminator. \\ \hline
+discriminator\_charge\_pp      & 1  & 0 & -   & Power pulse for charge discriminator. \\ \hline
+discriminator\_latched\_output & 1  & 0 & -   & 1: latched, 0: direct output. \\ \hline
+discriminator\_time\_en        & 1  & 1 & -   & Enable time discriminator. \\ \hline
+discriminator\_time\_pp        & 1  & 1 & -   & Power pulse for time discriminator. \\ \hline
+
+
+4bit\_dac\_charge\_en          & 1  & 0 & 261   & Enable 4-bit charge DAC. \\ \hline
+4bit\_dac\_charge\_pp          & 1  & 0 & -   & Power pulse for 4-bit charge DAC. \\ \hline
+4bit\_dac\_time\_en            & 1  & 1 & -   & Enable 4-bit time DAC. \\ \hline
+4bit\_dac\_time\_pp            & 1  & 1 & -   & Power pulse for 4-bit time DAC. \\ \hline
+
+% channel_discriminator_mask
+%\multicolumn{5}{|l|}{\emph{Register:channel\_discriminator\_mask } \\ \hline
+ ch\_0 & 1  & 1 & 265 & 0: masked, 1: unmasked. \\ \hline
+ $\vdots$ & &   &  & \\ \hline % Vertical dots for skipped channels
+ch\_31 & 1  & 1 & - & - \\ \hline
+
+% track_and_hold_power
+\multicolumn{5}{|l|}{\textcolor{red}{Register:track\_and\_hold\_power}} \\ \hline
+high\_gain\_pp & 1  & 0 & 297 & Enable high gain. \\ \hline
+ high\_gain\_en & 1  & 0 & -   & - \\ \hline
+ low\_gain\_pp  & 1  & 0 & -   & Power pulse for low gain. \\ \hline
+ low\_gain\_en  & 1  & 0 & -   & Enable low gain. \\ \hline
+ weak\_bias     & 1  & 0 & -   & 1: weak bias (600kHz max), 0: high bias (5MHz max). \\ \hline
+
+% peak_detector_power
+\multicolumn{5}{|l|}{\textcolor{red}{Register:peak\_detector\_power}} \\ \hline
+ high\_gain\_pp & 1  & 0 & 302 & Enable high gain for peak detector. \\ \hline
+ high\_gain\_en & 1  & 0 & - & - \\ \hline
+ low\_gain\_pp  & 1  & 0 & - & Power pulse for low gain. \\ \hline
+ low\_gain\_en  & 1  & 0 & - & Enable low gain for peak detector. \\ \hline
+
+% select_peak_sensing
+\multicolumn{5}{|l|}{\textcolor{red}{Register:select\_peak\_sensing}} \\ \hline
+ high\_gain\_th & 1  & 0 & 306 & 0: peak detector, 1: track and hold. \\ \hline
+ low\_gain\_th  & 1  & 0 & -   & - \\ \hline
+peak\_sensing\_cell\_bypass          & 1  & 0 & -   & 0: cell active, 1: bypass peak sensing cell. \\ \hline
+peak\_sensing\_external\_trigger     & 1  & 0 & -   & 0: internal trigger, 1: external trigger. \\ \hline
+
+% shaper
+\multicolumn{5}{|l|}{\textcolor{red}{Register:shaper}} \\ \hline
+ fast\_shaper\_follower\_pp & 1  & 0 & 310 & Power pulse for fast shaper follower. \\ \hline
+ fast\_shaper\_en           & 1  & 1 & -   & Enable fast shaper. \\ \hline
+ fast\_shaper\_pp           & 1  & 1 & -   & Power pulse for fast shaper. \\ \hline
+ low\_gain\_slow\_shaper\_pp & 1  & 0 & -   & Power pulse for low gain slow shaper. \\ \hline
+ low\_gain\_slow\_shaper\_en & 1  & 0 & -   & Enable low gain slow shaper. \\ \hline
+ low\_gain\_slow\_shaper\_time\_const & 3 & 0 & - & See the table above for values. \\ \hline
+ high\_gain\_slow\_shaper\_pp & 1 & 0 & - & Power pulse for high gain slow shaper. \\ \hline
+ high\_gain\_slow\_shaper\_en & 1 & 0 & - & Enable high gain slow shaper. \\ \hline
+ high\_gain\_slow\_shaper\_time\_const & 3 & 0 & - & See the table above for values. \\ \hline
+
+% (continue for all remaining parameters)
+% Preamp Power Settings
+\multicolumn{5}{|l|}{\textcolor{red}{Register:pre\_amp\_power}} \\ \hline
+low\_gain\_weak\_bias       & 1  & 0 & 323 & 0: normal bias, 1: weak bias. \\ \hline
+high\_gain\_pp             & 1  & 1 & -   & Power pulse for high gain preamp. \\ \hline
+high\_gain\_en             & 1  & 1 & -   & Enable high gain preamp. \\ \hline
+low\_gain\_pp              & 1  & 0 & -   & Power pulse for low gain preamp. \\ \hline
+low\_gain\_en              & 1  & 0 & -   & Enable low gain preamp. \\ \hline
+fast\_shaper\_low\_gain     & 1  & 0 & -   & 0: fast shaper on high gain. \\ \hline
+
+% Input DAC Settings
+\multicolumn{5}{|l|}{\textcolor{red}{Register:input\_dac}} \\ \hline
+dac\_en                   & 1  & 1 & 329 & Input DAC for bias correction. \\ \hline
+dac\_ref                  & 1  & 1 & -   & Voltage ref: 1 = internal 4.5V, 0 = internal 2.5V, depends on vdd\_dac. \\ \hline
+ch\_0                     & 8  & 255 & - & VSipm = V\_HV - V\_DAC (check what makes sense here). \\ \hline
+ch\_0\_en                  & 1  & 1 & -   & Enable channel 0 input DAC. \\ \hline
+$\vdots$ & &   &  & \\ \hline
+ch\_31                    & 8  & 255 & - & Same as ch\_0 for channel 31. \\ \hline
+ch\_31\_en                 & 1  & 1 & -   & Enable channel 31 input DAC. \\ \hline
+
+% Channel Preamp
+\multicolumn{5}{|l|}{\textcolor{red}{Register:channel\_preamp}} \\ \hline
+ch\_0\_hg                  & 6  & 62 & 619 & High gain preamp setting. \\ \hline
+ch\_0\_lg                  & 6  & 0  & -   & Low gain preamp setting. \\ \hline
+ch\_0\_ctest\_hg            & 1  & 0  & -   & 1: Connect injection capacitance for test signal. \\ \hline
+ch\_0\_ctest\_lg            & 1  & 0  & -   & 1: Connect low gain injection capacitance. \\ \hline
+ch\_0\_disable             & 1  & 0  & -   & 1 disables preamp for channel 0. \\ \hline
+$\vdots$ & &   &  & \\ \hline
+ch\_31\_hg                  & 6  & 62 & - & High gain preamp setting. \\ \hline
+ch\_31\_lg                  & 6  & 0  & -   & Low gain preamp setting. \\ \hline
+ch\_31\_ctest\_hg            & 1  & 0  & -   & 1: Connect injection capacitance for test signal. \\ \hline
+ch\_31\_ctest\_lg            & 1  & 0  & -   & 1: Connect low gain injection capacitance. \\ \hline
+ch\_31\_disable             & 1  & 0  & -   & 1 disables preamp for channel 0. \\ \hline
+% Service Blocks
+\multicolumn{5}{|l|}{\textcolor{red}{Register:service\_blocks}} \\ \hline
+temp\_pp                  & 1  & 1 & 999   & Enable power pulse for temperature monitoring. \\ \hline
+temp\_en                  & 1  & 1 & -   & Enable temperature monitoring. \\ \hline
+band\_gap\_pp              & 1  & 1 & -   & Enable power pulse for band gap reference. \\ \hline
+band\_gap\_en              & 1  & 1 & -   & Enable band gap reference. \\ \hline
+
+% Threshold DAC
+\multicolumn{5}{|l|}{\textcolor{red}{Register:threshold\_dac}} \\ \hline
+charge\_dac\_en            & 1  & 0 & 1103 & Enable charge threshold DAC. \\ \hline
+charge\_dac\_pp            & 1  & 0 & -   & Power pulse for charge threshold DAC. \\ \hline
+time\_dac\_en              & 1  & 1 & -   & Enable time threshold DAC. \\ \hline
+time\_dac\_pp              & 1  & 1 & -   & Power pulse for time threshold DAC. \\ \hline
+charge\_threshold         & 10 & 0 & -   & Charge threshold value. \\ \hline
+time\_threshold           & 10 & - & -   & Time threshold value (e.g., ~200 for 1 cell min, ~250 for 2 cells). \\ \hline
+
+% OTAQ Power
+\multicolumn{5}{|l|}{\textcolor{red}{Register:otaq\_power}} \\ \hline
+high\_gain\_en             & 1  & 1 & 1127 & Enable high gain for OTAQ. \\ \hline
+high\_gain\_pp             & 1  & 1 & -    & Power pulse for high gain OTAQ. \\ \hline
+low\_gain\_en              & 1  & 0 & -    & Enable low gain for OTAQ. \\ \hline
+low\_gain\_pp              & 1  & 0 & -    & Power pulse for low gain OTAQ. \\ \hline
+debug\_probe\_en           & 1  & 1 & -    & Enable debug probe. \\ \hline
+debug\_probe\_pp           & 1  & 1 & -    & Power pulse for debug probe. \\ \hline
+
+% Input/Output
+\multicolumn{5}{|l|}{\textcolor{red}{Register:input\_output}} \\ \hline
+output\_buffer\_bias       & 1  & 0 & 1133 & Output OTA buffer bias: 0 = auto bias, 1 = force on. \\ \hline
+val\_event\_receiver\_en    & 1  & 1 & -    & Enable validation event receiver. \\ \hline
+val\_event\_receiver\_pp    & 1  & 1 & -    & Power pulse for validation event receiver. \\ \hline
+raz\_chn\_en               & 1  & 1 & -    & Enable RAZ channel. \\ \hline
+raz\_chn\_pp               & 1  & 1 & -    & Power pulse for RAZ channel. \\ \hline
+digital\_output\_en        & 1  & 1 & -    & Enable digital multiplexed output. \\ \hline
+or32\_output\_en           & 1  & 1 & -    & Enable OR32 output. \\ \hline
+or32\_oc\_output\_en        & 1  & 1 & -    & Enable OR32 over-current output. \\ \hline
+trigger\_polarity         & 1  & 0 & -    & Trigger polarity: 0 = positive (rising edge), 1 = negative (falling edge). \\ \hline
+or32\_t\_oc\_en             & 1  & 1 & -    & Enable OR32 timeout over-current. \\ \hline
+32\_triggers\_en           & 1  & 1 & 1143    & Enable 32 triggers. \\ \hline
+\end{longtable}
+\newpage
+\begin{longtable}{|p{5cm}|p{2cm}|c|c|p{6cm}|}
+    \caption{Configurable registers of the probe register\autocite{InternalcommunicationKarl} \label{tab:probe_register_tab}} \\ \hline
+    
+    \hline
+    \textbf{Register}                & \textbf{Field} & \textbf{Bits} & \textbf{Position} & \textbf{Type} \\ 
+    \hline
+    \endfirsthead
+    
+    \hline
+    \textbf{Register}                & \textbf{Field} & \textbf{Bits} & \textbf{Position} & \textbf{Type} \\ 
+    \hline
+    \endhead
+    
+    \hline
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    % Data rows
+    out\_probe\_fast\_shaper       & ch\_0   & 1 & 0   & Analog - Out\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 31  &  \\
+    \hline
+    out\_probe\_slow\_shaper\_lg  & ch\_0   & 1 & 32  & Analog - Out\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 63  &  \\
+    \hline
+    digital\_probe\_peak\_sense\_lg & ch\_0   & 1 & 64  & Digital - Digital\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 95   \\
+    \hline
+    out\_probe\_slow\_shaper\_hg  & ch\_0   & 1 & 96  & Analog - Out\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 127 & \\
+    \hline
+    digital\_probe\_peak\_sense\_hg & ch\_0   & 1 & 128 & Digital - Digital\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 159 &  \\
+    \hline
+    out\_probe\_preamp\_hg        & ch\_0   & 1 & 160 & Analog - Out\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 191 &  \\
+    \hline
+    out\_probe\_preamp\_lg        & ch\_0   & 1 & 192 & Analog - Out\_probe \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 223 &  \\
+    \hline
+    input\_dac\_probe             & ch\_0   & 1 & 224 & Analog - Out\_probe\_dac\_5V \\
+                                   & $\vdots$ &   & $\vdots$ & \\ % Vertical dots for skipped channels
+                                   & ch\_31  & 1 & 255 & \\
+    
+    \end{longtable}

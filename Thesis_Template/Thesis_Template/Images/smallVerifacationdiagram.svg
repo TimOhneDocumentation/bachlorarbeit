@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="sprotty_root"
+   class="sprotty-graph sprotty-state-machine statemachine"
+   style="border-block-end-color:rgb(204, 204, 204);border-block-start-color:rgb(204, 204, 204);border-bottom-color:rgb(204, 204, 204);border-inline-end-color:rgb(204, 204, 204);border-inline-start-color:rgb(204, 204, 204);border-left-color:rgb(204, 204, 204);border-right-color:rgb(204, 204, 204);border-top-color:rgb(204, 204, 204);caret-color:rgb(204, 204, 204);color:rgb(204, 204, 204);column-rule-color:rgb(204, 204, 204);font-family:&quot;Noto Sans&quot;, Helvetica, Arial, sans-serif;font-size:13px;outline-color:rgb(204, 204, 204);perspective-origin:0px 0px;scrollbar-color:rgba(121, 121, 121, 0.4) rgb(31, 31, 31);text-decoration:none solid rgb(204, 204, 204);text-decoration-color:rgb(204, 204, 204);text-emphasis-color:rgb(204, 204, 204);transform-origin:0px 0px;-webkit-locale:&quot;en&quot;;-webkit-text-fill-color:rgb(204, 204, 204);-webkit-text-stroke-color:rgb(204, 204, 204);"
+   version="1.1"
+   viewBox="10 10 412.2487106323242 288"
+   width="412.2487106323242"
+   height="288"
+   sodipodi:docname="smallVerifacationdiagram.svg"
+   inkscape:export-filename="smallVerifacationdiagrammod.png"
+   inkscape:export-xdpi="3900.2"
+   inkscape:export-ydpi="3900.2"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs29" />
+  <sodipodi:namedview
+     id="namedview29"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.34375"
+     inkscape:cx="205.87192"
+     inkscape:cy="151.72414"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="sprotty_root" />
+  <g
+     transform="scale(1) translate(0,0)"
+     id="g29">
+    <g
+       id="sprotty_fsm$read_cr"
+       class="statemachine"
+       transform="translate(15, 15)">
+      <g
+         class="sprotty-block"
+         style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);stroke-dasharray:0px;"
+         id="g1">
+        <rect
+           x="0"
+           y="0"
+           rx="1"
+           ry="1"
+           width="402.2487106323242"
+           height="278"
+           id="rect1" />
+        <text
+           x="201.12436"
+           y="12"
+           class="sprotty-block-name"
+           style="font-weight:700;font-size:16px;dominant-baseline:middle;text-anchor:middle;fill:#303030"
+           id="text1">Verification state machine</text>
+        <line
+           x1="0"
+           y1="20"
+           x2="402.2487106323242"
+           y2="20"
+           id="line1" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_idle_st"
+         class="state"
+         transform="translate(120.77684656778972, 36)">
+        <ellipse
+           cx="52.509307861328125"
+           cy="20"
+           rx="52.509307861328125"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse1" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_idle_st/label"
+           transform="translate(52.192711,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">idle_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_wait4fedge_st"
+         class="state"
+         transform="translate(230.5421371459961, 106)">
+        <ellipse
+           cx="79.85328674316406"
+           cy="20"
+           rx="79.85328674316406"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse2" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_wait4fedge_st/label"
+           transform="translate(79.536461,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">wait4fedge_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_load_st"
+         class="state"
+         transform="translate(182.80259704589844, 166)">
+        <ellipse
+           cx="55.109310150146484"
+           cy="20"
+           rx="55.109310150146484"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse3" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_load_st/label"
+           transform="translate(54.796875,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">load_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_add_incr_st"
+         class="state"
+         transform="translate(215.6572488149007, 226)">
+        <ellipse
+           cx="71.8052978515625"
+           cy="20"
+           rx="71.8052978515625"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse4" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_add_incr_st/label"
+           transform="translate(71.489586,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">add_incr_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_read_st"
+         class="state"
+         transform="translate(62.686645507812514, 106)">
+        <ellipse
+           cx="55.42930603027344"
+           cy="20"
+           rx="55.42930603027344"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse5" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_read_st/label"
+           transform="translate(55.114586,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">read_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_read_ack_st"
+         class="state"
+         transform="translate(12, 166)">
+        <ellipse
+           cx="72.90129852294922"
+           cy="20"
+           rx="72.90129852294922"
+           ry="20"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse6" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$read_cr/state$read_read_ack_st/label"
+           transform="translate(72.588547,26.666668)"
+           style="font-size:16px;text-anchor:middle;fill:#303030">read_ack_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_idle_st_to_fsm$read_cr/state$read_wait4fedge_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g7">
+          <path
+             d=" M204.79173914591473,76 C204.79173914591473,76 299.8350554148356,91 310.39542388916016,106"
+             id="path6" />
+          <path
+             d=" M204.79173914591473,76 C204.79173914591473,76 299.8350554148356,91 310.39542388916016,106"
+             class="clickable"
+             id="path7" />
+        </g>
+        <path
+           d="M 310.39542388916016,106 L 317.39542388916016,103.5 L 317.39542388916016,108.5 Z"
+           transform="rotate(-125.14648655139932 310.39542388916016 106)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path8" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_idle_st_to_fsm$read_cr/state$read_read_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g10">
+          <path
+             d=" M162.78429285685223,76 C162.78429285685223,76 122.58278566996258,91 118.11595153808595,106"
+             id="path9" />
+          <path
+             d=" M162.78429285685223,76 C162.78429285685223,76 122.58278566996258,91 118.11595153808595,106"
+             class="clickable"
+             id="path10" />
+        </g>
+        <path
+           d="M 118.11595153808595,106 L 125.11595153808595,103.5 L 125.11595153808595,108.5 Z"
+           transform="rotate(-73.41705049153873 118.11595153808595 106)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path11" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_wait4fedge_st_to_fsm$read_cr/state$read_load_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g13">
+          <path
+             d=" M283.7776616414388,146 C283.7776616414388,146 270.02966944376624,156 256.28167724609375,166"
+             id="path12" />
+          <path
+             d=" M283.7776616414388,146 C283.7776616414388,146 270.02966944376624,156 256.28167724609375,166"
+             class="clickable"
+             id="path13" />
+        </g>
+        <path
+           d="M 256.28167724609375,166 L 263.28167724609375,163.5 L 263.28167724609375,168.5 Z"
+           transform="rotate(-36.03135347893228 256.28167724609375 166)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path14" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_load_st_to_fsm$read_cr/state$read_add_incr_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g16">
+          <path
+             d=" M237.91190719604492,206 C237.91190719604492,206 240.47346121470133,216 263.527447382609,226"
+             id="path15" />
+          <path
+             d=" M237.91190719604492,206 C237.91190719604492,206 240.47346121470133,216 263.527447382609,226"
+             class="clickable"
+             id="path16" />
+        </g>
+        <path
+           d="M 263.527447382609,226 L 270.527447382609,223.5 L 270.527447382609,228.5 Z"
+           transform="rotate(-156.55051357262303 263.527447382609 226)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path17" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_load_st_to_fsm$read_cr/state$read_idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g19">
+          <path
+             d=" M219.5421371459961,166 C219.5421371459961,156 219.54213714599604,143.5 219.54213714599604,133.08333333333331 C219.54213714599604,122.66666666666667 219.5421371459961,114.33333333333334 219.54213714599607,106.41666666666666 C219.54213714599607,98.5 219.5421371459961,91 183.78801600138348,76"
+             id="path18" />
+          <path
+             d=" M219.5421371459961,166 C219.5421371459961,156 219.54213714599604,143.5 219.54213714599604,133.08333333333331 C219.54213714599604,122.66666666666667 219.5421371459961,114.33333333333334 219.54213714599607,106.41666666666666 C219.54213714599607,98.5 219.5421371459961,91 183.78801600138348,76"
+             class="clickable"
+             id="path19" />
+        </g>
+        <path
+           d="M 183.78801600138348,76 L 190.78801600138348,73.5 L 190.78801600138348,78.5 Z"
+           transform="rotate(22.759611084508425 183.78801600138348 76)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path20" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_add_incr_st_to_fsm$read_cr/state$read_wait4fedge_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g22">
+          <path
+             d=" M311.3976459503174,226 C337.01318613688153,216 337.01318613688153,210.99999999999997 337.01318613688153,204.3333333333333 C337.01318613688153,197.66666666666666 337.01318613688153,189.33333333333334 337.01318613688153,178.91666666666666 C337.01318613688153,168.5 337.01318613688153,156 337.01318613688153,146"
+             id="path21" />
+          <path
+             d=" M311.3976459503174,226 C337.01318613688153,216 337.01318613688153,210.99999999999997 337.01318613688153,204.3333333333333 C337.01318613688153,197.66666666666666 337.01318613688153,189.33333333333334 337.01318613688153,178.91666666666666 C337.01318613688153,168.5 337.01318613688153,156 337.01318613688153,146"
+             class="clickable"
+             id="path22" />
+        </g>
+        <path
+           d="M 337.01318613688153,146 L 344.01318613688153,143.5 L 344.01318613688153,148.5 Z"
+           transform="rotate(90 337.01318613688153 146)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path23" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_read_st_to_fsm$read_cr/state$read_read_ack_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g25">
+          <path
+             d=" M118.11595153808595,146 C118.11595153808595,146 117.22452952067059,156 109.2017313639323,166"
+             id="path24" />
+          <path
+             d=" M118.11595153808595,146 C118.11595153808595,146 117.22452952067059,156 109.2017313639323,166"
+             class="clickable"
+             id="path25" />
+        </g>
+        <path
+           d="M 109.2017313639323,166 L 116.2017313639323,163.5 L 116.2017313639323,168.5 Z"
+           transform="rotate(-51.26063160794439 109.2017313639323 166)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path26" />
+      </g>
+      <g
+         id="sprotty_fsm$read_cr/state$read_read_ack_st_to_fsm$read_cr/state$read_idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g28">
+          <path
+             d=" M60.60086568196615,166 C51.686645507812514,156 51.686645507812514,151 51.686645507812514,145.16666666666666 C51.686645507812514,139.33333333333331 51.686645507812514,132.66666666666666 51.686645507812514,126 C51.686645507812514,119.33333333333333 51.686645507812514,112.66666666666666 51.686645507812514,105.58333333333333 C51.686645507812514,98.5 51.686645507812514,91 141.78056971232098,76"
+             id="path27" />
+          <path
+             d=" M60.60086568196615,166 C51.686645507812514,156 51.686645507812514,151 51.686645507812514,145.16666666666666 C51.686645507812514,139.33333333333331 51.686645507812514,132.66666666666666 51.686645507812514,126 C51.686645507812514,119.33333333333333 51.686645507812514,112.66666666666666 51.686645507812514,105.58333333333333 C51.686645507812514,98.5 51.686645507812514,91 141.78056971232098,76"
+             class="clickable"
+             id="path28" />
+        </g>
+        <path
+           d="M 141.78056971232098,76 L 148.78056971232098,73.5 L 148.78056971232098,78.5 Z"
+           transform="rotate(170.54736428149914 141.78056971232098 76)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path29" />
+      </g>
+    </g>
+  </g>
+</svg>

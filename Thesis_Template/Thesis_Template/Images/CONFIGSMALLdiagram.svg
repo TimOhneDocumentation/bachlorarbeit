@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="sprotty_root"
+   class="sprotty-graph sprotty-state-machine statemachine"
+   style="border-block-end-color:rgb(204, 204, 204);border-block-start-color:rgb(204, 204, 204);border-bottom-color:rgb(204, 204, 204);border-inline-end-color:rgb(204, 204, 204);border-inline-start-color:rgb(204, 204, 204);border-left-color:rgb(204, 204, 204);border-right-color:rgb(204, 204, 204);border-top-color:rgb(204, 204, 204);caret-color:rgb(204, 204, 204);color:rgb(204, 204, 204);column-rule-color:rgb(204, 204, 204);font-family:&quot;Noto Sans&quot;, Helvetica, Arial, sans-serif;font-size:13px;outline-color:rgb(204, 204, 204);perspective-origin:0px 0px;scrollbar-color:rgba(121, 121, 121, 0.4) rgb(31, 31, 31);text-decoration:none solid rgb(204, 204, 204);text-decoration-color:rgb(204, 204, 204);text-emphasis-color:rgb(204, 204, 204);transform-origin:0px 0px;-webkit-locale:&quot;en&quot;;-webkit-text-fill-color:rgb(204, 204, 204);-webkit-text-stroke-color:rgb(204, 204, 204);"
+   version="1.1"
+   viewBox="10 10 516.3385076522827 542.6666717529297"
+   width="516.3385076522827"
+   height="542.6666717529297"
+   sodipodi:docname="CONFIGSMALLdiagram.svg"
+   inkscape:export-filename="CONFIGSMALLdiagram2.png"
+   inkscape:export-xdpi="3000.1001"
+   inkscape:export-ydpi="3000.1001"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs66" />
+  <sodipodi:namedview
+     id="namedview66"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.3667075"
+     inkscape:cx="258.26419"
+     inkscape:cy="271.33334"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="sprotty_root" />
+  <g
+     transform="scale(1) translate(0,0)"
+     id="g66">
+    <g
+       id="sprotty_fsm$cr"
+       class="statemachine"
+       transform="translate(15, 15)">
+      <g
+         class="sprotty-block"
+         style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);stroke-dasharray:0px;"
+         id="g1">
+        <rect
+           x="0"
+           y="0"
+           rx="1"
+           ry="1"
+           width="506.3385076522827"
+           height="532.6666717529297"
+           id="rect1" />
+        <text
+           x="253.16925"
+           y="12"
+           class="sprotty-block-name"
+           style="font-weight:700;font-size:16px;dominant-baseline:middle;text-anchor:middle;fill:#303030"
+           id="text1">Configuration state machine</text>
+        <line
+           x1="0"
+           y1="20"
+           x2="506.3385076522827"
+           y2="20"
+           id="line1" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$idle_st"
+         class="state"
+         transform="translate(136.7857157389323, 36)">
+        <ellipse
+           cx="45"
+           cy="19.666666984558105"
+           rx="45"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse1" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$idle_st/label"
+           transform="translate(19.754680633544922, 8) translate(24.930557250976562, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:6.9184px 1.38889px;text-anchor:middle;">idle_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$reset_st"
+         class="state"
+         transform="translate(23, 125.33333396911621)">
+        <ellipse
+           cx="35.92531394958496"
+           cy="19.666666984558105"
+           rx="35.92531394958496"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse2" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$reset_st/label"
+           transform="translate(6, 8) translate(29.609376907348633, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:8.22049px 1.38889px;text-anchor:middle;">reset_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$read_st"
+         class="state"
+         transform="translate(266.9963747660319, 125.33333396911621)">
+        <ellipse
+           cx="34.16531753540039"
+           cy="19.666666984558105"
+           rx="34.16531753540039"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse3" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$read_st/label"
+           transform="translate(6, 8) translate(27.851564407348633, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:7.73438px 1.38889px;text-anchor:middle;">read_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$read_ack_st"
+         class="state"
+         transform="translate(226.94171969095868, 184.66666793823242)">
+        <ellipse
+           cx="51.63731384277344"
+           cy="19.666666984558105"
+           rx="51.63731384277344"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse4" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$read_ack_st/label"
+           transform="translate(6, 8) translate(45.32118225097656, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:12.5868px 1.38889px;text-anchor:middle;">read_ack_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$write_st"
+         class="state"
+         transform="translate(119.85062789916995, 125.33333396911621)">
+        <ellipse
+           cx="36.42131805419922"
+           cy="19.666666984558105"
+           rx="36.42131805419922"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse5" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$write_st/label"
+           transform="translate(6, 8) translate(30.104167938232422, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:8.35938px 1.38889px;text-anchor:middle;">write_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$load_st"
+         class="state"
+         transform="translate(356.1092348098755, 184.66666793823242)">
+        <ellipse
+           cx="33.845319747924805"
+           cy="19.666666984558105"
+           rx="33.845319747924805"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse6" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$load_st/label"
+           transform="translate(6, 8) translate(27.530384063720703, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:7.63889px 1.38889px;text-anchor:middle;">load_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$wait4fedge_st"
+         class="state"
+         transform="translate(366.15990352630615, 303.33333587646484)">
+        <ellipse
+           cx="58.58930206298828"
+           cy="19.666666984558105"
+           rx="58.58930206298828"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse7" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$wait4fedge_st/label"
+           transform="translate(6, 8) translate(52.27430725097656, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:14.5139px 1.38889px;text-anchor:middle;">wait4fedge_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$wait4redge_st"
+         class="state"
+         transform="translate(330.86125087738037, 244.00000190734863)">
+        <ellipse
+           cx="59.09330368041992"
+           cy="19.666666984558105"
+           rx="59.09330368041992"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse8" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$wait4redge_st/label"
+           transform="translate(6, 8) translate(52.77777862548828, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:14.6528px 1.38889px;text-anchor:middle;">wait4redge_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$shift_st"
+         class="state"
+         transform="translate(390.459885597229, 362.66666984558105)">
+        <ellipse
+           cx="33.78931999206543"
+           cy="19.666666984558105"
+           rx="33.78931999206543"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse9" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$shift_st/label"
+           transform="translate(6, 8) translate(27.47395896911621, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:7.63021px 1.38889px;text-anchor:middle;">shift_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$finish_st"
+         class="state"
+         transform="translate(386.22788524627686, 422.00000381469727)">
+        <ellipse
+           cx="38.02132034301758"
+           cy="19.666666984558105"
+           rx="38.02132034301758"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse10" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$finish_st/label"
+           transform="translate(6, 8) translate(31.705730438232422, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:8.80208px 1.38889px;text-anchor:middle;">finish_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$update_st"
+         class="state"
+         transform="translate(265.6937030156454, 481.3333377838135)">
+        <ellipse
+           cx="43.86931228637695"
+           cy="19.666666984558105"
+           rx="43.86931228637695"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse11" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$update_st/label"
+           transform="translate(6, 8) translate(37.552085876464844, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:10.4253px 1.38889px;text-anchor:middle;">update_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$delay_st"
+         class="state"
+         transform="translate(396.37277253468835, 125.33333396911621)">
+        <ellipse
+           cx="37.72531700134277"
+           cy="19.666666984558105"
+           rx="37.72531700134277"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse12" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$delay_st/label"
+           transform="translate(6, 8) translate(31.41059112548828, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:8.72396px 1.38889px;text-anchor:middle;">delay_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$write_finish_st"
+         class="state"
+         transform="translate(22.594663619995117, 184.66666793823242)">
+        <ellipse
+           cx="61.54130935668945"
+           cy="19.666666984558105"
+           rx="61.54130935668945"
+           ry="19.666666984558105"
+           class="sprotty-node clickable"
+           style="fill:rgb(255, 255, 255);stroke:rgb(48, 48, 48);"
+           id="ellipse13" />
+        <text
+           class="clickable sprotty-label state"
+           id="sprotty_fsm$cr/state$write_finish_st/label"
+           transform="translate(6, 8) translate(55.2256965637207, 18.33333396911621)"
+           style="cursor:default;fill:rgb(48, 48, 48);font-size:16px;perspective-origin:15.3385px 1.38889px;text-anchor:middle;">write_finish_st</text>
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$idle_st_to_fsm$cr/state$reset_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g14">
+          <path
+             d=" M166.7857157389323,75.33333396911621 C166.7857157389323,75.33333396911621 80.48894831339516,100.33333396911621 70.90041859944661,125.33333396911621"
+             id="path13" />
+          <path
+             d=" M166.7857157389323,75.33333396911621 C166.7857157389323,75.33333396911621 80.48894831339516,100.33333396911621 70.90041859944661,125.33333396911621"
+             class="clickable"
+             id="path14" />
+        </g>
+        <path
+           d="M 70.90041859944661,125.33333396911621 L 77.90041859944661,122.83333396911621 L 77.90041859944661,127.83333396911621 Z"
+           transform="rotate(-69.01612386156096 70.90041859944661 125.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path15" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$idle_st_to_fsm$cr/state$delay_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g17">
+          <path
+             d=" M216.7857157389323,75.33333396911621 C216.7857157389323,75.33333396911621 412.3668521563212,100.33333396911621 434.0980895360311,125.33333396911621"
+             id="path16" />
+          <path
+             d=" M216.7857157389323,75.33333396911621 C216.7857157389323,75.33333396911621 412.3668521563212,100.33333396911621 434.0980895360311,125.33333396911621"
+             class="clickable"
+             id="path17" />
+        </g>
+        <path
+           d="M 434.0980895360311,125.33333396911621 L 441.0980895360311,122.83333396911621 L 441.0980895360311,127.83333396911621 Z"
+           transform="rotate(-130.99878456795108 434.0980895360311 125.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path18" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$idle_st_to_fsm$cr/state$read_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g20">
+          <path
+             d=" M206.7857157389323,75.33333396911621 C206.7857157389323,75.33333396911621 291.7240946451823,100.33333396911621 301.1616923014323,125.33333396911621"
+             id="path19" />
+          <path
+             d=" M206.7857157389323,75.33333396911621 C206.7857157389323,75.33333396911621 291.7240946451823,100.33333396911621 301.1616923014323,125.33333396911621"
+             class="clickable"
+             id="path20" />
+        </g>
+        <path
+           d="M 301.1616923014323,125.33333396911621 L 308.1616923014323,122.83333396911621 L 308.1616923014323,127.83333396911621 Z"
+           transform="rotate(-110.681717573278 301.1616923014323 125.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path21" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$idle_st_to_fsm$cr/state$write_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g23">
+          <path
+             d=" M176.7857157389323,75.33333396911621 C176.7857157389323,75.33333396911621 158.3233229319255,100.33333396911621 156.27194595336917,125.33333396911621"
+             id="path22" />
+          <path
+             d=" M176.7857157389323,75.33333396911621 C176.7857157389323,75.33333396911621 158.3233229319255,100.33333396911621 156.27194595336917,125.33333396911621"
+             class="clickable"
+             id="path23" />
+        </g>
+        <path
+           d="M 156.27194595336917,125.33333396911621 L 163.27194595336917,122.83333396911621 L 163.27194595336917,127.83333396911621 Z"
+           transform="rotate(-85.30909944193552 156.27194595336917 125.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path24" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$reset_st_to_fsm$cr/state$idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g26">
+          <path
+             d=" M46.950209299723305,125.33333396911621 C57.93375994364419,100.33333396911621 156.7857157389323,75.33333396911621 156.7857157389323,75.33333396911621"
+             id="path25" />
+          <path
+             d=" M46.950209299723305,125.33333396911621 C57.93375994364419,100.33333396911621 156.7857157389323,75.33333396911621 156.7857157389323,75.33333396911621"
+             class="clickable"
+             id="path26" />
+        </g>
+        <path
+           d="M 156.7857157389323,75.33333396911621 L 163.7857157389323,72.83333396911621 L 163.7857157389323,77.83333396911621 Z"
+           transform="rotate(165.80729435299057 156.7857157389323 75.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path27" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$read_st_to_fsm$cr/state$read_ack_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g29">
+          <path
+             d=" M301.1616923014323,164.66666793823242 C301.1616923014323,164.66666793823242 300.62467021942143,174.66666793823242 295.79147148132324,184.66666793823242"
+             id="path28" />
+          <path
+             d=" M301.1616923014323,164.66666793823242 C301.1616923014323,164.66666793823242 300.62467021942143,174.66666793823242 295.79147148132324,184.66666793823242"
+             class="clickable"
+             id="path29" />
+        </g>
+        <path
+           d="M 295.79147148132324,184.66666793823242 L 302.79147148132324,182.16666793823242 L 302.79147148132324,187.16666793823242 Z"
+           transform="rotate(-64.2045986441288 295.79147148132324 184.66666793823242)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path30" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$read_ack_st_to_fsm$cr/state$idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g32">
+          <path
+             d=" M261.366595586141,184.66666793823242 C255.99637476603192,174.66666793823242 255.99637476603192,169.66666793823242 255.99637476603192,163.88889010747272 C255.99637476603192,158.11111227671304 255.99637476603192,151.55555661519367 255.99637476603192,145.00000095367432 C255.99637476603192,138.44444529215494 255.99637476603192,131.88888963063556 255.99637476603192,122.36111179987589 C255.99637476603192,112.83333396911621 255.99637476603192,100.33333396911621 196.7857157389323,75.33333396911621"
+             id="path31" />
+          <path
+             d=" M261.366595586141,184.66666793823242 C255.99637476603192,174.66666793823242 255.99637476603192,169.66666793823242 255.99637476603192,163.88889010747272 C255.99637476603192,158.11111227671304 255.99637476603192,151.55555661519367 255.99637476603192,145.00000095367432 C255.99637476603192,138.44444529215494 255.99637476603192,131.88888963063556 255.99637476603192,122.36111179987589 C255.99637476603192,112.83333396911621 255.99637476603192,100.33333396911621 196.7857157389323,75.33333396911621"
+             class="clickable"
+             id="path32" />
+        </g>
+        <path
+           d="M 196.7857157389323,75.33333396911621 L 203.7857157389323,72.83333396911621 L 203.7857157389323,77.83333396911621 Z"
+           transform="rotate(22.890505638380038 196.7857157389323 75.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path33" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$write_st_to_fsm$cr/state$write_finish_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g35">
+          <path
+             d=" M156.27194595336917,164.66666793823242 C156.27194595336917,164.66666793823242 151.10972563425702,174.66666793823242 104.64974276224771,184.66666793823242"
+             id="path34" />
+          <path
+             d=" M156.27194595336917,164.66666793823242 C156.27194595336917,164.66666793823242 151.10972563425702,174.66666793823242 104.64974276224771,184.66666793823242"
+             class="clickable"
+             id="path35" />
+        </g>
+        <path
+           d="M 104.64974276224771,184.66666793823242 L 111.64974276224771,182.16666793823242 L 111.64974276224771,187.16666793823242 Z"
+           transform="rotate(-12.146967896583483 104.64974276224771 184.66666793823242)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path36" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$write_finish_st_to_fsm$cr/state$idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g38">
+          <path
+             d=" M63.622203191121415,184.66666793823242 C12,174.66666793823242 12,169.66666793823242 12,163.88889010747272 C12,158.11111227671304 12,151.55555661519367 12,145.00000095367432 C12,138.44444529215494 12,131.88888963063556 12,122.36111179987589 C12,112.83333396911621 12,100.33333396911621 146.7857157389323,75.33333396911621"
+             id="path37" />
+          <path
+             d=" M63.622203191121415,184.66666793823242 C12,174.66666793823242 12,169.66666793823242 12,163.88889010747272 C12,158.11111227671304 12,151.55555661519367 12,145.00000095367432 C12,138.44444529215494 12,131.88888963063556 12,122.36111179987589 C12,112.83333396911621 12,100.33333396911621 146.7857157389323,75.33333396911621"
+             class="clickable"
+             id="path38" />
+        </g>
+        <path
+           d="M 146.7857157389323,75.33333396911621 L 153.7857157389323,72.83333396911621 L 153.7857157389323,77.83333396911621 Z"
+           transform="rotate(169.49221469278424 146.7857157389323 75.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path39" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$delay_st_to_fsm$cr/state$load_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g41">
+          <path
+             d=" M421.52298386891687,164.66666793823242 C421.52298386891687,164.66666793823242 393.11139748891196,174.66666793823242 389.9545545578003,184.66666793823242"
+             id="path40" />
+          <path
+             d=" M421.52298386891687,164.66666793823242 C421.52298386891687,164.66666793823242 393.11139748891196,174.66666793823242 389.9545545578003,184.66666793823242"
+             class="clickable"
+             id="path41" />
+        </g>
+        <path
+           d="M 389.9545545578003,184.66666793823242 L 396.9545545578003,182.16666793823242 L 396.9545545578003,187.16666793823242 Z"
+           transform="rotate(-72.4799117198736 389.9545545578003 184.66666793823242)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path42" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$load_st_to_fsm$cr/state$wait4redge_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g44">
+          <path
+             d=" M389.9545545578003,224.00000190734863 C389.9545545578003,224.00000190734863 389.9545545578003,234.00000190734863 389.9545545578003,244.00000190734863"
+             id="path43" />
+          <path
+             d=" M389.9545545578003,224.00000190734863 C389.9545545578003,224.00000190734863 389.9545545578003,234.00000190734863 389.9545545578003,244.00000190734863"
+             class="clickable"
+             id="path44" />
+        </g>
+        <path
+           d="M 389.9545545578003,244.00000190734863 L 396.9545545578003,241.50000190734863 L 396.9545545578003,246.50000190734863 Z"
+           transform="rotate(-90 389.9545545578003 244.00000190734863)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path45" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$wait4fedge_st_to_fsm$cr/state$shift_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g47">
+          <path
+             d=" M424.74920558929443,342.66666984558105 C424.74920558929443,342.66666984558105 424.6992055892944,352.66666984558105 424.24920558929443,362.66666984558105"
+             id="path46" />
+          <path
+             d=" M424.74920558929443,342.66666984558105 C424.74920558929443,342.66666984558105 424.6992055892944,352.66666984558105 424.24920558929443,362.66666984558105"
+             class="clickable"
+             id="path47" />
+        </g>
+        <path
+           d="M 424.24920558929443,362.66666984558105 L 431.24920558929443,360.16666984558105 L 431.24920558929443,365.16666984558105 Z"
+           transform="rotate(-87.42342816973125 424.24920558929443 362.66666984558105)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path48" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$wait4redge_st_to_fsm$cr/state$wait4fedge_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g50">
+          <path
+             d=" M409.65232245127356,283.33333587646484 C409.6523224512736,283.33333587646484 423.23951727549235,293.33333587646484 424.74920558929443,303.33333587646484"
+             id="path49" />
+          <path
+             d=" M409.65232245127356,283.33333587646484 C409.6523224512736,283.33333587646484 423.23951727549235,293.33333587646484 424.74920558929443,303.33333587646484"
+             class="clickable"
+             id="path50" />
+        </g>
+        <path
+           d="M 424.74920558929443,303.33333587646484 L 431.74920558929443,300.83333587646484 L 431.74920558929443,305.83333587646484 Z"
+           transform="rotate(-98.58504633777969 424.74920558929443 303.33333587646484)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path51" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$shift_st_to_fsm$cr/state$finish_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g53">
+          <path
+             d=" M424.24920558929443,402.00000381469727 C424.24920558929443,402.00000381469727 424.24920558929443,412.00000381469727 424.24920558929443,422.00000381469727"
+             id="path52" />
+          <path
+             d=" M424.24920558929443,402.00000381469727 C424.24920558929443,402.00000381469727 424.24920558929443,412.00000381469727 424.24920558929443,422.00000381469727"
+             class="clickable"
+             id="path53" />
+        </g>
+        <path
+           d="M 424.24920558929443,422.00000381469727 L 431.24920558929443,419.50000381469727 L 431.24920558929443,424.50000381469727 Z"
+           transform="rotate(-90 424.24920558929443 422.00000381469727)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path54" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$shift_st_to_fsm$cr/state$delay_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g56">
+          <path
+             d=" M441.14386558532715,362.66666984558105 C493.3385076522827,352.66666984558105 493.3385076522827,347.66666984558105 493.3385076522827,341.05555868148804 C493.3385076522827,334.444447517395 493.3385076522827,326.222225189209 493.3385076522827,318.00000286102295 C493.3385076522827,309.77778053283686 493.3385076522827,301.5555582046509 493.3385076522827,287.5555580457052 C493.3385076522827,273.5555578867594 493.3385076522827,253.77777989705405 493.33850765228266,239.77777973810834 C493.3385076522827,225.7777795791626 493.3385076522827,217.55555725097656 493.3385076522827,209.33333492279053 C493.3385076522827,201.11111259460446 493.3385076522827,192.88889026641846 493.3385076522827,186.2777791023254 C493.3385076522827,179.66666793823242 493.3385076522827,174.66666793823242 446.6731952031454,164.66666793823242"
+             id="path55" />
+          <path
+             d=" M441.14386558532715,362.66666984558105 C493.3385076522827,352.66666984558105 493.3385076522827,347.66666984558105 493.3385076522827,341.05555868148804 C493.3385076522827,334.444447517395 493.3385076522827,326.222225189209 493.3385076522827,318.00000286102295 C493.3385076522827,309.77778053283686 493.3385076522827,301.5555582046509 493.3385076522827,287.5555580457052 C493.3385076522827,273.5555578867594 493.3385076522827,253.77777989705405 493.33850765228266,239.77777973810834 C493.3385076522827,225.7777795791626 493.3385076522827,217.55555725097656 493.3385076522827,209.33333492279053 C493.3385076522827,201.11111259460446 493.3385076522827,192.88889026641846 493.3385076522827,186.2777791023254 C493.3385076522827,179.66666793823242 493.3385076522827,174.66666793823242 446.6731952031454,164.66666793823242"
+             class="clickable"
+             id="path56" />
+        </g>
+        <path
+           d="M 446.6731952031454,164.66666793823242 L 453.6731952031454,162.16666793823242 L 453.6731952031454,167.16666793823242 Z"
+           transform="rotate(12.095097729654103 446.6731952031454 164.66666793823242)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path57" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$shift_st_to_fsm$cr/state$wait4redge_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g59">
+          <path
+             d=" M407.3545455932617,362.66666984558105 C355.15990352630615,352.66666984558105 355.15990352630615,347.66666984558105 355.15990352630615,341.88889201482135 C355.15990352630615,336.11111418406165 355.15990352630615,329.5555585225423 355.15990352630615,323.00000286102295 C355.15990352630615,316.44444719950354 355.15990352630615,309.8888915379842 355.15990352630615,304.1111137072245 C355.15990352630615,298.33333587646484 355.15990352630615,293.33333587646484 370.25678666432697,283.33333587646484"
+             id="path58" />
+          <path
+             d=" M407.3545455932617,362.66666984558105 C355.15990352630615,352.66666984558105 355.15990352630615,347.66666984558105 355.15990352630615,341.88889201482135 C355.15990352630615,336.11111418406165 355.15990352630615,329.5555585225423 355.15990352630615,323.00000286102295 C355.15990352630615,316.44444719950354 355.15990352630615,309.8888915379842 355.15990352630615,304.1111137072245 C355.15990352630615,298.33333587646484 355.15990352630615,293.33333587646484 370.25678666432697,283.33333587646484"
+             class="clickable"
+             id="path59" />
+        </g>
+        <path
+           d="M 370.25678666432697,283.33333587646484 L 377.25678666432697,280.83333587646484 L 377.25678666432697,285.83333587646484 Z"
+           transform="rotate(146.47997148167647 370.25678666432697 283.33333587646484)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path60" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$finish_st_to_fsm$cr/state$update_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g62">
+          <path
+             d=" M424.24920558929443,461.3333377838135 C424.24920558929443,461.3333377838135 414.2428969701131,471.3333377838135 324.1861193974813,481.3333377838135"
+             id="path61" />
+          <path
+             d=" M424.24920558929443,461.3333377838135 C424.24920558929443,461.3333377838135 414.2428969701131,471.3333377838135 324.1861193974813,481.3333377838135"
+             class="clickable"
+             id="path62" />
+        </g>
+        <path
+           d="M 324.1861193974813,481.3333377838135 L 331.1861193974813,478.8333377838135 L 331.1861193974813,483.8333377838135 Z"
+           transform="rotate(-6.33622700285963 324.1861193974813 481.3333377838135)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path63" />
+      </g>
+      <g
+         id="sprotty_fsm$cr/state$update_st_to_fsm$cr/state$idle_st"
+         class="sprotty-edge transition"
+         style="fill:none;stroke:rgb(48, 48, 48);stroke-linejoin:round;">
+        <g
+           id="g65">
+          <path
+             d=" M294.93991120656335,481.3333377838135 C204.99637476603192,471.3333377838135 204.99637476603192,466.3333377838135 204.99637476603192,455.61111545562744 C204.99637476603192,444.88889312744135 204.99637476603192,428.4444484710693 204.99637476603192,415.2777816454569 C204.99637476603192,402.1111148198446 204.99637476603192,392.2222258249919 204.99637476603192,382.33333683013916 C204.99637476603192,372.44444783528644 204.9963747660319,362.5555588404338 204.99637476603192,347.7222253481547 C204.99637476603192,332.88889185587567 204.99637476603192,313.11111386617023 204.99637476603192,298.2777803738912 C204.99637476603192,283.4444468816122 204.99637476603192,273.55555788675946 204.99637476603192,263.6666688919068 C204.99637476603192,253.77777989705405 204.99637476603192,243.88889090220133 204.99637476603192,229.0555574099223 C204.99637476603192,214.22222391764325 204.99637476603192,194.44444592793783 204.9963747660319,180.44444576899213 C204.9963747660319,166.4444456100464 204.9963747660319,158.22222328186038 204.99637476603192,150.00000095367434 C204.99637476603192,141.77777862548828 204.99637476603192,133.55555629730225 204.99637476603192,123.19444513320924 C204.99637476603192,112.83333396911621 204.99637476603192,100.33333396911621 186.7857157389323,75.33333396911621"
+             id="path64" />
+          <path
+             d=" M294.93991120656335,481.3333377838135 C204.99637476603192,471.3333377838135 204.99637476603192,466.3333377838135 204.99637476603192,455.61111545562744 C204.99637476603192,444.88889312744135 204.99637476603192,428.4444484710693 204.99637476603192,415.2777816454569 C204.99637476603192,402.1111148198446 204.99637476603192,392.2222258249919 204.99637476603192,382.33333683013916 C204.99637476603192,372.44444783528644 204.9963747660319,362.5555588404338 204.99637476603192,347.7222253481547 C204.99637476603192,332.88889185587567 204.99637476603192,313.11111386617023 204.99637476603192,298.2777803738912 C204.99637476603192,283.4444468816122 204.99637476603192,273.55555788675946 204.99637476603192,263.6666688919068 C204.99637476603192,253.77777989705405 204.99637476603192,243.88889090220133 204.99637476603192,229.0555574099223 C204.99637476603192,214.22222391764325 204.99637476603192,194.44444592793783 204.9963747660319,180.44444576899213 C204.9963747660319,166.4444456100464 204.9963747660319,158.22222328186038 204.99637476603192,150.00000095367434 C204.99637476603192,141.77777862548828 204.99637476603192,133.55555629730225 204.99637476603192,123.19444513320924 C204.99637476603192,112.83333396911621 204.99637476603192,100.33333396911621 186.7857157389323,75.33333396911621"
+             class="clickable"
+             id="path65" />
+        </g>
+        <path
+           d="M 186.7857157389323,75.33333396911621 L 193.7857157389323,72.83333396911621 L 193.7857157389323,77.83333396911621 Z"
+           transform="rotate(53.92941844102142 186.7857157389323 75.33333396911621)"
+           class="arrow"
+           style="fill:rgb(48, 48, 48);stroke-linejoin:miter;stroke-miterlimit:2;"
+           id="path66" />
+      </g>
+    </g>
+  </g>
+</svg>
