@@ -20,17 +20,19 @@
 \contentsline {subsection}{\numberline {3.3.1}The slow control register}{14}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}The probe register}{15}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Development of the FPGA firmware for the SFH}{17}{chapter.4}%
-\contentsline {section}{\numberline {4.1}The IPBUS protocol}{17}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Configuration of the Citiroc1A ASIC}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Status and control register}{18}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Configuration state machine}{19}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Verification state machine}{20}{subsection.4.2.3}%
-\contentsline {chapter}{\numberline {5}Results}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conclusion}{25}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Outlook}{25}{section.7.2}%
-\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{27}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}\ Code}{35}{appendix.1.B}%
+\contentsline {section}{\numberline {4.1}Overview of the firmware}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}The IPBUS protocol}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}The firmware structure}{18}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Configuration of the Citiroc1A ASIC}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Status and control register}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Configuration state machine}{20}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Verification state machine}{21}{subsection.4.2.3}%
+\contentsline {chapter}{\numberline {5}Results}{23}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Discussion}{25}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusion}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{27}{section.7.2}%
+\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{29}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}\ Code}{37}{appendix.a.B}%
 \babel@toc {english}{}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

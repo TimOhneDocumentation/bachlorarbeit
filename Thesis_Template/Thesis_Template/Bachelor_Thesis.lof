@@ -16,8 +16,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces The slow control chronogram, depicting the bitstream writing process controled by \textcolor {red}{Clk\_sr} the clock signal and \textcolor {red}{Srin\_sr} the data signal. A rising edge of \textcolor {red}{Load\_sr} is required, after successful verification with the \textcolor {red}{Srout} signal to load the slow control register. \blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Scheme block of internal probing system, allowing the routing of internal signals to probe pins for debugging purposes. It is configured via the probe register. \blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{15}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces State machine for the configuration of the Citiroc1A ASIC.}}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces State machine for the verification of the configuration of the Citiroc1A ASIC.}}{20}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Finite state machine for configuring the Citiroc1A ASIC. States associated with the same processes are highlighted using the same color.}}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Finite state machine for verifying the configuration of the Citiroc1A ASIC. States belonging to the same processes are represented with the same color.}}{21}{figure.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

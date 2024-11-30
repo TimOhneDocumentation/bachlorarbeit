@@ -4,11 +4,15 @@
 % --------------------------------------
 % Packages
 % --------------------------------------
-
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\tikzstyle{block} = [rectangle, draw, text centered, minimum height=3em, minimum width=4em]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 \usepackage[top=31mm, left=25mm, right=25mm, bottom=30mm, headsep=8mm, footskip=12mm]{geometry}
 \usepackage[english]{babel}    		
 \usepackage[utf8]{inputenc}         		% use of unicode (non ASCII) characters eg: ä, ö, ü
 \usepackage{graphicx}						% simple use of graphics
+
 \graphicspath{{Images/}}			    
 \usepackage{siunitx}  						% SI-units
 \usepackage{amsmath}  						% handling of mathematical formulas (center)
@@ -109,7 +113,6 @@
 \definecolor{pink}{rgb}{0.97,0.15,0.45}
 
 % listings
-
 
 % General Setting of listings
 \lstset{
@@ -300,7 +303,8 @@
 
 \begin{document}
 \selectlanguage{english}
-\pagenumbering{Roman} 						% roman numbers for abstract and toc
+\pagenumbering{Roman} 	
+					% roman numbers for abstract and toc
 
 % --------------------------------------
 
