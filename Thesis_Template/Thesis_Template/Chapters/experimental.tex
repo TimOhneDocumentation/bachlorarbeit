@@ -1,10 +1,10 @@
 \chapter{Frontend electronic of the scintillating fiber hodoscope}\label{cha:frontend}
 %the sidevieve hast to be updates
 %citroc picute has to be included ans described witharrowas and refreces to the figure have to be included in the text
-%slow shaper fater then fast shaper
+
 %table of slow control register has to be checked
 %DAC output voltage (\SI{5}{\volt}) has to be understood
-%rstb_sr has to be explained(understood)
+
 \section{Overview of the frontend electronics}
 \begin{figure}[h]
     \centering
@@ -18,7 +18,9 @@ The frontend electronics of the scintillating fiber hodoscope process the signal
 They can be attached on all four sides of the SFH, as can be seen in Figure \ref{SFHpicture}.
 The fibers are conected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
 There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends produce an electric signal,
- a total of 1546 signals or 384 signals, for every attached electonics unit have to be proccesed.
+ a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
+ To mittigate the cost of the frontend electronics, as well as limit the amount of data that has to be proccesed, a mirrored setup is planed.
+ In this setup only one end of the fibers is conected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
  \newline
  The incoming photons are transformed into electric signals by the SiPM arrays.
  The SiPM signals are then transmitted to the analog frontend electronics (FEE) PCB by the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.\autocite{InternalcommunicationKarl}

@@ -70,7 +70,7 @@ The reconstruction of the path of the muon is achieved through the usage of two 
 \newline
 Each UTS consists of three layers of pixilized silicon detectors (ALPIDEs), for precises positional measurments (spacial resolution of about 8 µm \autocite{Amber2022Status}) of the incoming and scattered muons, 
 but lacking the time resolution(\SI{5} {\micro\second}\autocite{Amber2022Status}) required for the PRM experiment.
-For this reason each UTS includes a scintillating fiber hodoscope (SFH),the detector of intrest for this thesis,
+For this reason each UTS includes a scintillating fiber hodoscope (SFH), the detector of intrest for this thesis,
  which provides the time precision(\SI{300} {\pico\second}\Autocite{Amber2022Status}) for the measurment.
  \newline
 Four of these unified tracking stations, two before and two after the active target, are placed in the beamline as shown in \ref{fig:amber_setup}.
@@ -97,7 +97,8 @@ Every SFH contains four layers of scintillating fibers, two in x and two in y di
 Each layer is made up of 192\autocite{Amber2022Status}, 500 $\mu m$ thick\autocite{Amber2024Status} fibers, in total 768\autocite{Amber2022Status} fibers per SFH. 
 When charged particels, muons in this case, pass through a scintillating fiber they excite the scintillating material, 
 which then emits photons. Both ends of every fiber are conected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
- that is then proccesed by the frontend electronics.
+ that is then proccesed by the frontend electronics. To minimize cost and the amount of data that has to be processed , a mirrored readout is planned, 
+ where only one end is conected to the SiPM array and the other end is mirrored. \autocite{InternalcommunicationKarl}
 
 \section{Field Programmable Gate Arrays (FPGAs)}\label{sec:FPGA}
 hallo 
