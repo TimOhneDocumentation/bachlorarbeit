@@ -5,23 +5,23 @@
 
 \section{Measurment of the charge radius of the proton (PRM)}\label{sec:proton_radius}
 The proton is a baryon, a composite particle made up of one down quark and  two up quarks.
-From this follows that the proton is not a point particle, but has an internal sturucture.
+From this follows that the proton is not a point particle, but has an internal sturucture.\autocite{Workman:2836514}
 \newline
 The internal structure can be discribed by the structure functions of the proton, 
-the electric and magnetic form factors $G_E$ and $G_M$. \autocite{ProposalAmber}	
+the electric and magnetic form factors $G_E$ and $G_M$.\autocite{ProposalAmber}	
 \subsection{Previous measurements of the proton radius}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{PreviousmeausrementsProtonradius.png}
 	\caption{Previous measurements of the proton radius from electron proton  scattering experiments and the Lamb shift in muonic and ordinary hydrogen,
-	 the measurements differ from each other by five standard deviations. \autocite{ProposalAmber} }
+	 the measurements differ from each other by five standard deviations.\autocite{ProposalAmber} }
 	\label{fig:previous_proton_radius}
 \end{figure}
 
 The charge radius of the proton has been massured several times before with different methods.
 The two premier methods are electron proton scattering experiments and the Lamb shift in muonic and ordinary hydrogen.
 The results of these measurements differ by five standard deviations as shown in Figure \ref{fig:previous_proton_radius},
-this has given rise to the so called proton radius puzzle. \autocite{ProposalAmber}
+this has given rise to the so called proton radius puzzle.\autocite{ProposalAmber}
 
 \subsection{Elastic scattering of muons on protons}
 The AMBER PRM experiment at CERN aims to reslove the proton radius puzzle, by measuring the elastic scattering of muons on protons.
@@ -35,10 +35,10 @@ for the elastic scattering of muons on a proton target is
 \end{equation}
 with  $Q^2 = -q^2$ 	the squared transferred four-momentum, $\tau = Q^2 / 4m_p^2$, $s = (p_\mu + p_p)^2$, 
  $G_E$ the electric form factor of the proton,
-  $G_M$ the magnetic form factor of the proton and $\alpha$ the fine structure constant. \autocite{intentAmber}
+  $G_M$ the magnetic form factor of the proton and $\alpha$ the fine structure constant.\autocite{intentAmber}
   
   %INSERT: maybe  here more explantation 
-Through determining the form factor $G_E$ for small $Q^2$ , the charge radius of the Proton can be claculated with the following equation \autocite{intentAmber}
+Through determining the form factor $G_E$ for small $Q^2$ , the charge radius of the Proton can be claculated with the following equation\autocite{intentAmber}
 \begin{equation}
 \label{eq:charge_radius}
 r_p^2 = -6 \frac{dG_E}{dQ^2} \bigg|_{Q^2 = 0}
@@ -54,21 +54,20 @@ The general setup of the PRM experiment, with focus on the new detectors needed 
 \begin{figure}[H]
 	\centering
 	\includegraphics[angle=-90,origin=c,width=0.9\textwidth]{NEWPRMsetup.pdf}
-	\caption{General setup of the Amber experiment with new detectors for PRM.
-	%INSERT:BETTER DISCRIPTION
-	\autocite{InternalcommunicationKarl}}
+	\caption{General setup of the Amber experiment with new detectors for PRM.\autocite{InternalcommunicationKarl}}
 	\label{fig:amber_setup}
 \end{figure}
 %INSERT: MAYBE FLUX;ENERGY Maybe include detetor specs 
 
-The incoming muon beam with an energy of \SI{100} {\giga\electronvolt}\autocite{ProposalAmber} and an beam rate of $2 \times 10^6$\autocite{ConfrancePaperDAQ} particles per second is scattered on a pressurized hydrogen gas target, located in the Time Projection Chamber (TPC), 
+The incoming muon beam with an energy of \SI{100} {\giga\electronvolt}\autocite{ProposalAmber} and an beam rate of $2 \times 10^6$\autocite{ConfrancePaperDAQ} particles per second is scattered on a pressurized hydrogen gas target,
+located in the Time Projection Chamber (TPC), 
 which also acts as the detector for the recoil path of the scattered proton.
 %INSERT: should i included precicion values and other characteristics of the detectors
 \newline
 The reconstruction of the path of the muon is achieved through the usage of two detector types,
  combined into one unified tracking station (UTS) as shown in Figure \ref{UTSpicture}.
 \newline
-Each UTS consists of three layers of pixilized silicon detectors (ALPIDEs), for precises positional measurments (spacial resolution of about 8 µm \autocite{Amber2022Status}) of the incoming and scattered muons, 
+Each UTS consists of three layers of pixilized silicon detectors (ALPIDEs), for precises positional measurments (spacial resolution of about 8 µm\autocite{Amber2022Status}) of the incoming and scattered muons, 
 but lacking the time resolution(\SI{5} {\micro\second}\autocite{Amber2022Status}) required for the PRM experiment.
 For this reason each UTS includes a scintillating fiber hodoscope (SFH), the detector of intrest for this thesis,
  which provides the time precision(\SI{300} {\pico\second}\Autocite{Amber2022Status}) for the measurment.
@@ -80,7 +79,7 @@ for the PRM newly included, detectors\autocite{ProposalAmber}.
 \begin{figure}[H]	
 	\centering
 	\includegraphics[width=0.8\textwidth]{UFTmodel.png}
-	\caption{Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH). \autocite{InternalcommunicationKarl}}
+	\caption{Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH).\autocite{InternalcommunicationKarl}}
 	\label{UTSpicture}
 \end{figure}
 \subsection{Scintillating fiber hodoscope(SFH)}
@@ -97,8 +96,13 @@ Every SFH contains four layers of scintillating fibers, two in x and two in y di
 Each layer is made up of 192\autocite{Amber2022Status}, 500 $\mu m$ thick\autocite{Amber2024Status} fibers, in total 768\autocite{Amber2022Status} fibers per SFH. 
 When charged particels, muons in this case, pass through a scintillating fiber they excite the scintillating material, 
 which then emits photons. Both ends of every fiber are conected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
- that is then proccesed by the frontend electronics. To minimize cost and the amount of data that has to be processed , a mirrored readout is planned, 
- where only one end is conected to the SiPM array and the other end is mirrored. \autocite{InternalcommunicationKarl}
+ that is then proccesed by the frontend electronics. To minimize cost and the amount of data that has to be processed, a mirrored readout is planned, 
+ where only one end is conected to the SiPM array and the other end is mirrored.\autocite{InternalcommunicationKarl}
 
-\section{Field Programmable Gate Arrays (FPGAs)}\label{sec:FPGA}
-hallo 
+\section{Field Programmable Gate Arrays (FPGA)}\label{sec:FPGA}
+Field Programmable Gate Arrays (FPGAs) are integrated circuits that can be programmed after manufacturing.
+Their flexibility, reconfigurability, and robust parallel processing capabilities make them ideal candidates for digital signal processing(DSP).
+The frontend electronics for the SFH reqiure large amounts of data to be processed in real time, wich makes FPGAs with their large data throughput and parallel processing capabilities ideal for this task.\autocite{FPGA_reviewDSP}
+\newline
+The FPGA used in the frontend electronics for the scintillating fiber hodoscope is part of the Xilinx Artix-7 family.\autocite{InternalcommunicationIgor}
+INSERT: maybe more information about the FPGA used in the frontend electronics(speed grade, number of LUT,number of BRAMs, number of IOs, etc.)

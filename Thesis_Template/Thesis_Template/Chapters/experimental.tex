@@ -10,7 +10,7 @@
     \centering
     \includegraphics[width=0.9\textwidth]{SideViewElectronics.PNG}
     \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.
-     The SiPM arrays transform the incoming photons into  electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl}}
+     The SiPM arrays transform the incoming photons into  electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl} INSERT: old picture needs to be updated}
     \label{fig:SideviewModelElectronics}
     \end{figure}
 \subsection{Proccesing of the SFH signal}
@@ -31,7 +31,7 @@ There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends
     \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
-The analog frontend electronics (FEE) PCB, shown in Figure \ref{fig:FEE}, together with the iFTDC form the heart of the frontend electronics.
+The analog frontend electronics (FEE) PCB, shown in Figure \ref{fig:FEE}, together with the iFTDC forms the heart of the frontend electronics.
 The FEE PCB incorporates six Citiroc1A ASICs, which are designed to amplify and process the signals from the SiPM arrays.
  Each Citiroc1A ASIC handles 32 signals. The output of the Citiroc1A is then transmitted to the iFTDC over three flex PCBs.
 The power supply is connected to the FEE PCB on the left side as shown in \ref{fig:FEE}. Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
@@ -58,7 +58,7 @@ The focus of this thesis is the development of the FPGA firmware for the control
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{TRIGER.PNG}
-    \caption{General ASIC block scheme of the Citiroc1A. \autocite{datasheetCITIROC}}
+    \caption{General ASIC block scheme of the Citiroc1A.\autocite{datasheetCITIROC}}
     \label{fig:CITIROC1A_TRIGEER}
 \end{figure}
 
@@ -80,7 +80,7 @@ The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\sec
 \newline
 The ASIC has two discriminators, the charge discriminator and the time discriminator. In this thesis we will only look at the time discriminator,
  since it provides the time information.
-The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every individual channel as shown in Figure \ref{fig:CITIROC1A_TRIGEER} \autocite{datasheetCITIROC}.
+The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every individual channel as shown in Figure \ref{fig:CITIROC1A_TRIGEER}\autocite{datasheetCITIROC}.
 
 
 \section{Configuration of the Citiroc1A}\label{sec:configuration}
@@ -89,7 +89,7 @@ The time discriminator threshold is adjustable via a 10 bit dac for all channels
     \includegraphics[width=0.8\textwidth]{CitirocConfigHighqual.png}
     \caption{The two configurable registers of the Citiroc1A are selected using the \textcolor{red}{Select} signal. 
     The FPGA communicates with the Citiroc1A through the signals \textcolor{red}{Clk\_sr}, \textcolor{red}{Rstb\_sr}, 
-    \textcolor{red}{Srin\_sr}, and \textcolor{red}{Load\_sr}, while the \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA for verification. \autocite{datasheetCITIROC}}
+    \textcolor{red}{Srin\_sr}, and \textcolor{red}{Load\_sr}, while the \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA for verification.\autocite{datasheetCITIROC}}
     \label{fig:CITIROC1A_config}
 \end{figure}
 The configuration of the Citiroc1A is achievied by the FPGA via the five signals shown in Figure \ref{fig:CITIROC1A_config}.
@@ -101,22 +101,23 @@ The \textcolor{red}{Select} signal allowes the choice between configuring the sl
     \centering
     \includegraphics[width=0.8\textwidth]{BitwriteSlowControl.png}
     \caption{The slow control chronogram, depicting the bitstream writing process controled by  \textcolor{red}{Clk\_sr} the clock signal and  \textcolor{red}{Srin\_sr} the data signal. A rising edge of \textcolor{red}{Load\_sr} is required,
-     after successful verification with the \textcolor{red}{Srout} signal to load the slow control register. \autocite{datasheetCITIROC}}
+     after successful verification with the \textcolor{red}{Srout} signal to load the slow control register.\autocite{datasheetCITIROC}}
     \label{fig:CITIROC1A_writing_bitstream}
 \end{figure}
 The slow control register is used to set values for internal variables like the high gain for a channel or the time discriminator threshold.
-It also allowes for the FPGA to turn of spesific stages of the Citiroc1A, like the slow shaper or the time discriminator.
+It also allowes for the FPGA to turn of spesific stages of the Citiroc1A, such as the slow shaper or the time discriminator.
 The register is 1144 bits long. A full list of all the register that can be set is shown in Table \ref{tab:slow_control_register} in Appendix \ref{cha:Citiroc1A_register}.
 \newline
 The process of writing the bitstream into the slow control register by the FPGA is illustrated in Figure \ref{fig:CITIROC1A_writing_bitstream}.
 \newline
 The \textcolor{red}{Rstb\_sr} signal is an asynchronous active-high reset for the serial register, applying to both the slow control and probe register. 
 \newline
-The FPGA processes the bitstream sequentially, starting with the most significant bit (MSB).
- Each bit is sent on the \textcolor{red}{Srin\_sr} signal in coordination with a rising edge of the \textcolor{red}{Clk\_sr} clock signal.
- \newline
-    The \textcolor{red}{Load\_sr} signal is used to load the bitstream into the slow control register. After all bits have been sent to the Citiroc1A,
-     a rising edge on \textcolor{red}{Load\_sr} is required to load the slow control register.
+The FPGA processes the bitstream sequentially, starting with the least significant bit (LSB).
+The first bit of the bitstream to enter the serial register will be the last bit of the slow control register.
+Each bit is sent on the \textcolor{red}{Srin\_sr} signal in coordination with a rising edge of the \textcolor{red}{Clk\_sr} clock signal.
+\newline
+The \textcolor{red}{Load\_sr} signal is used to load the bitstream into the slow control register. After all bits have been sent to the Citiroc1A,
+a rising edge on \textcolor{red}{Load\_sr} is required to load the slow control register.
 \newline
 The \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA for bitstream verification.
 Only after the FPGA has sent the full bitstream twice, does the \textcolor{red}{Srout} signal take on the value of the bitstream, since the \textcolor{red}{Srout} signal is shifted by the length of the bitstream.\autocite{datasheetCITIROC}
@@ -126,12 +127,12 @@ One should only set the rising edge of the \textcolor{red}{Load\_sr} signal afte
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{ProbeRegister.png}
-    \caption{Scheme block of internal probing system, allowing the routing of internal signals to probe pins for debugging purposes. It is configured via the probe register. \autocite{datasheetCITIROC}}
+    \caption{Scheme block of internal probing system, allowing the routing of internal signals to probe pins for debugging purposes. It is configured via the probe register.\autocite{datasheetCITIROC}}
     \label{fig:CITIROC1A_proberegiseter}
 \end{figure}
 The probe register is used for routing internal signals to several output pins for debugging purposes.
 It's functionality is ilustrated in Figure \ref{fig:CITIROC1A_proberegiseter}.
-The register consists of 256 bits and is written the sameway as the slow control register,
+The register consists of 256 bits and is written the same way as the slow control register,
  with the difference that the bits are directly written into the Citiroc1A without requiring a rising edge on \textcolor{red}{Load\_sc}.\autocite{datasheetCITIROC}
 \newline
  The full list of all the register that can be set in the probe register is shown in Table \ref{tab:probe_register_tab} in Appendix \ref{cha:Citiroc1A_register}.

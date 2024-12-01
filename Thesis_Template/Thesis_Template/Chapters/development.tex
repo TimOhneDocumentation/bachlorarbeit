@@ -5,14 +5,14 @@ The firmware developed in this thesis for the three Artix-7 FPGAs, located on th
 The main tasks of the firmware are to configure the Citiroc1A ASIC, explained in Section \ref{sec:configuration},
  communicaton with the controlling coputer via ethernet and the IPBUS protocol and a provisional readout of the time triggerd data from the Citiroc1A ASIC.
 \newline
-The fimrmware is written in VHSIC Hardware Description Language (VHDL) and is synthesized and implemented using the Xilinx Vivado.
+The fimrmware is written in VHSIC Hardware Description Language (VHDL) and is synthesized and implemented using Xilinx Vivado.
 Several IP-cores, provided by Xilinx, are used to simplfy the development of the firmware for several tasks like the implementation of the configuration memory.
 \subsection{The IPBUS protocol}
 The IPBUS protocol used for the communication between the FPGA and the controlling computer is a simple protocol for controlling IP-aware hardware devices with a 32 bit read and write bus using UDP as the transport protocol.\autocite{IPBUS_article}
 \newline
 The IPBUS protocol defines a read and write command enabling successful write and read operations of a 32 bit register, with a 32 bit address in the FPGA.    
 \newline
-The commands can be issued on the controling computer with the $\mu$HAL library, which allowes the user to issue read and write commands with a python script and an XML file defining the address of the registers.\autocite{IPBUS_article}
+The commands can be issued on the controling computer with the $\mu$HAL library, which allowes the user to issue read and write commands using a python script and an XML file defining the addresses of the registers.\autocite{IPBUS_article}
 \newline
 The address space inside the FPGA is defined in the firmware. The address space is divided into seprate address spaces for each of the slaves by the leading bits of the address.
 For some slaves, the address space is further divided into subspaces for the different registers of the slave.
@@ -41,11 +41,11 @@ For some slaves, the address space is further divided into subspaces for the dif
     \node(Citiroc1A 1)[block, below left=2cm and 0cm of slaves] {Citiroc1A ASIC 1};
     \node(Citiroc1A 2)[block, below right  =2cm and 0cm of slaves] {Citiroc1A ASIC 2};
     %ASIC 1
-    \node (config1) [block, below left =3.5cm and 1cm of Citiroc1A 1 ] {Citiroc1A Interface};
-    \node (hitcounters1) [ block, below  =3.5cm and -1.5cm of Citiroc1A 1] {Hit Counters (32)};
+    \node (config1) [block, below left =1.5cm and 1cm of Citiroc1A 1 ] {Citiroc1A Interface};
+    \node (hitcounters1) [ block, below  =1.5cm and -1.5cm of Citiroc1A 1] {Hit Counters (32)};
     %ASIC 2
-    \node (config2) [block,  below right =3.5cm and -1cm of Citiroc1A 2] {Citiroc1A Interface};
-    \node (hitcounters2) [ block,below left = 3.5cm and -1.5cm    of Citiroc1A 2] {Hit Counters (32)};
+    \node (config2) [block,  below right =1.5cm and -1cm of Citiroc1A 2] {Citiroc1A Interface};
+    \node (hitcounters2) [ block,below left = 1.5cm and -1.5cm    of Citiroc1A 2] {Hit Counters (32)};
     %config1
     \node (confi1) [block, below =1.5cm and -1cm of config1 ] {Configuration SM};
     \node (verif1) [block, below right =1.5cm and 1cm of config1] {Verification SM};
@@ -102,14 +102,14 @@ The configuration of the slow control and probe registers of the Citiroc1A ASIC,
  along with the verification of this configuration, is handled by two finite state machines.
  \newline
   Each state machine each controls a random access memory (RAM) with a depth of 64 addresses,
-  whith each address storing 32 bits of data.
+  with each address storing 32 bits of data.
  \newline
-The state machiens in turn are controled by the status and control register of the corresponding Citiroc1A Interface, which can be written by the controlling computer via the ipbus protocol.
+The state machiens in turn are controled by the status and control register of the corresponding Citiroc1A Interface, which can be written by the controlling computer via the IPBUS protocol.
 \subsection{Status and control register}
 Each Citiroc1A interface has a 32 bit status and control register, but only the first 7 bits are used.
  It is responsible for the control of the configuration and verification state machines as well as the hitcounters.
- The bits of the status and control register, with the exeption of bit 1 which is set to 0 by the FPGA after the configuration is loaded,
-do not reset themselves after being set to 1 and have to deaserted by  the controlling computer.
+ The bits of the status and control register, with the exeption of bit 1 which is set to 0 by the FPGA after the configuration is loaded into the serial register,
+do not reset themselves after being set to 1 and have to be deaserted by the controlling computer.
 \newline
 It's structure is shown in Table \ref{tab:status_control_register}.
 \begin{figure}  
@@ -147,7 +147,7 @@ It's structure is shown in Table \ref{tab:status_control_register}.
 \subsection{Configuration state machine}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{CONFIGSMALLdiagramfarbe3000.png}%{E18Logo.png}%
+    \includegraphics[width=\textwidth]{CONFIGSMALLdiagramfarbe2900.png}%{E18Logo.png}%
     \caption{Finite state machine for configuring the Citiroc1A ASIC.
     States associated with the same processes are highlighted using the same color.}
     \label{fig:Configuration_state_machine}
@@ -165,10 +165,14 @@ The \textcolor{red}{reset} process resets the configuration RAM and the Configur
 \newline
 The \textcolor{VioletRed}{load} process loads the configuration data from the configuration RAM into the serial register of the Citiroc1A ASIC. 
 The first 1144/256 bits of the configuration RAM are shifted into the serial register of the Citiroc1A ASIC, depending on the selected register.
-Each bit is shifted in by setting the data line and clk as disccribed in Section \ref{sec:configuration}. 
+Each bit is shifted in by setting the data line \textcolor{red}{Srin\_sr} and clock \textcolor{red}{clk} as disccribed in Section \ref{sec:configuration}.
+Since as discribed in Section \ref{sec:configuration} the first bit written to the serial register is the last bit of the configuration, the controling computer has to write the bitstream in reverse order to the configuration RAM.
+\newline
+The \textcolor{red}{clk} clock signal for thr ASIC's serial register is generated by the FPGA with a frequency of \SI{1}{\mega\hertz}.
+The \textcolor{VioletRed}{load} process modulates this clock signal to control the operation of the serial register.
 \newline
 The process is repeated until all the data is shifted in and the configuration is loaded.
-It can be inniated by the controling computer by setting bit 1 of the status and control register to 1 and is only interupteable by the reset process.
+It can be inniated by the controling computer by setting bit 1 of the status and control register to 1 and is only interupteable by the \textcolor{red}{reset} process.
 \newline
 In order to load the configuration into the slow control register from the serial register, bit 4 of the status and control register must be set to 1, this is not neccessary for the probe register.
 
@@ -186,7 +190,7 @@ It can be reset by the controling computer by setting bit 2 of the status and co
 \newline
 If bits are shifted into the serial register of the Citiroc1A ASIC, the \textcolor{green}{verification} process is automatically started.
 The \textcolor{red}{srout} signal coming back from the ASIC, explained in Section \ref{sec:configuration}, is used to read back the shifted bits from the serial register of the Citiroc1A ASIC.
-The bits arrive at the FPGA in the same order they were loaded in, but shifted by the length of the bitstream(1144/256). To compare the read back bits with the the loaded bits the bitstream has to be loaded twice.
+The bits arrive at the FPGA in the same order as they were loaded in, but shifted by the length of the bitstream(1144/256). To compare the read back bits with the the loaded bits the bitstream has to be loaded twice.
 \newline
 The readback bits are stored in the verification RAM by the \textcolor{green}{verification} process and can be read by the controling computer via the  \textcolor{yellow}{read} process.
 This allowes the controling computer to compare the loaded bits with the read back bits and ensure that the configuration was loaded correctly into the serial register of the Citiroc1A ASIC.
@@ -207,4 +211,18 @@ The hitcounters and timecounters are reset by setting bit 5 of the status and co
 To read the hit and time counters, the controling computer first has to disable the hitcounters by setting bit 6 of the status and control register to 0, in order to avoid metastability issues arising from the clock domain crossing.
 The hitcounters can then be read by the controling computer via the IPBUS protocol.
 \newline
-The combination of the hitcounters and the timecounter allows the controling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC.
+The combination of the hitcounters and the timecounter allows the controling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC. 
+\section{Testing the firmware}
+
+The firmware will be evaluated through a noise measurement on the frontend electronics of the scintillating fiber hodoscope. 
+This noise analysis will be performed with the SiPMs disconnected from the frontend electronics. 
+The experimental setup for the noise analysis is illustrated in Figure \ref{fig:noise_setup}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{E18Logo.png}%{noise_setup.png}%{E18Logo.png}%
+    \caption{Experimental setup for the noise analysis of the frontend electronics of the scintillating fiber hodoscope.}
+    \label{fig:noise_setup}
+\end{figure}
+The noise analysis will be performed by the controlling computer, 
+which will scan through a range of thresholds of the time discriminator of the Citiroc1A ASIC and record the number of hits per second on each channel with an intergration time of \SI{300}{\milli\second}.
+This scan will be preformed for several different high gains near the maximum value of 62.

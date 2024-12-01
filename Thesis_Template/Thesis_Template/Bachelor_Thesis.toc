@@ -1,0 +1,40 @@
+\babel@toc {english}{}\relax 
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Theoretical concepts and overview of AMBER}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Measurment of the charge radius of the proton (PRM)}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Previous measurements of the proton radius}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Elastic scattering of muons on protons}{3}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}General setup for PRM at AMBER.}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detectors for PRM}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Scintillating fiber hodoscope(SFH)}{7}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Field Programmable Gate Arrays (FPGA)}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Frontend electronic of the scintillating fiber hodoscope}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview of the frontend electronics}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Proccesing of the SFH signal}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}The analog frontend electronics (FEE) PCB}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}The iFTDC}{11}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}The Citiroc1A ASIC}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Signal proccesing of the Citiroc1A}{12}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Configuration of the Citiroc1A}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}The slow control register}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}The probe register}{15}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Development of the FPGA firmware for the SFH}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview of the firmware}{17}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}The IPBUS protocol}{17}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}The firmware structure}{18}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Configuration of the Citiroc1A ASIC}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Status and control register}{19}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Configuration state machine}{21}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Verification state machine}{23}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}The provesional readout}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Testing the firmware}{24}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Results}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Discussion}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusion}{31}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{31}{section.7.2}%
+\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{33}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}\ Code}{41}{appendix.a.B}%
+\babel@toc {english}{}\relax 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
