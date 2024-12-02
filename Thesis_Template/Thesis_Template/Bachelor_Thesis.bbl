@@ -3013,6 +3013,53 @@
       \field{title}{Physics and Philosophy: The Revolution in Modern Science}
       \field{year}{1958}
     \endentry
+    \entry{Theorynoise}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=2d325a9851cbb549aeb69657fb89fff8}{%
+           family={Kmon},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4eeb7c42f7a8e44fcbc5ff286d93fca9}{%
+           family={Maj},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=827d95bd83afe5f72f7e869b1326214c}{%
+           family={Grybos},
+           familyi={G\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d44d82c49c8fbc40ec7b32adfee29da4}{%
+           family={Szczygiel},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5e51ed2c82d0cf0b79f878a58695bb4}
+      \strng{fullhash}{1b49e300e2c3d3c08232ed36d662e72a}
+      \strng{fullhashraw}{1b49e300e2c3d3c08232ed36d662e72a}
+      \strng{bibnamehash}{1b49e300e2c3d3c08232ed36d662e72a}
+      \strng{authorbibnamehash}{1b49e300e2c3d3c08232ed36d662e72a}
+      \strng{authornamehash}{d5e51ed2c82d0cf0b79f878a58695bb4}
+      \strng{authorfullhash}{1b49e300e2c3d3c08232ed36d662e72a}
+      \strng{authorfullhashraw}{1b49e300e2c3d3c08232ed36d662e72a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Nuclear Science}
+      \field{number}{2}
+      \field{title}{An Effective Multilevel Offset Correction Technique for Single Photon Counting Pixel Detectors}
+      \field{volume}{63}
+      \field{year}{2016}
+      \field{pages}{1194\bibrangedash 1201}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/TNS.2016.2527834
+      \endverb
+      \keyw{Photonics;Detectors;Integrated circuits;Radiation detectors;Transistors;Gain measurement;Tuning;Hybrid pixel detectors mismatch;offset trimming;single photon counting;X-ray imaging}
+    \endentry
     \entry{InternalcommunicationIgor}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=8da45e7d0fa9336fa3d8dd4adaad8000}{%

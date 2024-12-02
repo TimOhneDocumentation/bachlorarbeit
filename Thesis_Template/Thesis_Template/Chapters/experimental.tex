@@ -123,7 +123,7 @@ The \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA fo
 Only after the FPGA has sent the full bitstream twice, does the \textcolor{red}{Srout} signal take on the value of the bitstream, since the \textcolor{red}{Srout} signal is shifted by the length of the bitstream.\autocite{datasheetCITIROC}
 One should only set the rising edge of the \textcolor{red}{Load\_sr} signal after verifying that the \textcolor{red}{Srout} signal takes on the correct values.
 
-\subsection{The probe register}
+\subsection{The probe register}\label{sec:probe_register}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{ProbeRegister.png}

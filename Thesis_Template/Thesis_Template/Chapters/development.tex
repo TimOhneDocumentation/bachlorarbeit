@@ -213,16 +213,31 @@ The hitcounters can then be read by the controling computer via the IPBUS protoc
 \newline
 The combination of the hitcounters and the timecounter allows the controling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC. 
 \section{Testing the firmware}
-
-The firmware will be evaluated through a noise measurement on the frontend electronics of the scintillating fiber hodoscope. 
-This noise analysis will be performed with the SiPMs disconnected from the frontend electronics. 
-The experimental setup for the noise analysis is illustrated in Figure \ref{fig:noise_setup}.
+\subsection{Setup for the threshold scan}
+The firmware will be evaluated through a threshold scan of the frontend electronics of the scintillating fiber hodoscope. 
+This threshold scan will be performed with the SiPMs disconnected from the frontend electronics. 
+The experimental setup is illustrated in Figure \ref{fig:noise_setup}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{E18Logo.png}%{noise_setup.png}%{E18Logo.png}%
     \caption{Experimental setup for the noise analysis of the frontend electronics of the scintillating fiber hodoscope.}
     \label{fig:noise_setup}
 \end{figure}
-The noise analysis will be performed by the controlling computer, 
+The scan will be performed by the controlling computer, 
 which will scan through a range of thresholds of the time discriminator of the Citiroc1A ASIC and record the number of hits per second on each channel with an intergration time of \SI{300}{\milli\second}.
 This scan will be preformed for several different high gains near the maximum value of 62.
+\subsection{Theoretical backround for the threshold scan} \label{sec:noise_theory}
+The noise on the unconected frontend electronics is assumed to be of gaussian distribution,
+\begin{equation}
+    P(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\end{equation}
+where $\mu$ is the mean and $\sigma$ the standard deviation of the noise.\autocite{Theorynoise}
+\newline
+The number of hits per second on each channel of the Citiroc1A ASIC is assumed to be proportional to the number of noise events above the threshold of the time discriminator.
+and thus to the integral of the noise distribution above the threshold.\
+\newline
+The number of hits per second vs the threshold of the time discriminator is expected to follow an S-curve, which can be described by the error function,
+\begin{equation}
+    N = \frac{A}{2} \left( 1 - \text{erf} \left( \frac{x - \mu}{\sqrt{2}\sigma} \right) \right)
+\end{equation}
+where $N$ is the number of hits per second and $x$ the threshold of the time discriminator and A an renormalization factor.\autocite{Theorynoise}

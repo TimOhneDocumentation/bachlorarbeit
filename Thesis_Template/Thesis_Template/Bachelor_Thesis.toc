@@ -29,12 +29,19 @@
 \contentsline {subsection}{\numberline {4.2.3}Verification state machine}{23}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}The provesional readout}{24}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Testing the firmware}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Setup for the threshold scan}{24}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Theoretical backround for the threshold scan}{25}{subsection.4.4.2}%
 \contentsline {chapter}{\numberline {5}Results}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{31}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Conclusion}{31}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Outlook}{31}{section.7.2}%
-\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{33}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}\ Code}{41}{appendix.a.B}%
+\contentsline {section}{\numberline {5.1}Threshold scan}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}S-curve analysis}{28}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Discussion}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Evolation of the firmware}{31}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Threshold scan}{31}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{33}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Conclusion}{33}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Outlook}{33}{section.7.2}%
+\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{35}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Fit parameters of the S-curve analysis}{43}{appendix.1.B}%
+\contentsline {chapter}{Appendix \numberline {C}\ Code}{47}{appendix.1.C}%
 \babel@toc {english}{}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
