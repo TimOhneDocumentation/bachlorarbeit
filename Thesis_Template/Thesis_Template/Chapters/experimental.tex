@@ -1,34 +1,35 @@
-\chapter{Frontend electronic of the scintillating fiber hodoscope}\label{cha:frontend}
+\chapter{Frontend Electronic of the Scintillating Fiber Hodoscope}\label{cha:frontend}
 %the sidevieve hast to be updates
 %citroc picute has to be included ans described witharrowas and refreces to the figure have to be included in the text
 
 %table of slow control register has to be checked
 %DAC output voltage (\SI{5}{\volt}) has to be understood
 
-\section{Overview of the frontend electronics}
+\section{Overview of the Frontend Electronics}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{SideViewElectronics.PNG}
     \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.
-     The SiPM arrays transform the incoming photons into  electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl} INSERT: old picture needs to be updated}
+     The SiPM arrays transform the incoming photons into electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl} INSERT: old picture needs to be updated}
     \label{fig:SideviewModelElectronics}
     \end{figure}
-\subsection{Proccesing of the SFH signal}
+\subsection{Proccesing of the SFH Signal}
 The frontend electronics of the scintillating fiber hodoscope process the signals from the scintillating fibers.
 They can be attached on all four sides of the SFH, as can be seen in Figure \ref{SFHpicture}.
-The fibers are conected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
+The fibers are connected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
 There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends produce an electric signal,
  a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
  To mittigate the cost of the frontend electronics, as well as limit the amount of data that has to be proccesed, a mirrored setup is planed.
- In this setup only one end of the fibers is conected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
+ In this setup only one end of the fibers is connected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
  \newline
  The incoming photons are transformed into electric signals by the SiPM arrays.
  The SiPM signals are then transmitted to the analog frontend electronics (FEE) PCB by the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.\autocite{InternalcommunicationKarl}
-\subsection{The analog frontend electronics (FEE) PCB}
+\subsection{The Analog Frontend Electronics (FEE) PCB}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{E18Logo.PNG}
-    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
+    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.
+    The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
 The analog frontend electronics (FEE) PCB, shown in Figure \ref{fig:FEE}, together with the iFTDC forms the heart of the frontend electronics.
@@ -38,7 +39,7 @@ The power supply is connected to the FEE PCB on the left side as shown in \ref{f
 \subsection{The iFTDC}\label{sec:iFTDC}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{E18Logo.PNG}
+    \includegraphics[width=0.6\textwidth]{WhatsApp Bild 2024-12-05 um 16.27.03_5a99d29b.jpg}
     \caption{The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the power supply.\autocite{InternalcommunicationIgor}}
     \label{fig:iFTDC}
 \end{figure}
@@ -46,15 +47,15 @@ The power supply is connected to the FEE PCB on the left side as shown in \ref{f
 The iFTDC, depicted in Figure \ref{fig:iFTDC} is a FPGA based time-to-digital converter. It consists of three Artix-7 FPGA, who each control two Citiroc1A ASICs.
 The FPGA handels the readout as well as the configuration of the Citiroc1A ASICs\autocite{InternalcommunicationIgor}.
 \newline
-INSERT: here stil hast to be includes how ethernet works how ipbus works and how jtag is implemented ans stuff analong this line 
+The FPGAs are programmed via jtag and connected to the controling computer via ethernet.
 \section{The Citiroc1A ASIC}
 The Citiroc1A ASIC is a frontend application-specific integrated circuit developed by Weeroc for the readout of SiPM detectors.
 It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a photoelectron.\autocite{datasheetCITIROC}
 \newline
-The Citiroc1A ASIC is controlled and readout by the Artix-7 FPGA on the iFTDC, each FPGA controlling two Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
+The Citiroc1A ASIC is controlled and readout by the Artix-7 FPGAs on the iFTDC, each FPGA controlling two Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
 The focus of this thesis is the development of the FPGA firmware for the control of the Citiroc1A ASICs,
- but a provesional readout firmware for testing the configuration of the Citiroc1A will also be developed.
-\subsection{Signal proccesing of the Citiroc1A}
+but a provesional readout firmware for testing the configuration of the Citiroc1A will also be developed.
+\subsection{Signal Proccesing of the Citiroc1A}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{TRIGER.PNG}
@@ -95,7 +96,7 @@ The time discriminator threshold is adjustable via a 10 bit dac for all channels
 The configuration of the Citiroc1A is achievied by the FPGA via the five signals shown in Figure \ref{fig:CITIROC1A_config}.
 The \textcolor{red}{Select} signal allowes the choice between configuring the slow control, for \textcolor{red}{Select} = 1  or the probe register, for \textcolor{red}{Select} = 0.\autocite{datasheetCITIROC}
 
-\subsection{The slow control register}
+\subsection{The Slow Control Register}
 
 \begin{figure}
     \centering
@@ -123,7 +124,7 @@ The \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA fo
 Only after the FPGA has sent the full bitstream twice, does the \textcolor{red}{Srout} signal take on the value of the bitstream, since the \textcolor{red}{Srout} signal is shifted by the length of the bitstream.\autocite{datasheetCITIROC}
 One should only set the rising edge of the \textcolor{red}{Load\_sr} signal after verifying that the \textcolor{red}{Srout} signal takes on the correct values.
 
-\subsection{The probe register}\label{sec:probe_register}
+\subsection{The Probe Register}\label{sec:probe_register}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{ProbeRegister.png}
@@ -138,7 +139,7 @@ The register consists of 256 bits and is written the same way as the slow contro
  The full list of all the register that can be set in the probe register is shown in Table \ref{tab:probe_register_tab} in Appendix \ref{cha:Citiroc1A_register}.
 \newline
 The internal signals for each channel that can be routed to the output pins are shown in Table \ref{tab:probe_register}. 
- \begin{table}[h]
+ \begin{table}[H]
     \centering
     \begin{tabular}{@{}lll@{}}
     \toprule
@@ -152,7 +153,6 @@ The internal signals for each channel that can be routed to the output pins are 
     \caption{Internal signal routing to output pins for each channel.}
     \label{tab:probe_register}
 \end{table}
-\newline
 Only one signal can be routed to each output pin at a time, without potentially causing a short circuit.\autocite{datasheetCITIROC}
 
 

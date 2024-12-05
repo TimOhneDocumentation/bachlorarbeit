@@ -1,13 +1,19 @@
-\chapter{Development of the FPGA firmware for the SFH}\label{cha:development}
-Insert: Explain diifrence between firmware for the three FPGAs
-\section{Overview of the firmware} 
-The firmware developed in this thesis for the three Artix-7 FPGAs, located on the iFTDC as described in Section \ref{sec:iFTDC}, must perform several functionalities.
-The main tasks of the firmware are to configure the Citiroc1A ASIC, explained in Section \ref{sec:configuration},
- communicaton with the controlling coputer via ethernet and the IPBUS protocol and a provisional readout of the time triggerd data from the Citiroc1A ASIC.
+\chapter{Development of the FPGA Firmware for the SFH}\label{cha:development}
+\section{Overview of the Firmware}
+
+The firmware in this thesis was developed for only two of three Artix-7 FPGAs integrated into the iFTDC, as detailed in Section \ref{sec:iFTDC}.
+The third FPGA was excluded due to the incomplete development of its Ethernet connection.
+\newline
+The firmware of the different FPGAs differs only by their port assignment but are otherwise identical.
+\newline
+The firmware must perform several functionalities.
+\newline
+The main tasks of the firmware are to configure the Citiroc1A ASICs, explained in Section \ref{sec:configuration},
+ communicaton with the controlling coputer via ethernet and the IPBUS protocol and a provisional readout of the time triggerd data from the Citiroc1A ASICs.
 \newline
 The fimrmware is written in VHSIC Hardware Description Language (VHDL) and is synthesized and implemented using Xilinx Vivado.
 Several IP-cores, provided by Xilinx, are used to simplfy the development of the firmware for several tasks like the implementation of the configuration memory.
-\subsection{The IPBUS protocol}
+\subsection{The IPBUS Protocol}
 The IPBUS protocol used for the communication between the FPGA and the controlling computer is a simple protocol for controlling IP-aware hardware devices with a 32 bit read and write bus using UDP as the transport protocol.\autocite{IPBUS_article}
 \newline
 The IPBUS protocol defines a read and write command enabling successful write and read operations of a 32 bit register, with a 32 bit address in the FPGA.    
@@ -18,7 +24,7 @@ The address space inside the FPGA is defined in the firmware. The address space 
 For some slaves, the address space is further divided into subspaces for the different registers of the slave.
 
 
-\subsection{The firmware structure}
+\subsection{The Firmware Structure}
 \begin{figure}[H]
     \centering
     
@@ -80,7 +86,7 @@ For some slaves, the address space is further divided into subspaces for the dif
         
     \end{tikzpicture}
     \caption{Structure of the firmware developed for this thesis. The black arrows represent the true hierarchical 
-    conections between the moduls, while the blue arrows indicate connections that are semantically correct but are routed through higher-level modules.}
+    connections between the moduls, while the blue arrows indicate connections that are semantically correct but are routed through higher-level modules.}
     \label{fig:Firmware_structure}
 \end{figure}
 The firmware has a hierarchical structure ilustrated in Figure \ref{fig:Firmware_structure}. 
@@ -101,14 +107,14 @@ The slave modul contains several slaves for the different tasks of the firmware.
 The configuration of the slow control and probe registers of the Citiroc1A ASIC,
  along with the verification of this configuration, is handled by two finite state machines.
  \newline
-  Each state machine each controls a random access memory (RAM) with a depth of 64 addresses,
+  Each state machine controls a random access memory (RAM) with a depth of 64 addresses,
   with each address storing 32 bits of data.
  \newline
 The state machiens in turn are controled by the status and control register of the corresponding Citiroc1A Interface, which can be written by the controlling computer via the IPBUS protocol.
-\subsection{Status and control register}
+\subsection{Status and Control Register}
 Each Citiroc1A interface has a 32 bit status and control register, but only the first 7 bits are used.
  It is responsible for the control of the configuration and verification state machines as well as the hitcounters.
- The bits of the status and control register, with the exeption of bit 1 which is set to 0 by the FPGA after the configuration is loaded into the serial register,
+ The bits of the status and control register, with the exeption of bit 1, which is set to 0 by the FPGA after the configuration is loaded into the serial register,
 do not reset themselves after being set to 1 and have to be deaserted by the controlling computer.
 \newline
 It's structure is shown in Table \ref{tab:status_control_register}.
@@ -144,7 +150,7 @@ It's structure is shown in Table \ref{tab:status_control_register}.
     \label{tab:status_control_register}
 \end{figure}  
   
-\subsection{Configuration state machine}
+\subsection{Configuration State Machine}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{CONFIGSMALLdiagramfarbe2900.png}%{E18Logo.png}%
@@ -152,7 +158,7 @@ It's structure is shown in Table \ref{tab:status_control_register}.
     States associated with the same processes are highlighted using the same color.}
     \label{fig:Configuration_state_machine}
 \end{figure}
-The Configuration state machine is responsible for configuring the slow control and probe registers of the Citiroc1A ASIC.
+The Configuration state machine, embedded  in the firmware as shown in Figure \ref{fig:Firmware_structure}, is responsible for configuring the slow control and probe registers of the Citiroc1A ASIC.
 The state machine is controlled by the status and control register, which is written by the controlling computer via the IPBUS protocol.
 It has four processes, whose states are shown in different colors in Figure \ref{fig:Configuration_state_machine}.
 \newline
@@ -176,7 +182,7 @@ It can be inniated by the controling computer by setting bit 1 of the status and
 \newline
 In order to load the configuration into the slow control register from the serial register, bit 4 of the status and control register must be set to 1, this is not neccessary for the probe register.
 
-\subsection{Verification state machine}
+\subsection{Verification State Machine}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{smallVerifacationdiagrammodfarbe.png}%{E18Logo.png}%
@@ -185,6 +191,7 @@ In order to load the configuration into the slow control register from the seria
     \label{fig:Verification_state_machine}
 \end{figure}
 The Verification state machine, ilustrated in Figure \ref{fig:Verification_state_machine} is responsible for verifying the configuration of the Citiroc1A ASIC.
+It is incorporated into the firmware, as shown in Figure \ref{fig:Firmware_structure}.
 \newline
 It can be reset by the controling computer by setting bit 2 of the status and control register to 1.
 \newline
@@ -194,7 +201,7 @@ The bits arrive at the FPGA in the same order as they were loaded in, but shifte
 \newline
 The readback bits are stored in the verification RAM by the \textcolor{green}{verification} process and can be read by the controling computer via the  \textcolor{yellow}{read} process.
 This allowes the controling computer to compare the loaded bits with the read back bits and ensure that the configuration was loaded correctly into the serial register of the Citiroc1A ASIC.
-\section{The provesional readout}
+\section{The Provesional Readout}
 In addition to the configuration and verification of the configuration of Citiroc1A ASIC, the firmware also provides a provisional readout in form of hitcounters and timecounters. 
 \newline
 The hitcounters are used to count the number of hits on each channel of the Citiroc1A ASIC.
@@ -212,32 +219,44 @@ To read the hit and time counters, the controling computer first has to disable 
 The hitcounters can then be read by the controling computer via the IPBUS protocol.
 \newline
 The combination of the hitcounters and the timecounter allows the controling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC. 
-\section{Testing the firmware}
-\subsection{Setup for the threshold scan}
+
+
+\section{Testing the Firmware}
+\subsection{Setup for the Threshold Scan}
 The firmware will be evaluated through a threshold scan of the frontend electronics of the scintillating fiber hodoscope. 
 This threshold scan will be performed with the SiPMs disconnected from the frontend electronics. 
 The experimental setup is illustrated in Figure \ref{fig:noise_setup}.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{E18Logo.png}%{noise_setup.png}%{E18Logo.png}%
-    \caption{Experimental setup for the noise analysis of the frontend electronics of the scintillating fiber hodoscope.}
+    \includegraphics[width=0.8\textwidth]{WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg}%{noise_setup.png}%{E18Logo.png}%
+    \caption{Experimental setup for the threshold scan of the frontend electronics of the scintillating fiber hodoscope.}
     \label{fig:noise_setup}
 \end{figure}
 The scan will be performed by the controlling computer, 
-which will scan through a range of thresholds of the time discriminator of the Citiroc1A ASIC and record the number of hits per second on each channel with an intergration time of \SI{300}{\milli\second}.
+which will scan through a range of thresholds of the time discriminator of the Citiroc1A ASIC and record the number of hits per second on each channel with an intergration time of \SI{400}{\milli\second}.
 This scan will be preformed for several different high gains near the maximum value of 62.
-\subsection{Theoretical backround for the threshold scan} \label{sec:noise_theory}
-The noise on the unconected frontend electronics is assumed to be of gaussian distribution,
+\newline
+For comparison, the threshold scan will also be performed with the same configuration of the Citiroc1A ASICs on a testboard provided by Weeroc, 
+with the setup shown in Figure \ref{fig:noise_setup_testboard}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg}%{noise_setup_testboard.png}%{E18Logo.png}%
+    \caption{Experimental setup for the threshold scan with a testboard provided by Weeroc.}
+    \label{fig:noise_setup_testboard}
+\end{figure}
+
+\subsection{Theoretical Backround for the Threshold Scan} \label{sec:noise_theory}
+The noise on the unconnected frontend electronics is assumed to be of gaussian distribution,
 \begin{equation}
     P(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 \end{equation}
 where $\mu$ is the mean and $\sigma$ the standard deviation of the noise.\autocite{Theorynoise}
 \newline
-The number of hits per second on each channel of the Citiroc1A ASIC is assumed to be proportional to the number of noise events above the threshold of the time discriminator.
-and thus to the integral of the noise distribution above the threshold.\
+The number of hits per second on each channel of the Citiroc1A ASIC is assumed to be proportional to the number of noise events above the threshold of the time discriminator, but limited by the maximal trigger rate of the fast sha Citiroc1A
+and thus approximately proportional to the integral of the noise distribution above the threshold.\autocite{Theorynoise}
 \newline
-The number of hits per second vs the threshold of the time discriminator is expected to follow an S-curve, which can be described by the error function,
+The number of hits per second vs the threshold of the time discriminator is expected to follow an S-curve, which can be described by a modified error function,
 \begin{equation}
     N = \frac{A}{2} \left( 1 - \text{erf} \left( \frac{x - \mu}{\sqrt{2}\sigma} \right) \right)
 \end{equation}
-where $N$ is the number of hits per second and $x$ the threshold of the time discriminator and A an renormalization factor.\autocite{Theorynoise}
+where $N$ is the number of hits per second, $x$ the threshold of the time discriminator and A an renormalization factor.\autocite{Theorynoise}

@@ -1,21 +1,21 @@
-\chapter{Theoretical concepts and overview of AMBER}\label{cha:theory}
+\chapter{Theoretical Concepts and Overview of AMBER}\label{cha:theory}
 %What is atached in sfh picture
 
 %previous mesurments garpic has to be explainedn more in detail
 %explain noise measurment
 
-\section{Measurment of the charge radius of the proton (PRM)}\label{sec:proton_radius}
+\section{Measurment of the Charge Radius of the Proton (PRM)}\label{sec:proton_radius}
 The proton is a baryon, a composite particle made up of one down quark and  two up quarks.
 From this follows that the proton is not a point particle, but has an internal sturucture.\autocite{Workman:2836514}
 \newline
 The internal structure can be discribed by the structure functions of the proton, 
 the electric and magnetic form factors $G_E$ and $G_M$.\autocite{ProposalAmber}	
-\subsection{Previous measurements of the proton radius}
+\subsection{Previous Measurements of the Proton Radius}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{PreviousmeausrementsProtonradius.png}
 	\caption{Previous measurements of the proton radius from electron proton  scattering experiments and the Lamb shift in muonic and ordinary hydrogen,
-	 the measurements differ from each other by five standard deviations.\autocite{ProposalAmber} }
+	 the measurements differ from each other by five standard deviations.An arbitrary result for the proton radius by the PRM experiment with the expected uncertainty is included.\autocite{ProposalAmber} }
 	\label{fig:previous_proton_radius}
 \end{figure}
 
@@ -24,7 +24,7 @@ The two premier methods are electron proton scattering experiments and the Lamb 
 The results of these measurements differ by five standard deviations as shown in Figure \ref{fig:previous_proton_radius},
 this has given rise to the so called proton radius puzzle.\autocite{ProposalAmber}
 
-\subsection{Elastic scattering of muons on protons}
+\subsection{Elastic Scattering of Muons on Protons}
 The AMBER PRM experiment at CERN aims to reslove the proton radius puzzle, by measuring the elastic scattering of muons on protons.
 The first order cross section, taking into account only interactions where one virtual photon was exchanged, 
 for the elastic scattering of muons on a proton target is 
@@ -45,7 +45,7 @@ Through determining the form factor $G_E$ for small $Q^2$ , the charge radius of
 r_p^2 = -6 \frac{dG_E}{dQ^2} \bigg|_{Q^2 = 0}
 \end{equation}
 
-\section{General setup for PRM at AMBER.}\label{sec:general_setup}
+\section{General Setup for PRM at AMBER.}\label{sec:general_setup}
 \subsection{Detectors for PRM}
 
 To determine the magentic $G_M$ and electric form $G_E$ factors of the proton and thus the charge radius of the Proton,
@@ -73,7 +73,7 @@ but lacking the time resolution(\SI{5} {\micro\second}\autocite{Amber2022Status}
 For this reason each UTS includes a scintillating fiber hodoscope (SFH), the detector of intrest for this thesis,
  which provides the time precision(\SI{300} {\pico\second}\Autocite{Amber2022Status}) for the measurment.
  \newline
-Four of these unified tracking stations, two before and two after the active target, are placed in the beamline as shown in \ref{fig:amber_setup}.
+Four of these unified tracking stations, two before and two after the active target, are placed in the beamline as shown in Figure \ref{fig:amber_setup}.
 The measurment of the momentum of the scattered moun is done by existing COMPASS detectors located after the, 
 for the PRM newly included, detectors\autocite{ProposalAmber}.
 
@@ -83,11 +83,11 @@ for the PRM newly included, detectors\autocite{ProposalAmber}.
 	\caption{Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH).\autocite{InternalcommunicationKarl}}
 	\label{UTSpicture}
 \end{figure}
-\subsection{Scintillating fiber hodoscope(SFH)}
+\subsection{Scintillating Fiber Hodoscope(SFH)}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{SFH_somelayers.JPEG}
-	\caption{Scintillating fiber hodoscope (SFH) with some of the scintillating fibers of the four layres installed.The frontend electronics are not attached.\autocite{InternalcommunicationKarl}}
+	\caption{Scintillating fiber hodoscope (SFH) with some of the scintillating fibers of the four layres installed. The frontend electronics are not attached.\autocite{InternalcommunicationKarl}}
 	\label{SFHpicture}
 \end{figure}
 The scintillating fiber hodoscope shown in Figure \ref{SFHpicture}, 
@@ -96,9 +96,9 @@ is used to measure the precise timing(\SI{300}{\pico\second}\Autocite{Amber2022S
 Every SFH contains four layers of scintillating fibers, two in x and two in y direction.
 Each layer is made up of 192\autocite{Amber2022Status}, 500 $\mu m$ thick\autocite{Amber2024Status} fibers, in total 768\autocite{Amber2022Status} fibers per SFH. 
 When charged particels, muons in this case, pass through a scintillating fiber they excite the scintillating material, 
-which then emits photons. Both ends of every fiber are conected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
+which then emits photons. Both ends of every fiber are connected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
  that is then proccesed by the frontend electronics. To minimize cost and the amount of data that has to be processed, a mirrored readout is planned, 
- where only one end is conected to the SiPM array and the other end is mirrored.\autocite{InternalcommunicationKarl}
+ where only one end is connected to the SiPM array and the other end is mirrored.\autocite{InternalcommunicationKarl}
 
 \section{Field Programmable Gate Arrays (FPGA)}\label{sec:FPGA}
 Field Programmable Gate Arrays (FPGAs) are integrated circuits that can be programmed after manufacturing.
