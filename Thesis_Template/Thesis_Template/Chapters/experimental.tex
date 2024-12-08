@@ -1,6 +1,4 @@
 \chapter{Frontend Electronic of the Scintillating Fiber Hodoscope}\label{cha:frontend}
-%the sidevieve hast to be updates
-%citroc picute has to be included ans described witharrowas and refreces to the figure have to be included in the text
 
 %table of slow control register has to be checked
 %DAC output voltage (\SI{5}{\volt}) has to be understood
@@ -8,9 +6,8 @@
 \section{Overview of the Frontend Electronics}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{SideViewElectronics.PNG}
-    \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.
-     The SiPM arrays transform the incoming photons into electric signals, that are then transferred to the frontend electronics by the PCB interposer.\autocite{InternalcommunicationKarl} INSERT: old picture needs to be updated}
+    \includegraphics[width=0.9\textwidth]{FrontendAngluarview.png}
+    \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\autocite{InternalcommunicationKarl} }
     \label{fig:SideviewModelElectronics}
     \end{figure}
 \subsection{Proccesing of the SFH Signal}
@@ -18,29 +15,34 @@ The frontend electronics of the scintillating fiber hodoscope process the signal
 They can be attached on all four sides of the SFH, as can be seen in Figure \ref{SFHpicture}.
 The fibers are connected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
 There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends produce an electric signal,
- a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
- To mittigate the cost of the frontend electronics, as well as limit the amount of data that has to be proccesed, a mirrored setup is planed.
- In this setup only one end of the fibers is connected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
- \newline
- The incoming photons are transformed into electric signals by the SiPM arrays.
- The SiPM signals are then transmitted to the analog frontend electronics (FEE) PCB by the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.\autocite{InternalcommunicationKarl}
+a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
+To mittigate the cost of the frontend electronics, as well as limit the amount of data that has to be proccesed, a mirrored setup is planed.
+In this setup only one end of the fibers is connected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
+\newline
+The incoming photons are transformed into electric signals by the SiPM arrays.
+The SiPM signals are then transmitted to the analog frontend electronics (FEE) PCB by the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.
+\newline
+The FEE PCB and the iFTDC are the two main components of the frontend electronics, as shown in Figure \ref{fig:SideviewModelElectronics}, and are connected over three flex PCBs as well as plug connectors.
+The whole setup is cooled by a water cooling system and is designed in a way that minimizes its size in order to reduce the amount of material in the beamline.\autocite{InternalcommunicationKarl}    
 \subsection{The Analog Frontend Electronics (FEE) PCB}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{E18Logo.PNG}
-    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected.
-    The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
+    \includegraphics[width=0.6\textwidth]{beschrifteterFEE.png}
+    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, inorder to test the SFH.
+    The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
 The analog frontend electronics (FEE) PCB, shown in Figure \ref{fig:FEE}, together with the iFTDC forms the heart of the frontend electronics.
 The FEE PCB incorporates six Citiroc1A ASICs, which are designed to amplify and process the signals from the SiPM arrays.
- Each Citiroc1A ASIC handles 32 signals. The output of the Citiroc1A is then transmitted to the iFTDC over three flex PCBs.
-The power supply is connected to the FEE PCB on the left side as shown in \ref{fig:FEE}. Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
+Each Citiroc1A ASIC handles 32 signals. The output of the ASICs is then transmitted to the iFTDC over three flex PCBs.
+Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
+\newline
+Currently for prototype testing the SFH is read out by the ADCs on the FEE PCB, as is illustrated on the right side of the FEE PCB in Figure \ref{fig:FEE}, but the final setup will use the iFTDC for the readout of the SFH.\autocite{InternalcommunicationKarl} 
 \subsection{The iFTDC}\label{sec:iFTDC}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{WhatsApp Bild 2024-12-05 um 16.27.03_5a99d29b.jpg}
-    \caption{The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the power supply.\autocite{InternalcommunicationIgor}}
+    \includegraphics[width=0.5\textwidth]{WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg}
+    \caption{The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}
     \label{fig:iFTDC}
 \end{figure}
 
@@ -80,7 +82,7 @@ The amplified signals are then shaped by either the slow (ssh) or fast shaper (f
 The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\second} peaking time and a better time resuliton, which is needed for the time precision of the SFH.\autocite{datasheetCITIROC}
 \newline
 The ASIC has two discriminators, the charge discriminator and the time discriminator. In this thesis we will only look at the time discriminator,
- since it provides the time information.
+since it provides the time information.
 The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every individual channel as shown in Figure \ref{fig:CITIROC1A_TRIGEER}\autocite{datasheetCITIROC}.
 
 

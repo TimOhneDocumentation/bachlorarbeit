@@ -2,14 +2,14 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Previous measurements of the proton radius from electron proton scattering experiments and the Lamb shift in muonic and ordinary hydrogen, the measurements differ from each other by five standard deviations.An arbitrary result for the proton radius by the PRM experiment with the expected uncertainty is included.\blx@tocontentsinit {0}\autocite {ProposalAmber} }}{4}{figure.caption.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Previous measurements of the proton radius from electron proton scattering experiments and the Lamb shift in muonic and ordinary hydrogen, the measurements differ from each other by five standard deviations. An arbitrary result for the proton radius by the PRM experiment, with the expected uncertainty is included.\blx@tocontentsinit {0}\autocite {ProposalAmber} }}{4}{figure.caption.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces General setup of the Amber experiment with new detectors for PRM.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{5}{figure.caption.2}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH).\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{6}{figure.caption.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Scintillating fiber hodoscope (SFH) with some of the scintillating fibers of the four layres installed. The frontend electronics are not attached.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{7}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Scintillating fiber hodoscope (SFH) with two of the four layers of scintillating fibers installed. The frontend electronics are not attached.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{7}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers. The SiPM arrays transform the incoming photons into electric signals, that are then transferred to the frontend electronics by the PCB interposer.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl} INSERT: old picture needs to be updated}}{9}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply is connected. The output of the Citiroc1A is transmitted to the iFTDC over three flex PCBs.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{10}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the power supply.\blx@tocontentsinit {0}\autocite {InternalcommunicationIgor}}}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl} }}{9}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, inorder to test the SFH. The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{10}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}}{11}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces General ASIC block scheme of the Citiroc1A.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{12}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces The two configurable registers of the Citiroc1A are selected using the \textcolor {red}{Select} signal. The FPGA communicates with the Citiroc1A through the signals \textcolor {red}{Clk\_sr}, \textcolor {red}{Rstb\_sr}, \textcolor {red}{Srin\_sr}, and \textcolor {red}{Load\_sr}, while the \textcolor {red}{Srout} signal is sent back from the Citiroc1A to the FPGA for verification.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.10}%
@@ -26,14 +26,15 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 58 from threshold 0 to 800.}}{30}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 59 from threshold 0 to 800.}}{31}{figure.caption.21}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 60 from threshold 0 to 800.}}{32}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 2 and 2 for gain 61 from threshold 0 to 800.}}{33}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 61 from threshold 0 to 800.}}{33}{figure.caption.23}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 62 from threshold 0 to 800.}}{34}{figure.caption.24}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Comparison of the threshold scan of the frontend electronics to the threshold scan performed on a by Weeroc provided testboard with a gain of 58.}}{36}{figure.caption.25}%
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 60.}}{37}{figure.caption.26}%
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 61.}}{37}{figure.caption.27}%
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 62.}}{38}{figure.caption.28}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Mean $\mu $ and standard deviation $\sigma $ determined from the S-curve fits for all channels of the Citiroc1A ASICs of FPGA 1 and 2 plotted vs the gain.}}{39}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Results of the S-curve analysis for all channels of the Citiroc1A ASICs of FPGA 1 and 2 with gain 62.}}{38}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Mean $\mu $ and standard deviation $\sigma $ determined from the S-curve fits for all channels of the Citiroc1A ASICs of FPGA 1 and 2 plotted vs the gain.}}{39}{figure.caption.30}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
