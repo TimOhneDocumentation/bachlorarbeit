@@ -6,7 +6,7 @@ Furthermore, several tests were performed to verify successful configuration of 
 such as disabling specific stages of the ASICs and routing probe signals using the probe register, as detailed in Section \ref{sec:probe_register}.
 \section{Frontend Electronics Characterization}
 \subsection{Comparison with Testboard Measurments} 
-A comperison of the threshold scan to one performed with the same configuration of the Citiroc1A ASIC on a by Weeroc provieded testboard with gain 58 is shown in Figure \ref{fig:threshold_scan_comparison_58}.% and 62 is shown in Figures \ref{fig:threshold_scan_comparison_58} and \ref{fig:threshold_scan_comparison_62}. 
+A comparison of the threshold scan to one performed with the same configuration of the Citiroc1A ASIC on a by Weeroc provieded testboard with gain 58 is shown in Figure \ref{fig:threshold_scan_comparison_58}.% and 62 is shown in Figures \ref{fig:threshold_scan_comparison_58} and \ref{fig:threshold_scan_comparison_62}. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{Runs_170_400_Gain_58.0_0_Channel_compare.png}
@@ -21,12 +21,12 @@ A comperison of the threshold scan to one performed with the same configuration 
  %   \label{fig:threshold_scan_comparison_62}
 %\end{figure}
 The pedestal of the threshold scan performed with the frontend electronics is far larger than the pedestal of the threshold scan performed with the by testboard.
-This difference in the observed behaviour of the frontend electronics can currently not be explained. The possibility of the Citiroc1A beeing wrongly configured was investigated and ruled out by testing for specific behaviours.
-Further test with an oscilloscope probe showed significant high frequency noise on the input signals of the Citiroc1A ASICs,
-which could be the cause of the observed behaviour, but further investigation is reqiured.(Old niose explenation new explenation needed)
+This difference in the observed behavior of the frontend electronics can currently not be explained. The possibility of the Citiroc1A being wrongly configured was investigated and ruled out by testing for specific behaviors.
+Further tests with an oscilloscope probe showed significant high frequency noise on the input signals of the Citiroc1A ASICs,
+which could be the cause of the observed behaviour, but further investigation is required.(Old noise explenation new explenation needed)
 
 \subsection{S-curve Analysis}
-In order to determine the optimal threshold and caracterize the noise of the Citiroc1A ASICs of FPGA 1 and 2, an S-curve analysis was performed.
+In order to determine the optimal threshold and characterize the noise of the Citiroc1A ASICs of FPGA 1 and 2, an S-curve analysis was performed.
 \newline
 The falling edge of the pedestal was fitted with the S-curve described in Section \ref{sec:noise_theory}
 \newline
@@ -80,11 +80,11 @@ A general trend of the standard deviation $\sigma$ of the S-curve increasing and
 From the S-curve analysis it can be observed that the channels of the Citiroc1A ASICs show different behaviour in the threshold scan.
 \newline
 Especially channel 27 of Citiroc1A 1 of FPGA 1 shows a significantly different behaviour compared to the other channels,
-as can be seen in Figure \ref{fig:Mean vs gain} and in the results of the thresholdscan shown in the Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}.
+as can be seen in Figure \ref{fig:Mean vs gain} and in the results of the threshold scan shown in the Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}.
 \newline
-Furthermore, for the threshold scan with gain 59 depicted in Figure \ref{fig:threshold_scan_59} , all the channels show diverging behaviour, this is also suspected to be beacause of the transition between the two gain regions.
+Furthermore, for the threshold scan with gain 59 depicted in Figure \ref{fig:threshold_scan_59} , all the channels show diverging behavior, this is also suspected to be beacause of the transition between the two gain regions.
 \newline
-The behaviour of channel 27 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and needs further investigation.
+The behavior of channel 27 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and needs further investigation.
 This could be investigated by performing a threshold scan with another FEE PCB and comparing the results.
 \subsection{Summary of the Characterisation}
 The threshold scan and the S-curve analysis show that the frontend electronics of the SFH are not performing as desired.

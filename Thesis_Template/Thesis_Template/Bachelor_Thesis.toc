@@ -27,7 +27,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Status and Control Register}{20}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Configuration State Machine}{21}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Verification State Machine}{23}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}The Provesional Readout}{24}{section.4.3}%
+\contentsline {section}{\numberline {4.3}The Provisional Readout}{24}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Testing the Firmware}{24}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Setup for the Threshold Scan}{24}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Theoretical Backround for the Threshold Scan}{26}{subsection.4.4.2}%
@@ -44,8 +44,8 @@
 \contentsline {chapter}{\numberline {7}Conclusion and Outlook}{41}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Conclusion}{41}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Outlook}{41}{section.7.2}%
-\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{43}{appendix.1.A}%
-\contentsline {chapter}{Appendix \numberline {B}Fit parameters of the S-curve analysis}{51}{appendix.1.B}%
-\contentsline {chapter}{Appendix \numberline {C}\ Code}{55}{appendix.1.C}%
+\contentsline {chapter}{Appendix \numberline {A}Configurable registers of the Citiroc1A ASIC}{43}{appendix.a.A}%
+\contentsline {chapter}{Appendix \numberline {B}Fit parameters of the S-curve analysis}{51}{appendix.a.B}%
+\contentsline {chapter}{Appendix \numberline {C}\ Code}{55}{appendix.a.C}%
 \babel@toc {english}{}\relax 
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

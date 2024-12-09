@@ -16,7 +16,7 @@ They can be attached on all four sides of the SFH, as can be seen in Figure \ref
 The fibers are connected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
 There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends produce an electric signal,
 a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
-To mittigate the cost of the frontend electronics, as well as limit the amount of data that has to be proccesed, a mirrored setup is planed.
+To mitigate the cost of the frontend electronics, as well as limit the amount of data that has to be processed, a mirrored setup is planed.
 In this setup only one end of the fibers is connected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
 \newline
 The incoming photons are transformed into electric signals by the SiPM arrays.
@@ -28,7 +28,7 @@ The whole setup is cooled by a water cooling system and is designed in a way tha
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{beschrifteterFEE.png}
-    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, inorder to test the SFH.
+    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, in order to test the SFH.
     The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
@@ -37,7 +37,7 @@ The FEE PCB incorporates six Citiroc1A ASICs, which are designed to amplify and 
 Each Citiroc1A ASIC handles 32 signals. The output of the ASICs is then transmitted to the iFTDC over three flex PCBs.
 Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
 \newline
-Currently for prototype testing the SFH is read out by the ADCs on the FEE PCB, as is illustrated on the right side of the FEE PCB in Figure \ref{fig:FEE}, but the final setup will use the iFTDC for the readout of the SFH.\autocite{InternalcommunicationKarl} 
+Currently, for prototype testing the SFH is read out by the ADCs on the FEE PCB, as is illustrated on the right side of the FEE PCB in Figure \ref{fig:FEE}, but the final setup will use the iFTDC for the readout of the SFH.\autocite{InternalcommunicationKarl} 
 \subsection{The iFTDC}\label{sec:iFTDC}
 \begin{figure}[H]
     \centering
@@ -56,7 +56,7 @@ It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a 
 \newline
 The Citiroc1A ASIC is controlled and readout by the Artix-7 FPGAs on the iFTDC, each FPGA controlling two Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
 The focus of this thesis is the development of the FPGA firmware for the control of the Citiroc1A ASICs,
-but a provesional readout firmware for testing the configuration of the Citiroc1A will also be developed.
+but a provisional readout firmware for testing the configuration of the Citiroc1A will also be developed.
 \subsection{Signal Proccesing of the Citiroc1A}
 \begin{figure}[h]
     \centering
@@ -79,7 +79,7 @@ The input signals are amplified with a variable high or low gain, configurable f
 The PRM experiment requires the maximal high gain of 62.\autocite{InternalcommunicationIgor}
 \newline
 The amplified signals are then shaped by either the slow (ssh) or fast shaper (fsh) as shown in Figure \ref{fig:CITIROC1A_TRIGEER}. 
-The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\second} peaking time and a better time resuliton, which is needed for the time precision of the SFH.\autocite{datasheetCITIROC}
+The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\second} peaking time and a better time resolution, which is neccessary for the time precision of the SFH.\autocite{datasheetCITIROC}
 \newline
 The ASIC has two discriminators, the charge discriminator and the time discriminator. In this thesis we will only look at the time discriminator,
 since it provides the time information.
@@ -134,7 +134,7 @@ One should only set the rising edge of the \textcolor{red}{Load\_sr} signal afte
     \label{fig:CITIROC1A_proberegiseter}
 \end{figure}
 The probe register is used for routing internal signals to several output pins for debugging purposes.
-It's functionality is ilustrated in Figure \ref{fig:CITIROC1A_proberegiseter}.
+Its functionality is illustrated in Figure \ref{fig:CITIROC1A_proberegiseter}.
 The register consists of 256 bits and is written the same way as the slow control register,
  with the difference that the bits are directly written into the Citiroc1A without requiring a rising edge on \textcolor{red}{Load\_sc}.\autocite{datasheetCITIROC}
 \newline
