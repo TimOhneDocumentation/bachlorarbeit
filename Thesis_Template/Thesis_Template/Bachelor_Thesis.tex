@@ -7,8 +7,12 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows, positioning}
 \tikzstyle{block} = [rectangle, draw, text centered, minimum height=3em, minimum width=4em]
+%\tikzstyle{block} = [draw, thick, rectangle, minimum height=1cm, minimum width=2cm, text centered, text width=2.5cm]
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \usepackage[top=31mm, left=25mm, right=25mm, bottom=30mm, headsep=8mm, footskip=12mm]{geometry}
+
+\usetikzlibrary{positioning, fit}
+\usetikzlibrary{shapes.multipart}
 \usepackage[english]{babel}    		
 \usepackage[utf8]{inputenc}         		% use of unicode (non ASCII) characters eg: ä, ö, ü
 \usepackage{graphicx}						% simple use of graphics
@@ -358,7 +362,7 @@
 %   Descripton of dicussion
 % -------------------------------
 \include{Chapters/results}
-\include{Chapters/discussion}
+%\include{Chapters/discussion}
 
 % -------------------------------
 %   Conclusion and Outlook
@@ -373,7 +377,7 @@
 \begin{appendices}							% start of appendix: numbering in capsize letters
 \include{Chapters/appendixB}
 \include{Chapters/appendixFitPar}
-\include{Chapters/appendix}
+%\include{Chapters/appendix}
 
 	
 \end{appendices}
@@ -402,7 +406,7 @@
 %   Acknowledgement
 % -------------------------------
 
-\include{Chapters/acknowledgement}
+%\include{Chapters/acknowledgement}
 \clearpage
 
 % -------------------------------

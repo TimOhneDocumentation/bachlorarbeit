@@ -1,20 +1,24 @@
 \chapter{Conclusion and Outlook}
+\noindent
+\section{Personal Contribution}
+In this thesis, I developed the firmware and software, 
+for the three FPGAs of the frontend electronics of the scintillating fiber hodoscope (SFH) responsible for the control and provisional readout of the Citiroc1A ASICs.
+\newline
+For this, I structured the firmware hierarchically into different modules, responsible for the configuration of the Citiroc1A ASICs, communication with the controling computer and the readout of the ASICs and developed it in VHDL using Xilinx Vivado.
+\newline
+I tested the firmware and characterized the frontend electronics with a threshold scan and an S-curve analysis.
 \section{Conclusion}
-In this thesis, the firmware for two of the three FPGAs of the frontend electronics of the scintillating fiber hodoscope (SFH) responsible for the control and provisional readout of the Citiroc1A ASICs was developed and tested.
-For this, the firmware was hierarchically structured into different modules, responsible for the configuration of the Citiroc1A ASICs, communication with the controling computer and the readout of the ASICs and devloped in VHDL using Xilinx Vivado.
-The firmware was tested by characterizing the frontend electronics with a threshold scan and an S-curve analysis.
 The threshold scan shows that the Citiroc1A ASICs can be successfully configured, but that the frotend electronics show abnormal behaviour.
-This could be due to high frequency noise causing some unexpected behavior in the Citiroc1A ASICs, but this has to be investigated further.
-We conclude that the developed firmware allows for the configuration and provisional readout of the Citiroc1A ASICs, 
+I conclude that the developed firmware allows for the configuration and provisional readout of the Citiroc1A ASICs, 
 but that the frontend electronics of the SFH are not performing as desired.
 
 \section{Outlook}
-The next steps in the development of the frontend electronics for the SFH are, the devolopment of the firmware for the third FPGA,
+The next steps in the development of the frontend electronics for the SFH are,
 the integration of this part of the firmware with the rest of the frontend electronics and the final readout of the SFH.
-Moreover, additional investigation into the abnormal behaviour of the frontend electronics observed during the threshold scan is required.
+Moreover, additional investigation into the abnormal behaviour of the frontend electronics observed during the noise measurement is required.
 \newline
 This could be accomplished using the internal probing capabilities of the Citiroc1A ASICs.
-Furthermore more tests with different FEE PCBs could be performed to investigate the origin of the observed behaviour.
+Furthermore, tests with different FEE PCBs could be performed to investigate the origin of the observed behaviour.
 \newline
 By conducting these proposed steps and completing the development of the frontend electronics,
-the scintillating fiber hodoscope will be one step closer to being fully operational and performing its role in the PRM experiment and solving the proton radius puzzle.
+the scintillating fiber hodoscope will be one step closer to being fully operational and performing its role in the PRM experiment and help solve the proton radius puzzle.

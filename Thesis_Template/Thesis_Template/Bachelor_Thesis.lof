@@ -7,37 +7,35 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Unified tracking station (UTS) with three layers of pixilized silicon detectors (ALPIDEs) and the scintillating fiber hodoscope (SFH).\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{6}{figure.caption.3}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Scintillating fiber hodoscope (SFH) with two of the four layers of scintillating fibers installed. The frontend electronics are not attached.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{7}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl} }}{9}{figure.caption.5}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, in order to test the SFH. The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{10}{figure.caption.6}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}}{11}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl} }}{10}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs. The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl}}}{11}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The signals used by the FPGA to control and readout the two Citiroc1A ASICs.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{11}{figure.caption.7}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces General ASIC block scheme of the Citiroc1A.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{12}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces The two configurable registers of the Citiroc1A are selected using the \textcolor {red}{Select} signal. The FPGA communicates with the Citiroc1A through the signals \textcolor {red}{Clk\_sr}, \textcolor {red}{Rstb\_sr}, \textcolor {red}{Srin\_sr}, and \textcolor {red}{Load\_sr}, while the \textcolor {red}{Srout} signal is sent back from the Citiroc1A to the FPGA for verification.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces The slow control chronogram, depicting the bitstream writing process controled by \textcolor {red}{Clk\_sr} the clock signal and \textcolor {red}{Srin\_sr} the data signal. A rising edge of \textcolor {red}{Load\_sr} is required, after successful verification with the \textcolor {red}{Srout} signal to load the slow control register.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Scheme block of internal probing system, allowing the routing of internal signals to probe pins for debugging purposes. It is configured via the probe register.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces The two configurable registers of the Citiroc1A are selected using the \textcolor {red}{Select} signal. The FPGA communicates with the Citiroc1A through the signals \textcolor {red}{Clk\_sr}, \textcolor {red}{Rstb\_sr}, \textcolor {red}{Srin\_sr}, and \textcolor {red}{Load\_sr}, while the \textcolor {red}{Srout} signal is sent back from the Citiroc1A to the FPGA for verification.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces The slow control chronogram, depicting the bitstream writing process controled by \textcolor {red}{Clk\_sr} the clock signal and \textcolor {red}{Srin\_sr} the data signal. A rising edge of \textcolor {red}{Load\_sr} is required, after successful verification with the \textcolor {red}{Srout} signal to load the slow control register.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Scheme block of internal probing system, allowing the routing of internal signals to probe pins for debugging purposes. It is configured via the probe register.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{15}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}}{17}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure of the firmware developed for this thesis. The black arrows represent the true hierarchical connections between the moduls, while the blue arrows indicate connections that are semantically correct but are routed through higher-level modules.}}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Structure of the status and control register of the Citiroc1A interface. The specified commands are executed when the bits are set to 1. }}{20}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Finite state machine for configuring the Citiroc1A ASIC. States associated with the same processes are highlighted using the same color.}}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Finite state machine for verifying the configuration of the Citiroc1A ASIC. States belonging to the same processes are represented with the same color.}}{23}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Experimental setup for the threshold scan of the frontend electronics of the scintillating fiber hodoscope.}}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Experimental setup for the threshold scan with a testboard provided by Weeroc.}}{26}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Hierarchical structure of the firmware, where each module contains its submodules. The black arrows indicate connections that are semantically correct but are routed through higher-level modules.}}{20}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Structure of the status and control register of the Citiroc1A interface. The specified commands are executed when the bits are set to 1. }}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Finite state machine for configuring the Citiroc1A ASIC. States associated with the same processes are highlighted using the same color.}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Finite state machine for verifying the configuration of the Citiroc1A ASIC. States belonging to the same processes are represented with the same color.}}{25}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Experimental setup for the noise measurement of the frontend electronics of the scintillating fiber hodoscope.}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Experimental setup for the noise measurment with an Evaluation Board provided by Weeroc company.}}{28}{figure.caption.27}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 58 from threshold 0 to 800.}}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 59 from threshold 0 to 800.}}{31}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 60 from threshold 0 to 800.}}{32}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 61 from threshold 0 to 800.}}{33}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 62 from threshold 0 to 800.}}{34}{figure.caption.24}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Comparison of the threshold scan of the frontend electronics to the threshold scan performed on a by Weeroc provided testboard with a gain of 58.}}{36}{figure.caption.25}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 60.}}{37}{figure.caption.26}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 61.}}{37}{figure.caption.27}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 62.}}{38}{figure.caption.28}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Results of the S-curve analysis for all channels of the Citiroc1A ASICs of FPGA 1 and 2 with gain 62.}}{38}{figure.caption.29}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Mean $\mu $ and standard deviation $\sigma $ determined from the S-curve fits for all channels of the Citiroc1A ASICs of FPGA 1 and 2 plotted vs the gain.}}{39}{figure.caption.30}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 58 from threshold 0 to 800.}}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 59 from threshold 0 to 800.}}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 60 from threshold 0 to 800.}}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 61 from threshold 0 to 800.}}{35}{figure.caption.31}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Threshold scan of the Citiroc1A ASICs of FPGA 1 and 2 for gain 62 from threshold 0 to 800.}}{36}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 60.}}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 61.}}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Results of the S-curve analysis for channel 0 of Citiroc1A 1 of FPGA 1 with gain 62.}}{38}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Results of the S-curve analysis for all channels of the Citiroc1A ASICs of FPGA 1 and 2 with gain 62.}}{39}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Mean $\mu $ and standard deviation $\sigma $ determined from the S-curve fits for all channels of the Citiroc1A ASICs of FPGA 1 and 2 plotted vs the gain.}}{40}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparison of the threshold scan of the frontend electronics to the threshold scan performed on a by Weeroc company provided Evaluation Board with a gain of 58.}}{41}{figure.caption.38}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

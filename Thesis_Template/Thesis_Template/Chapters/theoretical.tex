@@ -1,11 +1,11 @@
-\chapter{Theoretical Concepts and Overview of AMBER}\label{cha:theory}
+\chapter{The AMBER Experiment}\label{cha:theory}
 %What is atached in sfh picture
 
 %previous mesurments garpic has to be explainedn more in detail
 %explain noise measurment
-
+\noindent
 \section{Measurment of the Charge Radius of the Proton (PRM)}\label{sec:proton_radius}
-The proton is a baryon, a composite particle made up of one down quark and two up quarks.
+The proton is a baryon, a composite particle made up of one down and two up quarks.
 From this follows that the proton is not a point particle, but has an internal sturucture.\autocite{Workman:2836514}
 \newline
 The internal structure can be described by the structure functions of the proton, 
@@ -25,7 +25,7 @@ The results of these measurements differ by five standard deviations as shown in
 this has given rise to the so called proton radius puzzle.\autocite{ProposalAmber}
 
 \subsection{Elastic Scattering of Muons on Protons}
-The AMBER PRM experiment at CERN aims to help reslove the proton radius puzzle, by measuring the elastic scattering of muons on protons.
+The AMBER PRM experiment at CERN aims to help reslove the puzzle, by measuring the elastic scattering of muons on protons.
 The first order cross section, taking into account only interactions where one virtual photon was exchanged, 
 for the elastic scattering of muons on a proton target is 
 %INSERT: maybe  here more explantation 
@@ -91,15 +91,7 @@ is used to measure the precise timing(\SI{300}{\pico\second}\Autocite{Amber2022S
 Every SFH contains four layers of scintillating fibers, two in x and two in y direction.
 Each layer is made up of 192\autocite{Amber2022Status}, 500 $\mu m$ thick\autocite{Amber2024Status} fibers, in total 768\autocite{Amber2022Status} fibers per SFH. 
 When charged particels, muons in this case, pass through a scintillating fiber they excite the scintillating material, 
-which then emits photons. Both ends of every fiber are connected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
-that is then proccesed by the frontend electronics. To minimize cost and the amount of data that has to be processed, a mirrored readout is planned, 
-where only one end is connected to the SiPM array and the other end is mirrored.\autocite{InternalcommunicationKarl}
+which then emits photons. One end of every fiber are connected to a silicon photomultiplier (SiPM) which converts the photons into an electrical signal,
+that is then proccesed by the frontend electronics.\autocite{InternalcommunicationKarl}
 
-\section{Field Programmable Gate Arrays (FPGA)}\label{sec:FPGA}
-Field Programmable Gate Arrays (FPGAs) are integrated circuits that can be programmed after manufacturing.
-FPGA are made up of a grid of programmable logic blocks (PLBs) and programmable interconnects.
-They posses the advantage of beeing flexible, reconfigurable and beeing able to process large amounts of data in parallel.
-The frontend electronics for the SFH reqiure large amounts of data to be processed in real time, which makes FPGAs with their large data throughput and parallel processing capabilities ideal for this task.\autocite{FPGA_reviewDSP}
-\newline
-The FPGA used in the frontend electronics for the scintillating fiber hodoscope is part of the Xilinx Artix-7 family.\autocite{InternalcommunicationIgor}
 

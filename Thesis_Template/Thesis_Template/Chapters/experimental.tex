@@ -2,7 +2,15 @@
 
 %table of slow control register has to be checked
 %DAC output voltage (\SI{5}{\volt}) has to be understood
-
+\noindent
+\section{Field Programmable Gate Arrays (FPGA)}\label{sec:FPGA}
+The frontend electronics for the scintillating fiber hodoscope (SFH) are based on Field Programmable Gate Arrays (FPGAs).
+Field Programmable Gate Arrays (FPGAs) are integrated circuits that can be programmed after manufacturing.
+FPGA are made up of a grid of programmable logic blocks (PLBs) and programmable interconnects.
+They posses the advantage of beeing flexible, reconfigurable and beeing able to process large amounts of data in parallel.
+The frontend electronics for the SFH reqiure large amounts of data to be processed in real time, which makes FPGAs with their large data throughput and parallel processing capabilities ideal for this task.\autocite{FPGA_reviewDSP}
+\newline
+The FPGA used in the frontend electronics for the scintillating fiber hodoscope is part of the Xilinx Artix-7 family.\autocite{InternalcommunicationIgor}
 \section{Overview of the Frontend Electronics}
 \begin{figure}[h]
     \centering
@@ -12,51 +20,50 @@
     \end{figure}
 \subsection{Proccesing of the SFH Signal}
 The frontend electronics of the scintillating fiber hodoscope process the signals from the scintillating fibers.
-They can be attached on all four sides of the SFH, as can be seen in Figure \ref{SFHpicture}.
-The fibers are connected to the fiber holders on both ends as shown in Figure \ref{fig:SideviewModelElectronics}. 
-There are in total 768\autocite{Amber2022Status} fibers per SFH. Since both ends produce an electric signal,
-a total of 1546 signals have to be proccesed. This would require a total of 48 Citiroc1A ASICs, spread over 8 frontend electronics units. 
-To mitigate the cost of the frontend electronics, as well as limit the amount of data that has to be processed, a mirrored setup is planed.
-In this setup only one end of the fibers is connected to the SiPM array, while the other end is mirrored. This would reduce the amount of reqiured frontend electronics units to 4.\autocite{InternalcommunicationKarl}
+They are attached on all four sides of the SFH, as shown in Figure \ref{SFHpicture}.
+\newline 
+Two types of readout are considered for the SFH, a mirrored readout and a non-mirrored readout.
+In the mirrored scenario only one end of the fibers is connected to the SiPM array and the other end is mirrored,
+while in the nom mirrored readout both ends are connected.\autocite{InternalcommunicationKarl}
 \newline
-The incoming photons are transformed into electric signals by the SiPM arrays.
-The SiPM signals are then transmitted to the analog frontend electronics (FEE) PCB by the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.
+The mirrored scenario has the advantage of only requiring 4 instead of 8 frontend elctronics units, halving the amount of channels and thus the amount of data that has to be processed.
+Furthermore, test beam measurements show that the mirrored readout has a higher efficiency than the non-mirrored readout.\autocite{InternalcommunicationIgor}
 \newline
-The FEE PCB and the iFTDC are the two main components of the frontend electronics, as shown in Figure \ref{fig:SideviewModelElectronics}, and are connected over three flex PCBs as well as plug connectors.
-The whole setup is cooled by a water cooling system and is designed in a way that minimizes its size in order to reduce the amount of material in the beamline.\autocite{InternalcommunicationKarl}    
-\subsection{The Analog Frontend Electronics (FEE) PCB}
+Due to these advantages currently the mirrored configuration is planed for the SFH.\autocite{InternalcommunicationKarl}
+\newline
+Each SFH posses 768 fibers, for the mirrored configuration this results in 768 signals that have to be processed, spread out over 4 frontend electronics units each handling 192 signals. 
+\newline
+The fibers are connected to the fiber holders as shown in Figure \ref{fig:SideviewModelElectronics}.
+The incoming photons are converted into electric signals by the SiPM arrays.
+\newline
+These are then transmitted to the heart of the frontend electronics via the interposer PCB also shown in Figure \ref{fig:SideviewModelElectronics}.
+\newline
+The heart of the frontend electronics is made up of two components, the FEE PCB and iFTDC stacked on top of each other,
+connected by three flex PCBs and plug connectors.
+\newline
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{beschrifteterFEE.png}
-    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs, on the left side the power supply and on the right side ADCs for temporary readout, in order to test the SFH.
+    \caption{The analog frontend electronics (FEE) PCB with the six Citiroc1A ASICs.
     The output of the Citiroc1A ASICs is transmitted to the iFTDC over three flex PCBs.\autocite{InternalcommunicationKarl}}
     \label{fig:FEE}
 \end{figure}
-The analog frontend electronics (FEE) PCB, shown in Figure \ref{fig:FEE}, together with the iFTDC forms the heart of the frontend electronics.
-The FEE PCB incorporates six Citiroc1A ASICs, which are designed to amplify and process the signals from the SiPM arrays.
-Each Citiroc1A ASIC handles 32 signals. The output of the ASICs is then transmitted to the iFTDC over three flex PCBs.
-Two Citirroc1A ASICs are each controlled by one Artix-7 FPGA located on the iFTDC.\autocite{InternalcommunicationIgor}
+The analog frontend electronics (FEE) PCB, illustrated in Figure \ref{fig:FEE}, incorporates six Citiroc1A ASICs, each handling 32 channels.
+The SiPM signals are amplified, shaped and dicsriminated by the Citiroc1A ASICs  and then transmitted to the iFTDC over the three flex PCBs.
 \newline
-Currently, for prototype testing the SFH is read out by the ADCs on the FEE PCB, as is illustrated on the right side of the FEE PCB in Figure \ref{fig:FEE}, but the final setup will use the iFTDC for the readout of the SFH.\autocite{InternalcommunicationKarl} 
-\subsection{The iFTDC}\label{sec:iFTDC}
+The FPGA housed on the iFTDC, described in Section \ref{sec:iFTDC},
+reads these signals out and processes them as well as controlling the Citiroc1A ASICs with the signals shown in Figure \ref{fig:FPGA_sigs}.\autocite{InternalcommunicationIgor}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg}
-    \caption{The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}
-    \label{fig:iFTDC}
+    \includegraphics[width=0.8\textwidth]{FPGA_sig.png}
+    \caption{The signals used by the FPGA to control and readout the two Citiroc1A ASICs.\autocite{datasheetCITIROC}}
+    \label{fig:FPGA_sigs}
 \end{figure}
 
-The iFTDC, depicted in Figure \ref{fig:iFTDC} is a FPGA based time-to-digital converter. It consists of three Artix-7 FPGA, who each control two Citiroc1A ASICs.
-The FPGA handels the readout as well as the configuration of the Citiroc1A ASICs\autocite{InternalcommunicationIgor}.
-\newline
-The FPGAs are programmed via jtag and connected to the controling computer via ethernet.
+
 \section{The Citiroc1A ASIC}
-The Citiroc1A ASIC is a frontend application-specific integrated circuit developed by Weeroc for the readout of SiPM detectors.
+The Citiroc1A ASIC is a Application-Specific Integrated Circuit developed by Weeroc company for the readout of SiPM detectors.
 It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a photoelectron.\autocite{datasheetCITIROC}
-\newline
-The Citiroc1A ASIC is controlled and readout by the Artix-7 FPGAs on the iFTDC, each FPGA controlling two Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
-The focus of this thesis is the development of the FPGA firmware for the control of the Citiroc1A ASICs,
-but a provisional readout firmware for testing the configuration of the Citiroc1A will also be developed.
 \subsection{Signal Proccesing of the Citiroc1A}
 \begin{figure}[h]
     \centering
@@ -73,20 +80,20 @@ but a provisional readout firmware for testing the configuration of the Citiroc1
 \end{figure}
 The general block scheme of the Citiroc1A is shown in Figure \ref{fig:CITIROC1A_TRIGEER}.
 \newline
-The Citiroc1A allows for the fine tuning of the SiPM bias voltage for each channel via the 8-bit input DAC.
+The Citiroc1A allows fine tuning of the SiPM bias voltage for each channel via the 8-bit input DAC.
 \newline	
-The input signals are amplified with a variable high or low gain, configurable for every channel as depicted in Figure \ref{HighGain}. 
+The input signals are amplified with a for every channel configurable high or low gain by an integrator as depicted in Figure \ref{HighGain}.
+The high gain is adjustable from 0 to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps, via a 6 bit dac.\autocite{datasheetCITIROC}
 The PRM experiment requires the maximal high gain of 62.\autocite{InternalcommunicationIgor}
 \newline
 The amplified signals are then shaped by either the slow (ssh) or fast shaper (fsh) as shown in Figure \ref{fig:CITIROC1A_TRIGEER}. 
-The fast shaper is used for the PRM experiment, since it has a \SI{15}{\nano\second} peaking time and a better time resolution, which is neccessary for the time precision of the SFH.\autocite{datasheetCITIROC}
+The fast shaper is used for the PRM experiment, since it has a better time resolution, which is important for the SFH performance.\autocite{datasheetCITIROC}
 \newline
-The ASIC has two discriminators, the charge discriminator and the time discriminator. In this thesis we will only look at the time discriminator,
+Each channel of the ASIC has two discriminators, namely the charge discriminator and the time discriminator. In this thesis i discuss only the time discriminator,
 since it provides the time information.
-The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every individual channel as shown in Figure \ref{fig:CITIROC1A_TRIGEER}\autocite{datasheetCITIROC}.
+The time discriminator threshold is adjustable via a 10 bit dac for all channels and an additional 4 bit dac for every channel individually, as shown in Figure \ref{fig:CITIROC1A_TRIGEER}\autocite{datasheetCITIROC}.
 
-
-\section{Configuration of the Citiroc1A}\label{sec:configuration}
+\subsection{Configuration of the Citiroc1A}\label{sec:configuration}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{CitirocConfigHighqual.png}
@@ -98,7 +105,7 @@ The time discriminator threshold is adjustable via a 10 bit dac for all channels
 The configuration of the Citiroc1A is achievied by the FPGA via the five signals shown in Figure \ref{fig:CITIROC1A_config}.
 The \textcolor{red}{Select} signal allowes the choice between configuring the slow control, for \textcolor{red}{Select} = 1  or the probe register, for \textcolor{red}{Select} = 0.\autocite{datasheetCITIROC}
 
-\subsection{The Slow Control Register}
+\subsubsection{The Slow Control Register}
 
 \begin{figure}
     \centering
@@ -126,7 +133,7 @@ The \textcolor{red}{Srout} signal is sent back from the Citiroc1A to the FPGA fo
 Only after the FPGA has sent the full bitstream twice, does the \textcolor{red}{Srout} signal take on the value of the bitstream, since the \textcolor{red}{Srout} signal is shifted by the length of the bitstream.\autocite{datasheetCITIROC}
 One should only set the rising edge of the \textcolor{red}{Load\_sr} signal after verifying that the \textcolor{red}{Srout} signal takes on the correct values.
 
-\subsection{The Probe Register}\label{sec:probe_register}
+\subsubsection{The Probe Register}\label{sec:probe_register}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{ProbeRegister.png}
@@ -156,6 +163,18 @@ The internal signals for each channel that can be routed to the output pins are 
     \label{tab:probe_register}
 \end{table}
 Only one signal can be routed to each output pin at a time, without potentially causing a short circuit.\autocite{datasheetCITIROC}
+\subsection{The iFTDC}\label{sec:iFTDC}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg}
+    \caption{The iFTDC with three Artix-7 FPGA, the three flex PCBs that connect the iFTDC with the FEE PCB and the connected power suply.}
+    \label{fig:iFTDC}
+\end{figure}
+
+The iFTDC, depicted in Figure \ref{fig:iFTDC} is a FPGA based time-to-digital converter. It houses three Artix-7 FPGA.
+Each FPGA handels the readout as well as the control  of two of the Citiroc1A ASICs.\autocite{InternalcommunicationIgor}
+\newline
+The FPGA firmware is loaded via jtag. The control and readout of the FPGAs is performed via Ethernet.
 
 
 
