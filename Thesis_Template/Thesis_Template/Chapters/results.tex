@@ -2,7 +2,7 @@
 \noindent
 \section{Noise Measurements}
 For the noise measurement, the threshold was scanned in steps of 1 for a range of high gains,
-starting with gain 58 and ending with the maxmial gain of 62.
+starting with a gain of 58 and ending with a maximal gain of 62.
 \newline
 The number of hits was measured for each of the 32 channels of the ASICs within a time interval of \SI{400}{\milli\second}.
 The threshold scan was performed for both the ASICs of FPGA 1 and 2.
@@ -45,19 +45,19 @@ The results of the threshold scan are shown for both ASICs of FPGA 1 and 2 for g
     \end{figure}
     \section{Frontend Electronics Characterization}
     \subsection{Firmware Evaluation}
-    Before performing the final noise measurments I thorougly verified the firmware functionality by performing the following tests:
+    Before performing the final noise measurements, I thoroughly verified the firmware functionality by performing the following tests:
     \begin{itemize}
         \item Using the internal probing capabilities of the Citiroc1A to verify the configuration of the ASICs, described in Section \ref{sec:probe_register}.
-        \item Turning of individual channels of the ASICs by turning of the amplification of the the channels or setting it to a low gain.
-        \item Disabling spesific stages of the ASIC, such as the fast shaper or the time discriminator.
-        \item Using the output configuration of the Citiroc1A to turn of all triggers of the ASICs.
+        \item Turning off individual channels of the ASICs by turning off the amplification of the channels or setting it to a low gain.
+        \item Disabling specific stages of the ASIC, such as the fast shaper or the time discriminator.
+        \item Using the output configuration of the Citiroc1A to turn off all triggers of the ASICs.
     \end{itemize}
     \subsection{S-curve Analysis}
     In order to determine the optimal threshold and characterize the noise of the ASICs of FPGA 1 and 2, an S-curve analysis was performed.
     \newline
     The falling edge of the pedestal is fitted with the S-curve described in Section \ref{sec:noise_theory}
     \newline
-    The results of the S-curve analysis are shown exemplary for channel 0 of Citiroc1A 1 of FPGA 1 with gain 60,61 and 62 in Figures \ref{fig:S_curve_60}, \ref{fig:S_curve_61} and \ref{fig:S_curve_62}.
+    The results of the S-curve analysis are shown exemplarily for channel 0 of Citiroc1A 1 of FPGA 1 with gain 60,61 and 62 in Figures \ref{fig:S_curve_60}, \ref{fig:S_curve_61} and \ref{fig:S_curve_62}.
     
     \begin{figure}[H]
         \centering
@@ -85,7 +85,7 @@ The results of the threshold scan are shown for both ASICs of FPGA 1 and 2 for g
         \caption{Results of the S-curve analysis for all channels of the Citiroc1A ASICs of FPGA 1 and 2 with gain 62.}
         \label{fig:S_curve_62_ALL}
     \end{figure}
-    The mean $\mu$ and the standard deviation $\sigma$ of the noise distribution that were determined from the S-curve fits and are shown in Appendix \ref{cha:appendixFitPar}.
+    The mean $\mu$ and the standard deviation $\sigma$ of the noise distribution were determined from the S-curve fits and are shown in Appendix \ref{cha:appendixFitPar}.
     They are plotted against the gain for all channels in Figure \ref{fig:Mean vs gain}.
     \begin{figure}[H]
         \centering
@@ -95,7 +95,7 @@ The results of the threshold scan are shown for both ASICs of FPGA 1 and 2 for g
     \end{figure}
     
     \subsection{Comparison with Evaluation Board} 
-    A comparison of the threshold scan to one performed with the same configuration of the Citiroc1A ASIC on a by Weeroc company provieded Evaluation Board with gain 58 is shown in Figure \ref{fig:threshold_scan_comparison_58}.% and 62 is shown in Figures \ref{fig:threshold_scan_comparison_58} and \ref{fig:threshold_scan_comparison_62}. 
+    A comparison of the threshold scan to one performed with the same configuration of the Citiroc1A ASIC on a by Weeroc company provided Evaluation Board with gain 58 is shown in Figure \ref{fig:threshold_scan_comparison_58}.% and 62 is shown in Figures \ref{fig:threshold_scan_comparison_58} and \ref{fig:threshold_scan_comparison_62}. 
     \begin{figure}[H]
         \centering
         \includegraphics[width=1.0\textwidth]{Runs_170_400_Gain_58.0_0_Channel_compare.png}
@@ -105,37 +105,37 @@ The results of the threshold scan are shown for both ASICs of FPGA 1 and 2 for g
     
  
     The pedestal of the threshold scan performed with the frontend electronics is far larger than the pedestal of the threshold scan performed with the Evaluation Board.
-    This difference in the observed behavior of the frontend electronics can currently not be explained.
-    The possibility of the Citiroc1A being wrongly configured was investigated and ruled out by testing for specific behaviors.
+    This difference in the observed behaviour of the frontend electronics can currently not be explained.
+    The possibility of the Citiroc1A being wrongly configured was investigated and ruled out by testing for specific behaviours.
   
-    \subsection{Behavior at different Gain Setting}
-    The threshold scan of the Citiroc1A ASICs in the frontend electronics shows different behavior for gain ranges of 0 to 58 (Figure \ref{fig:threshold_scan_58}) and 60 to 62 (Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}),
-    with the threshold scan at gain 59 showing a transition between the two behaviors depicted in Figure \ref{fig:threshold_scan_59}.
+    \subsection{Behaviour at different Gain Setting}
+    The threshold scan of the Citiroc1A ASICs in the frontend electronics shows different behaviour for gain ranges of 0 to 58 (Figure \ref{fig:threshold_scan_58}) and 60 to 62 (Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}),
+    with the threshold scan at gain 59 showing a transition between the two behaviours depicted in Figure \ref{fig:threshold_scan_59}.
     This difference is also currently not understood and is suspected to have the same cause as the difference in the threshold scan compared to the Evaluation Board measurement. 
     \newline
     A general trend of the standard deviation $\sigma$ of the S-curve increasing and the mean $\mu$ decreasing with higher gain is observed in Figure \ref{fig:Mean vs gain}.
-    \subsection{Channel Behavior Analysis}
-    From the S-curve analysis it can be observed that the channels of the Citiroc1A ASICs show different behavior in the threshold scan.
+    \subsection{Channel Behaviour Analysis}
+    From the S-curve analysis it can be observed that the channels of the Citiroc1A ASICs show different behaviour in the threshold scan.
     \newline
-    Especially channel 6 of Citiroc1A 1 of FPGA 1 shows a significantly different behavior compared to the other channels,
-    as can be seen in Figure \ref{fig:Mean vs gain} and in the results of the threshold scan shown in the Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}.
+    Especially channel 6 of Citiroc1A 1 of FPGA 1 shows a significantly different behaviour compared to the other channels,
+    as can be seen in Figure \ref{fig:Mean vs gain} and in the results of the threshold scan shown in Figures \ref{fig:threshold_scan_60}, \ref{fig:threshold_scan_61} and \ref{fig:threshold_scan_62}.
     \newline
-    Furthermore, for the threshold scan with gain 59 depicted in Figure \ref{fig:threshold_scan_59} , all the channels show diverging behavior, this is also suspected to be beacause of the transition between the two gain regions.
+    Furthermore, for the threshold scan with gain 59 depicted in Figure \ref{fig:threshold_scan_59} , all the channels show diverging behaviour, this is also suspected to be because of the transition between the two gain regions.
     \newline
-    The behavior of channel 6 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and needs further investigation.
+    The behaviour of channel 6 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and needs further investigation.
     This could be investigated by performing a threshold scan with another FEE PCB and comparing the results.
     \subsection{Summary of the Characterisation}
     The threshold scan and the S-curve analysis show that the frontend electronics of the SFH do not perform as expected.
-    The noise behavior at different gains is not consistent with the change of the gain value.
+    The noise behaviour at different gains is not consistent with the change of the gain value.
     \newline
     Due to this, a calibration of the individual channels of the frontend electronics is not yet possible.
-    The cause of the observed behavior is currently under investigation. The following sources are being considered:
+    The cause of the observed behaviour is currently under investigation. The following sources are being considered:
     \begin{itemize}
         \item Ripple noise on the power supplies of the frontend electronics.
-        \item Software error, that causes the ASIC to be configured with a wrong configuration.
+        \item Software error that causes the ASIC to be configured with a wrong configuration.
         \item Mistake in the circuit diagram or the layout of the PCBs. 
     \end{itemize}
-    Furthermore, the behavior of channel 6 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and also needs further investigation.
+    Furthermore, the behaviour of channel 6 of Citiroc1A 1 of FPGA 1 seems to have a different cause than the gain transition and also needs further investigation.
     
     
 
