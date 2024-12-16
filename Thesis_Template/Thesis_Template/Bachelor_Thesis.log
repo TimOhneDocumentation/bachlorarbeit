@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  16 DEC 2024 00:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  16 DEC 2024 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1673,7 +1673,7 @@ Package pdftex.def Info: Images/CONFIGSMALLdiagramfarbe2900.png  used on input l
 <Images/smallVerifacationdiagrammodfarbe.png, id=441, 310.35332pt x 216.82854pt>
 File: Images/smallVerifacationdiagrammodfarbe.png Graphic file (type png)
 <use Images/smallVerifacationdiagrammodfarbe.png>
-Package pdftex.def Info: Images/smallVerifacationdiagrammodfarbe.png  used on input line 171.
+Package pdftex.def Info: Images/smallVerifacationdiagrammodfarbe.png  used on input line 172.
 (pdftex.def)             Requested size: 455.24411pt x 318.06248pt.
 
 
@@ -1683,7 +1683,7 @@ Package pdftex.def Info: Images/smallVerifacationdiagrammodfarbe.png  used on in
 <Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg, id=458, 2055.68pt x 1790.69pt>
 File: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg Graphic file (type jpg)
 <use Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg>
-Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg  used on input line 214.
+Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg  used on input line 215.
 (pdftex.def)             Requested size: 364.19667pt x 317.22809pt.
 
 
@@ -1691,7 +1691,7 @@ Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jp
 <Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg, id=465, 1505.625pt x 2007.5pt>
 File: Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg Graphic file (type jpg)
 <use Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg>
-Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg  used on input line 226.
+Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg  used on input line 227.
 (pdftex.def)             Requested size: 364.19667pt x 485.57758pt.
 
 
@@ -2084,13 +2084,13 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis.run.xml'.
 Here is how much of TeX's memory you used:
  49291 strings out of 473361
  1053253 string characters out of 5725029
- 2279691 words of memory out of 5000000
+ 2279698 words of memory out of 5000000
  71487 multiletter control sequences out of 15000+600000
  567569 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,20n,109p,10973b,3588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Bachelor_Thesis.pdf (71 pages, 21765891 bytes).
+Output written on Bachelor_Thesis.pdf (71 pages, 21765988 bytes).
 PDF statistics:
  1083 PDF objects out of 1200 (max. 8388607)
  887 compressed objects within 9 object streams

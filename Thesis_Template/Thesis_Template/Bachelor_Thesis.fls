@@ -1,8 +1,8 @@
-PWD c:/Users/ge42tig/Bachlorarbeit/Thesis_Template/Thesis_Template
+PWD c:/Users/j/OneDrive/Desktop/Unistuff/Bachelorarbeit/DIE_ARBEIT/Thesis_Template/Thesis_Template
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/ge42tig/Bachlorarbeit/Thesis_Template/Thesis_Template/Bachelor_Thesis.tex
+INPUT c:/Users/j/OneDrive/Desktop/Unistuff/Bachelorarbeit/DIE_ARBEIT/Thesis_Template/Thesis_Template/Bachelor_Thesis.tex
 OUTPUT Bachelor_Thesis.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -676,10 +676,10 @@ INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
