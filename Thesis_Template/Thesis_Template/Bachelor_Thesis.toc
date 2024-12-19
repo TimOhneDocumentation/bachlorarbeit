@@ -11,9 +11,9 @@
 \contentsline {chapter}{\numberline {3}Frontend Electronic of the Scintillating Fiber Hodoscope}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Field Programmable Gate Arrays (FPGA)}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Overview of the Frontend Electronics}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Proccesing of the SFH Signal}{9}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{12}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Signal Proccesing of the Citiroc1A}{12}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.2.1}Processing of the SFH Signal}{9}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Signal Processing of the Citiroc1A}{12}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Configuration of the Citiroc1A}{13}{subsection.3.3.2}%
 \contentsline {subsubsection}{\nonumberline The Slow Control Register}{14}{subsubsection*.12}%
 \contentsline {subsubsection}{\nonumberline The Probe Register}{15}{subsubsection*.15}%
@@ -31,19 +31,19 @@
 \contentsline {section}{\numberline {4.5}Testing the Firmware}{26}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Setup for the Noise Measurement}{26}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Theoretical Background for the Noise Measurement}{28}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Measurment Results}{31}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Measurement Results}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Noise Measurements}{31}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Frontend Electronics Characterization}{36}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Firmware Evaluation}{36}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}S-curve Analysis}{37}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Comparison with Evaluation Board}{41}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Behaviour at different Gain Setting}{42}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.3}Comparison with Evaluation Board}{40}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Behaviour at different Gain Setting}{41}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Channel Behaviour Analysis}{42}{subsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.2.6}Summary of the Characterisation}{42}{subsection.5.2.6}%
-\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Personal Contribution}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Conclusion}{45}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Outlook}{45}{section.6.3}%
-\contentsline {chapter}{Appendix \numberline {A}Configurable Registers of the Citiroc1A ASIC}{47}{appendix.a.A}%
-\contentsline {chapter}{Appendix \numberline {B}Fit Parameters of the S-Curve Analysis}{55}{appendix.a.B}%
+\contentsline {chapter}{\numberline {6}Conclusion and Outlook}{43}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Personal Contribution}{43}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Conclusion}{43}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Outlook}{43}{section.6.3}%
+\contentsline {chapter}{Appendix \numberline {A}Configurable Registers of the Citiroc1A ASIC}{45}{appendix.1.A}%
+\contentsline {chapter}{Appendix \numberline {B}Fit Parameters of the S-Curve Analysis}{53}{appendix.1.B}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

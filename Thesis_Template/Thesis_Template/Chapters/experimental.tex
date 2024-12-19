@@ -18,13 +18,13 @@ The FPGA used in the frontend electronics for the scintillating fiber hodoscope 
     \caption{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\autocite{InternalcommunicationKarl} }
     \label{fig:SideviewModelElectronics}
     \end{figure}
-\subsection{Proccesing of the SFH Signal}
+\subsection{Processing of the SFH Signal}
 The frontend electronics of the scintillating fiber hodoscope process the signals from the scintillating fibers.
 They are attached on all four sides of the SFH, as shown in Figure \ref{SFHpicture}.
 \newline 
 Two types of readout are considered for the SFH, a mirrored readout and a non-mirrored readout.
 In the mirrored scenario, only one end of the fibers is connected to the SiPM array and the other end is mirrored,
-while in the nom mirrored readout, both ends are connected.\autocite{InternalcommunicationKarl}
+while in the non mirrored readout, both ends are connected.\autocite{InternalcommunicationKarl}
 \newline
 The mirrored scenario has the advantage of only requiring 4 instead of 8 frontend electronics units, halving the number of channels and thus the amount of data that has to be processed.
 Furthermore, test beam measurements show that the mirrored readout has a higher efficiency than the non-mirrored readout.\autocite{InternalcommunicationIgor}
@@ -55,7 +55,7 @@ The FPGA housed on the iFTDC, described in Section \ref{sec:iFTDC},
 reads these signals out and processes them, as well as controlling the Citiroc1A ASICs with the signals shown in Figure \ref{fig:FPGA_sigs}.\autocite{InternalcommunicationIgor}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{FPGA_sig.png}
+    \includegraphics[width=0.7\textwidth]{FPGA_sig.png}
     \caption{The signals used by the FPGA to control and readout the two Citiroc1A ASICs.\autocite{datasheetCITIROC}}
     \label{fig:FPGA_sigs}
 \end{figure}
@@ -64,7 +64,7 @@ reads these signals out and processes them, as well as controlling the Citiroc1A
 \section{The Citiroc1A ASIC}
 The Citiroc1A ASIC is an Application-Specific Integrated Circuit developed by Weeroc company for the readout of SiPM detectors.
 It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a photoelectron.\autocite{datasheetCITIROC}
-\subsection{Signal Proccesing of the Citiroc1A}
+\subsection{Signal Processing of the Citiroc1A}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{TRIGER.PNG}
@@ -72,19 +72,30 @@ It allows for the readout of 32 channels and is sensitive to $\frac{1}{3}$ of a 
     \label{fig:CITIROC1A_TRIGEER}
 \end{figure}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.8\textwidth]{HighGain.PNG}
-    \caption{High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps.\autocite{datasheetCITIROC}}
-    \label{HighGain}
-\end{figure}
 The general block scheme of the Citiroc1A is shown in Figure \ref{fig:CITIROC1A_TRIGEER}.
 \newline
 The Citiroc1A allows fine tuning of the SiPM bias voltage for each channel via the 8-bit input DAC.
 \newline	
 The input signals are amplified with a for every channel configurable high or low gain by an integrator as depicted in Figure \ref{HighGain}.
-The high gain is adjustable from 0 to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps, via a 6 bit dac.\autocite{datasheetCITIROC}
-The PRM experiment requires the maximal high gain of 62.\autocite{InternalcommunicationIgor}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{HighGain.PNG}
+    \caption{High gain amplification of the Citiroc1A. The feedback capacitance is adjustable from \SI{25}{\femto\farad} to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps.\autocite{datasheetCITIROC}}
+    \label{HighGain}
+\end{figure}
+The feedback capacitance of for the high gain is adjustable from \SI{25}{\femto\farad} to \SI{1575}{\femto\farad} in \SI{25}{\femto\farad} steps, via a 6 bit dac, with the feedback capacitance following equation \ref{eq:gain}
+\begin{equation}
+    \text{feedback capacitance} = (63 - \text{Dac\_value}) \times \SI{25}{\femto\farad}
+    \label{eq:gain}
+\end{equation}
+and the resulting voltage amplification equation \ref{eq:voltage_amplification} 
+\begin{equation}
+    \frac{V_{\text{out}}}{V_{\text{in}}} = \frac{\SI{15}{\pico\farad}}{\text{feedback capacitance}} = 600 \times \frac{1}{63 - \text{Dac\_value}}
+       \label{eq:voltage_amplification}
+   \end{equation}
+\autocite{datasheetCITIROC}
+
+The PRM experiment requires the maximal high gain of 62 amplifying the incoming voltage by a factor 600.\autocite{InternalcommunicationIgor}
 \newline
 The amplified signals are then shaped by either the slow (ssh) or fast shaper (fsh), as shown in Figure \ref{fig:CITIROC1A_TRIGEER}. 
 The fast shaper is used for the PRM experiment since it has a better time resolution, which is important for the SFH performance.\autocite{datasheetCITIROC}

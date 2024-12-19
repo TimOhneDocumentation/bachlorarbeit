@@ -1,8 +1,8 @@
-PWD c:/Users/j/OneDrive/Desktop/Unistuff/Bachelorarbeit/DIE_ARBEIT/Thesis_Template/Thesis_Template
+PWD c:/Users/ge42tig/Bachlorarbeit/Thesis_Template/Thesis_Template
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/j/OneDrive/Desktop/Unistuff/Bachelorarbeit/DIE_ARBEIT/Thesis_Template/Thesis_Template/Bachelor_Thesis.tex
+INPUT c:/Users/ge42tig/Bachlorarbeit/Thesis_Template/Thesis_Template/Bachelor_Thesis.tex
 OUTPUT Bachelor_Thesis.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/koma-script/scrbook.cls
@@ -434,6 +434,9 @@ INPUT Chapters/appendixB.aux
 INPUT ./Chapters/appendixFitPar.aux
 INPUT ./Chapters/appendixFitPar.aux
 INPUT Chapters/appendixFitPar.aux
+INPUT ./Chapters/acknowledgement.aux
+INPUT ./Chapters/acknowledgement.aux
+INPUT Chapters/acknowledgement.aux
 INPUT ./Chapters/statement.aux
 INPUT ./Chapters/statement.aux
 INPUT Chapters/statement.aux
@@ -676,18 +679,18 @@ INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
 INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 3.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
 INPUT ./Chapters/conclusion.tex
 INPUT ./Chapters/conclusion.tex
 OUTPUT Chapters/conclusion.aux
@@ -712,6 +715,12 @@ INPUT Bachelor_Thesis.lof
 OUTPUT Bachelor_Thesis.lof
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT ./Chapters/acknowledgement.tex
+INPUT ./Chapters/acknowledgement.tex
+OUTPUT Chapters/acknowledgement.aux
+INPUT ./Chapters/acknowledgement.tex
+INPUT ./Chapters/acknowledgement.tex
+INPUT Chapters/acknowledgement.tex
 INPUT ./Chapters/statement.tex
 INPUT ./Chapters/statement.tex
 OUTPUT Chapters/statement.aux
@@ -746,6 +755,9 @@ INPUT Chapters/appendixB.aux
 INPUT ./Chapters/appendixFitPar.aux
 INPUT ./Chapters/appendixFitPar.aux
 INPUT Chapters/appendixFitPar.aux
+INPUT ./Chapters/acknowledgement.aux
+INPUT ./Chapters/acknowledgement.aux
+INPUT Chapters/acknowledgement.aux
 INPUT ./Chapters/statement.aux
 INPUT ./Chapters/statement.aux
 INPUT Chapters/statement.aux

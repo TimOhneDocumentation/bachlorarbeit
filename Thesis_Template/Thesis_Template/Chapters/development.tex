@@ -36,7 +36,7 @@ The FPGA logic includes an IPBUS IP core and the slave entities in addition to a
 \newline
 
 The slave module contains two identical Citiroc1A modules, one for each ASIC. The Citiroc1A interface is instantiated for the configuration and verification of the ASIC.
-The hitcounters allow to perform hit rate measurements for the 32 channels of the Citiroc1A ASIC. 
+The hit counters allow to perform hit rate measurements for the 32 channels of the Citiroc1A ASIC. 
 \section{The Address Space}
 The 32-bit address is divided into sub addresses by the address decoding logic of the firmware.
 \newline
@@ -46,8 +46,8 @@ The address space is first divided between the two Citiroc1A ASICs:
 \begin{tabular}{p{7cm} l}
     \textbf{Citiroc1A Interface ASIC 1:} & 0000\_0000\_0000\_0000\_0\textcolor{red}{001}\_0000\_0000 \\
     \textbf{Citiroc1A Interface ASIC 2:} & 0000\_0000\_0000\_0000\_0\textcolor{red}{010}\_0000\_0000 \\
-    \textbf{Hitcounters of ASIC 1:} & 0000\_0000\_0000\_0000\_0\textcolor{red}{011}\_0000\_0000 \\
-    \textbf{Hitcounters of ASIC 2: } & 0000\_0000\_0000\_0000\_0\textcolor{red}{100}\_0000\_0000\\
+    \textbf{Hit counters of ASIC 1:} & 0000\_0000\_0000\_0000\_0\textcolor{red}{011}\_0000\_0000 \\
+    \textbf{Hit counters of ASIC 2: } & 0000\_0000\_0000\_0000\_0\textcolor{red}{100}\_0000\_0000\\
 \end{tabular}
 \end{figure}
 
@@ -66,20 +66,20 @@ To read the second address of the configuration RAM of the first Citiroc1A ASIC,
 \newline
 0000\_0000\_0000\_0000\_0001\_0100\_0001
 \newline
-The address space of the hitcounters is also further divided into sub addresses:
+The address space of the hit counters is also further divided into sub addresses:
 \begin{figure}[H]
     \centering
  \begin{tabular}{p{7cm} l}
-        \textbf{Hitcounter 0:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{0\_0001} \\
-        \textbf{Timecounter 0:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{0\_0001} \\
-        \textbf{Hitcounter 1:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{0\_0010} \\
-        \textbf{Timecounter 1:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{0\_0010} \\
+        \textbf{Hit counter 0:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{0\_0001} \\
+        \textbf{Time counter 0:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{0\_0001} \\
+        \textbf{Hit counter 1:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{0\_0010} \\
+        \textbf{Time counter 1:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{0\_0010} \\
         \textbf{...} & ... \\
-        \textbf{Hitcounter 31:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{1\_1111} \\
-        \textbf{Timecounter 31:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{1\_1111} \\
+        \textbf{Hit counter 31:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{00}0\textcolor{blue}{1\_1111} \\
+        \textbf{Time counter 31:} & 0000\_0000\_0000\_0000\_0000\_\textcolor{red}{01}0\textcolor{blue}{1\_1111} \\
  \end{tabular}
 \end{figure}
-The address to read the timecounter of the fifth channel of the second Citiroc1A ASIC would be:
+The address to read the time counter of the fifth channel of the second Citiroc1A ASIC would be:
 \newline
 0000\_0000\_0000\_0000\_0100\_0100\_0101
 
@@ -94,7 +94,7 @@ with each address storing 32-bits of data.
 The state machines, in turn, are controlled by the status and control register of the corresponding Citiroc1A Interface, which can be written by the controlling computer via the IPBUS protocol.
 \subsection{Status and Control Register}
 Each Citiroc1A interface has a 32-bit status and control register, but only the first 7 bits are used.
-It is responsible for the control of the configuration and verification state machines as well as the hitcounters.
+It is responsible for the control of the configuration and verification state machines as well as the hit counters.
 The bits of the status and control register, with the exception of bit 1
 do not reset themselves after being set to 1 and have to be deasserted by the controlling computer.
 \newline
@@ -124,8 +124,8 @@ Its structure is shown in Table \ref{tab:status_control_register}.
     bit 2 & Resets the Configuration and Verification SM and the Configuration RAM \\
     bit 3 & Resets the  Citiroc1A serial register \\
     bit 4 & Loads the configuration into the slow control register \\
-    bit 5 & Resets the hitcounters associated with the Citiroc1A \\
-    bit 6 & Enables the hitcounters associated with the Citiroc1A \\
+    bit 5 & Resets the hit counters associated with the Citiroc1A \\
+    bit 6 & Enables the hit counters associated with the Citiroc1A \\
     \hline
     \end{longtable}
     \caption{Structure of the status and control register of the Citiroc1A interface. 
@@ -156,7 +156,7 @@ The \textbf{\textcolor{red}{reset}} process resets the configuration RAM and the
 The \textbf{\textcolor{VioletRed}{load}} process loads the configuration data from the configuration RAM into the serial register of the Citiroc1A ASIC. 
 The first 1144/256 bits of the configuration RAM are shifted into the serial register of the Citiroc1A ASIC, depending on the selected register.
 Each bit is shifted in by setting the data line \textbf{\textcolor{red}{Srin\_sr}} and clock \textbf{\textcolor{red}{clk}} as described in Section \ref{sec:configuration}.
-Since, as described in Section \ref{sec:configuration}, the first bit written to the serial register is the last bit of the configuration, the controlling computer has to write the bitstream in reverse order to the configuration RAM.
+As described in Section \ref{sec:configuration}, the first bit written to the serial register is the last bit of the configuration, the controlling computer has to write the bitstream in reverse order to the configuration RAM.
 \newline
 The \textbf{\textcolor{red}{clk}} clock signal for the ASIC's serial register is generated by the FPGA with a frequency of \SI{1}{\mega\hertz}.
 The \textbf{\textcolor{VioletRed}{load}} process modulates this clock signal to control the operation of the serial register.
@@ -186,23 +186,23 @@ The bits arrive at the FPGA in the same order as they were loaded in, but shifte
 The readback bits are stored in the verification RAM by the \textbf{\textcolor{green}{verification}} process and can be read by the controling computer via the  \textbf{\textcolor{yellow!60!black}{read}} process.
 This allows the controlling computer to compare the loaded bits with the read back bits and ensure that the configuration was loaded correctly into the serial register of the Citiroc1A ASIC.
 \section{The Provisional Readout}
-In addition to the configuration and verification of the configuration of Citiroc1A ASIC, the firmware also provides a provisional readout in form of hitcounters and timecounters. 
+In addition to the configuration and verification of the configuration of Citiroc1A ASIC, the firmware also provides a provisional readout in form of hit counters and time counters. 
 \newline
-The hitcounters are used to count the number of hits on each channel of the Citiroc1A ASIC.
+The hit counters are used to count the number of hits on each channel of the Citiroc1A ASIC.
 \newline
 They are limited to a minimal time between hits of two periods of the synchronization clock.
 In this case a \SI{325}{\mega\hertz} clock is used, which corresponds to a minimal time between hits of \SI{6.16}{\nano\second}.
 \newline
-Each Citiroc1A has 32 hitcounters, one for each channel.
-The 32-bit hitcounters are enabled by setting bit 6 of the status and control register of the corresponding Citiroc1A Interface to 1. 
-This also enables the timecounter, which counts the number of clock cycles since it was last reset. 
+Each Citiroc1A has 32 hit counters, one for each channel.
+The 32-bit hit counters are enabled by setting bit 6 of the status and control register of the corresponding Citiroc1A Interface to 1. 
+This also enables the time counter, which counts the number of clock cycles since it was last reset. 
 \newline
-The hitcounters and timecounters are reset by setting bit 5 of the status and control register of the corresponding Citiroc1A Interface to 1.
+The hit counters and time counters are reset by setting bit 5 of the status and control register of the corresponding Citiroc1A Interface to 1.
 \newline
-To read the hit and time counters, the controlling computer first has to disable the hitcounters by setting bit 6 of the status and control register to 0, in order to avoid metastability issues arising from the clock domain crossing.
-The hitcounters can then be read by the controlling computer via the IPBUS protocol.
+To read the hit and time counters, the controlling computer first has to disable the hit counters by setting bit 6 of the status and control register to 0, in order to avoid metastability issues arising from the clock domain crossing.
+The hit counters can then be read by the controlling computer via the IPBUS protocol.
 \newline
-The combination of the hitcounters and the timecounter allows the controlling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC. 
+The combination of the hit counters and the time counter allows the controlling computer to determine the number of hits per second on each channel of the Citiroc1A ASIC. 
 
 
 \section{Testing the Firmware}

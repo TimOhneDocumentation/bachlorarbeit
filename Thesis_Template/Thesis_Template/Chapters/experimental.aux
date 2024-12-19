@@ -11,7 +11,7 @@
 \newlabel{sec:FPGA}{{3.1}{9}{Field Programmable Gate Arrays (FPGA)}{section.3.1}{}}
 \newlabel{sec:FPGA@cref}{{[section][1][3]3.1}{[1][9][]9}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Overview of the Frontend Electronics}{9}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Proccesing of the SFH Signal}{9}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Processing of the SFH Signal}{9}{subsection.3.2.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\blx@tocontentsinit {0}\autocite {InternalcommunicationKarl} }}{10}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:SideviewModelElectronics}{{3.1}{10}{Sideview of the frontend electronics that will be attached on the sides of the SFH, the fiber holders will be attached to the fibers.\autocite {InternalcommunicationKarl}}{figure.caption.5}{}}
 \newlabel{fig:SideviewModelElectronics@cref}{{[figure][1][3]3.1}{[1][9][]10}{}{}{}}
@@ -21,13 +21,17 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces The signals used by the FPGA to control and readout the two Citiroc1A ASICs.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{11}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:FPGA_sigs}{{3.3}{11}{The signals used by the FPGA to control and readout the two Citiroc1A ASICs.\autocite {datasheetCITIROC}}{figure.caption.7}{}}
 \newlabel{fig:FPGA_sigs@cref}{{[figure][3][3]3.3}{[1][11][]11}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{12}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Signal Proccesing of the Citiroc1A}{12}{subsection.3.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{11}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Signal Processing of the Citiroc1A}{12}{subsection.3.3.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces General ASIC block scheme of the Citiroc1A.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{12}{figure.caption.8}\protected@file@percent }
 \newlabel{fig:CITIROC1A_TRIGEER}{{3.4}{12}{General ASIC block scheme of the Citiroc1A.\autocite {datasheetCITIROC}}{figure.caption.8}{}}
-\newlabel{fig:CITIROC1A_TRIGEER@cref}{{[figure][4][3]3.4}{[1][12][]12}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.9}\protected@file@percent }
-\newlabel{HighGain}{{3.5}{13}{High gain amplification of the Citiroc1A. The gain is adjustable from 0 to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\autocite {datasheetCITIROC}}{figure.caption.9}{}}
+\newlabel{fig:CITIROC1A_TRIGEER@cref}{{[figure][4][3]3.4}{[1][11][]12}{}{}{}}
+\newlabel{eq:gain}{{3.1}{12}{Signal Processing of the Citiroc1A}{equation.3.1}{}}
+\newlabel{eq:gain@cref}{{[equation][1][3]3.1}{[1][12][]12}{}{}{}}
+\newlabel{eq:voltage_amplification}{{3.2}{12}{Signal Processing of the Citiroc1A}{equation.3.2}{}}
+\newlabel{eq:voltage_amplification@cref}{{[equation][2][3]3.2}{[1][12][]12}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces High gain amplification of the Citiroc1A. The feedback capacitance is adjustable from \SI {25}{\femto \farad } to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{13}{figure.caption.9}\protected@file@percent }
+\newlabel{HighGain}{{3.5}{13}{High gain amplification of the Citiroc1A. The feedback capacitance is adjustable from \SI {25}{\femto \farad } to \SI {1575}{\femto \farad } in \SI {25}{\femto \farad } steps.\autocite {datasheetCITIROC}}{figure.caption.9}{}}
 \newlabel{HighGain@cref}{{[figure][5][3]3.5}{[1][12][]13}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Configuration of the Citiroc1A}{13}{subsection.3.3.2}\protected@file@percent }
 \newlabel{sec:configuration}{{3.3.2}{13}{Configuration of the Citiroc1A}{subsection.3.3.2}{}}
@@ -37,7 +41,7 @@
 \newlabel{fig:CITIROC1A_config@cref}{{[figure][6][3]3.6}{[1][13][]13}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces The slow control chronogram, depicting the bitstream writing process controlled by \textcolor {red}{Clk\_sr} the clock signal and \textcolor {red}{Srin\_sr} the data signal. A rising edge of \textcolor {red}{Load\_sr} is required after successful verification with the \textcolor {red}{Srout} signal to load the slow control register.\blx@tocontentsinit {0}\autocite {datasheetCITIROC}}}{14}{figure.caption.13}\protected@file@percent }
 \newlabel{fig:CITIROC1A_writing_bitstream}{{3.7}{14}{The slow control chronogram, depicting the bitstream writing process controlled by \textcolor {red}{Clk\_sr} the clock signal and \textcolor {red}{Srin\_sr} the data signal. A rising edge of \textcolor {red}{Load\_sr} is required after successful verification with the \textcolor {red}{Srout} signal to load the slow control register.\autocite {datasheetCITIROC}}{figure.caption.13}{}}
-\newlabel{fig:CITIROC1A_writing_bitstream@cref}{{[figure][7][3]3.7}{[1][13][]14}{}{}{}}
+\newlabel{fig:CITIROC1A_writing_bitstream@cref}{{[figure][7][3]3.7}{[1][14][]14}{}{}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline The Slow Control Register}{14}{subsubsection*.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\nonumberline The Probe Register}{15}{subsubsection*.15}\protected@file@percent }
 \newlabel{sec:probe_register}{{3.3.2}{15}{The Probe Register}{subsubsection*.15}{}}
@@ -56,7 +60,7 @@
 \newlabel{fig:iFTDC@cref}{{[figure][9][3]3.9}{[1][16][]17}{}{}{}}
 \@setckpt{Chapters/experimental}{
 \setcounter{page}{18}
-\setcounter{equation}{0}
+\setcounter{equation}{2}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}

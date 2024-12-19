@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  16 DEC 2024 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.25)  16 DEC 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1220,7 +1220,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
- (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/conclusion.aux) (./Chapters/appendixB.aux) (./Chapters/appendixFitPar.aux) (./Chapters/statement.aux))
+ (./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/conclusion.aux) (./Chapters/appendixB.aux) (./Chapters/appendixFitPar.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
 \openout1 = `Bachelor_Thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 310.
@@ -1560,19 +1560,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--50
 File: Images/FPGA_sig.png Graphic file (type png)
 <use Images/FPGA_sig.png>
 Package pdftex.def Info: Images/FPGA_sig.png  used on input line 58.
-(pdftex.def)             Requested size: 364.19667pt x 269.65593pt.
-
-
-[11 <./Images/beschrifteterFEE.png> <./Images/FPGA_sig.png>]
-<Images/TRIGER.PNG, id=311, 531.9875pt x 370.38374pt>
+(pdftex.def)             Requested size: 318.66948pt x 235.94655pt.
+<Images/TRIGER.PNG, id=302, 531.9875pt x 370.38374pt>
 File: Images/TRIGER.PNG Graphic file (type png)
 <use Images/TRIGER.PNG>
 Package pdftex.def Info: Images/TRIGER.PNG  used on input line 70.
 (pdftex.def)             Requested size: 364.19667pt x 253.57004pt.
-<Images/HighGain.PNG, id=314, 244.41313pt x 143.53625pt>
+
+
+[11 <./Images/beschrifteterFEE.png> <./Images/FPGA_sig.png>]
+<Images/HighGain.PNG, id=316, 244.41313pt x 143.53625pt>
 File: Images/HighGain.PNG Graphic file (type png)
 <use Images/HighGain.PNG>
-Package pdftex.def Info: Images/HighGain.PNG  used on input line 77.
+Package pdftex.def Info: Images/HighGain.PNG  used on input line 82.
 (pdftex.def)             Requested size: 364.19667pt x 213.88678pt.
 
 
@@ -1581,38 +1581,39 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 [12 <./Images/TRIGER.png>]
-<Images/CitirocConfigHighqual.png, id=333, 751.80875pt x 356.83313pt>
+<Images/CitirocConfigHighqual.png, id=337, 751.80875pt x 356.83313pt>
 File: Images/CitirocConfigHighqual.png Graphic file (type png)
 <use Images/CitirocConfigHighqual.png>
-Package pdftex.def Info: Images/CitirocConfigHighqual.png  used on input line 99.
+Package pdftex.def Info: Images/CitirocConfigHighqual.png  used on input line 110.
 (pdftex.def)             Requested size: 364.19667pt x 172.8624pt.
-<Images/BitwriteSlowControl.png, id=338, 610.78188pt x 373.89688pt>
-File: Images/BitwriteSlowControl.png Graphic file (type png)
-<use Images/BitwriteSlowControl.png>
-Package pdftex.def Info: Images/BitwriteSlowControl.png  used on input line 112.
-(pdftex.def)             Requested size: 364.19667pt x 222.95349pt.
 
 
 [13 <./Images/HighGain.png> <./Images/CitirocConfigHighqual.png>]
+<Images/BitwriteSlowControl.png, id=350, 610.78188pt x 373.89688pt>
+File: Images/BitwriteSlowControl.png Graphic file (type png)
+<use Images/BitwriteSlowControl.png>
+Package pdftex.def Info: Images/BitwriteSlowControl.png  used on input line 123.
+(pdftex.def)             Requested size: 364.19667pt x 222.95349pt.
+
 
 [14 <./Images/BitwriteSlowControl.png>]
-<Images/ProbeRegister.png, id=363, 381.425pt x 327.2225pt>
+<Images/ProbeRegister.png, id=367, 381.425pt x 327.2225pt>
 File: Images/ProbeRegister.png Graphic file (type png)
 <use Images/ProbeRegister.png>
-Package pdftex.def Info: Images/ProbeRegister.png  used on input line 139.
+Package pdftex.def Info: Images/ProbeRegister.png  used on input line 150.
 (pdftex.def)             Requested size: 364.19667pt x 312.45238pt.
 
-Overfull \hbox (41.3666pt too wide) in paragraph at lines 153--162
+Overfull \hbox (41.3666pt too wide) in paragraph at lines 164--173
  [][] 
  []
 
 
 
 [15 <./Images/ProbeRegister.png>]
-<Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg, id=382, 2001.4775pt x 3677.74pt>
+<Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg, id=386, 2001.4775pt x 3677.74pt>
 File: Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg Graphic file (type jpg)
 <use Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg>
-Package pdftex.def Info: Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg  used on input line 169.
+Package pdftex.def Info: Images/WhatsApp Bild 2024-12-06 um 12.54.12_a1c66d92.jpg  used on input line 180.
 (pdftex.def)             Requested size: 227.62206pt x 418.24538pt.
 
 
@@ -1645,7 +1646,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 
 [19]
-<Images/Rastergrafik_mit_pfeile.png, id=408, 597.17842pt x 844.4179pt>
+<Images/Rastergrafik_mit_pfeile.png, id=412, 597.17842pt x 844.4179pt>
 File: Images/Rastergrafik_mit_pfeile.png Graphic file (type png)
 <use Images/Rastergrafik_mit_pfeile.png>
 Package pdftex.def Info: Images/Rastergrafik_mit_pfeile.png  used on input line 25.
@@ -1660,7 +1661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--37
 [20 <./Images/Rastergrafik_mit_pfeile.png>]
 
 [21]
-<Images/CONFIGSMALLdiagramfarbe2900.png, id=424, 388.71292pt x 408.54979pt>
+<Images/CONFIGSMALLdiagramfarbe2900.png, id=428, 388.71292pt x 408.54979pt>
 File: Images/CONFIGSMALLdiagramfarbe2900.png Graphic file (type png)
 <use Images/CONFIGSMALLdiagramfarbe2900.png>
 Package pdftex.def Info: Images/CONFIGSMALLdiagramfarbe2900.png  used on input line 139.
@@ -1670,7 +1671,7 @@ Package pdftex.def Info: Images/CONFIGSMALLdiagramfarbe2900.png  used on input l
 [22]
 
 [23 <./Images/CONFIGSMALLdiagramfarbe2900.png>]
-<Images/smallVerifacationdiagrammodfarbe.png, id=441, 310.35332pt x 216.82854pt>
+<Images/smallVerifacationdiagrammodfarbe.png, id=446, 310.35332pt x 216.82854pt>
 File: Images/smallVerifacationdiagrammodfarbe.png Graphic file (type png)
 <use Images/smallVerifacationdiagrammodfarbe.png>
 Package pdftex.def Info: Images/smallVerifacationdiagrammodfarbe.png  used on input line 172.
@@ -1680,7 +1681,7 @@ Package pdftex.def Info: Images/smallVerifacationdiagrammodfarbe.png  used on in
 [24]
 
 [25 <./Images/smallVerifacationdiagrammodfarbe.png>]
-<Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg, id=458, 2055.68pt x 1790.69pt>
+<Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg, id=462, 2055.68pt x 1790.69pt>
 File: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg Graphic file (type jpg)
 <use Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg>
 Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jpg  used on input line 215.
@@ -1688,7 +1689,7 @@ Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.27.30_2637fa81.jp
 
 
 [26]
-<Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg, id=465, 1505.625pt x 2007.5pt>
+<Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg, id=469, 1505.625pt x 2007.5pt>
 File: Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg Graphic file (type jpg)
 <use Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg>
 Package pdftex.def Info: Images/WhatsApp Bild 2024-12-05 um 16.35.49_ef329d4e.jpg  used on input line 227.
@@ -1723,7 +1724,7 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 (scrbook)              KOMA-Script and will not work with a coming version,
 (scrbook)              that will remove this deprecated code.
 
-<Images/Gain_58.0_ALLCHANNELS copy.png, id=497, 1445.4pt x 1156.32pt>
+<Images/Gain_58.0_ALLCHANNELS copy.png, id=501, 1445.4pt x 1156.32pt>
 File: Images/Gain_58.0_ALLCHANNELS copy.png Graphic file (type png)
 <use Images/Gain_58.0_ALLCHANNELS copy.png>
 Package pdftex.def Info: Images/Gain_58.0_ALLCHANNELS copy.png  used on input line 14.
@@ -1731,7 +1732,7 @@ Package pdftex.def Info: Images/Gain_58.0_ALLCHANNELS copy.png  used on input li
 
 
 [31]
-<Images/Gain_59.0_ALLCHANNELS copy.png, id=508, 1445.4pt x 1156.32pt>
+<Images/Gain_59.0_ALLCHANNELS copy.png, id=512, 1445.4pt x 1156.32pt>
 File: Images/Gain_59.0_ALLCHANNELS copy.png Graphic file (type png)
 <use Images/Gain_59.0_ALLCHANNELS copy.png>
 Package pdftex.def Info: Images/Gain_59.0_ALLCHANNELS copy.png  used on input line 21.
@@ -1739,7 +1740,7 @@ Package pdftex.def Info: Images/Gain_59.0_ALLCHANNELS copy.png  used on input li
 
 
 [32 <./Images/Gain_58.0_ALLCHANNELS copy.png>]
-<Images/Gain_60.0_ALLCHANNELS.png, id=514, 1445.4pt x 1156.32pt>
+<Images/Gain_60.0_ALLCHANNELS.png, id=518, 1445.4pt x 1156.32pt>
 File: Images/Gain_60.0_ALLCHANNELS.png Graphic file (type png)
 <use Images/Gain_60.0_ALLCHANNELS.png>
 Package pdftex.def Info: Images/Gain_60.0_ALLCHANNELS.png  used on input line 28.
@@ -1747,7 +1748,7 @@ Package pdftex.def Info: Images/Gain_60.0_ALLCHANNELS.png  used on input line 28
 
 
 [33 <./Images/Gain_59.0_ALLCHANNELS copy.png>]
-<Images/Gain_61.0_ALLCHANNELS copy.png, id=520, 1445.4pt x 1156.32pt>
+<Images/Gain_61.0_ALLCHANNELS copy.png, id=524, 1445.4pt x 1156.32pt>
 File: Images/Gain_61.0_ALLCHANNELS copy.png Graphic file (type png)
 <use Images/Gain_61.0_ALLCHANNELS copy.png>
 Package pdftex.def Info: Images/Gain_61.0_ALLCHANNELS copy.png  used on input line 35.
@@ -1755,7 +1756,7 @@ Package pdftex.def Info: Images/Gain_61.0_ALLCHANNELS copy.png  used on input li
 
 
 [34 <./Images/Gain_60.0_ALLCHANNELS.png>]
-<Images/Gain_62.0_ALLCHANNELS copy.png, id=526, 1445.4pt x 1156.32pt>
+<Images/Gain_62.0_ALLCHANNELS copy.png, id=530, 1445.4pt x 1156.32pt>
 File: Images/Gain_62.0_ALLCHANNELS copy.png Graphic file (type png)
 <use Images/Gain_62.0_ALLCHANNELS copy.png>
 Package pdftex.def Info: Images/Gain_62.0_ALLCHANNELS copy.png  used on input line 42.
@@ -1765,17 +1766,17 @@ Package pdftex.def Info: Images/Gain_62.0_ALLCHANNELS copy.png  used on input li
 [35 <./Images/Gain_61.0_ALLCHANNELS copy.png>]
 
 [36 <./Images/Gain_62.0_ALLCHANNELS copy.png>]
-<Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png, id=542, 1445.4pt x 1156.32pt>
+<Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png, id=546, 1445.4pt x 1156.32pt>
 File: Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png Graphic file (type png)
 <use Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png>
 Package pdftex.def Info: Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png  used on input line 64.
 (pdftex.def)             Requested size: 318.66948pt x 254.93814pt.
-<Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png, id=543, 1445.4pt x 1156.32pt>
+<Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png, id=547, 1445.4pt x 1156.32pt>
 File: Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png Graphic file (type png)
 <use Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png>
 Package pdftex.def Info: Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png  used on input line 70.
 (pdftex.def)             Requested size: 318.66948pt x 254.93814pt.
-<Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png, id=544, 1445.4pt x 1156.32pt>
+<Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png, id=548, 1445.4pt x 1156.32pt>
 File: Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png Graphic file (type png)
 <use Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png>
 Package pdftex.def Info: Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png  used on input line 76.
@@ -1783,7 +1784,7 @@ Package pdftex.def Info: Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2
 
 
 [37 <./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png>]
-<Images/Fit for all Channels with Gain 62 copy 4.png, id=555, 1445.4pt x 1445.4pt>
+<Images/Fit for all Channels with Gain 62 copy 4.png, id=559, 1445.4pt x 1445.4pt>
 File: Images/Fit for all Channels with Gain 62 copy 4.png Graphic file (type png)
 <use Images/Fit for all Channels with Gain 62 copy 4.png>
 Package pdftex.def Info: Images/Fit for all Channels with Gain 62 copy 4.png  used on input line 84.
@@ -1791,42 +1792,29 @@ Package pdftex.def Info: Images/Fit for all Channels with Gain 62 copy 4.png  us
 
 
 [38 <./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png> <./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png>]
-<Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png, id=565, 722.7pt x 1156.32pt>
+<Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png, id=569, 722.7pt x 1156.32pt>
 File: Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png Graphic file (type png)
 <use Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png>
 Package pdftex.def Info: Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png  used on input line 92.
-(pdftex.def)             Requested size: 409.71692pt x 655.54517pt.
+(pdftex.def)             Requested size: 318.66948pt x 509.8763pt.
 
 
 [39 <./Images/Fit for all Channels with Gain 62 copy 4.png>]
-Overfull \vbox (23.0601pt too high) has occurred while \output is active []
-
-
-
-[40 <./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png>]
-<Images/Runs_170_400_Gain_58.0_0_Channel_compare.png, id=578, 1445.4pt x 1156.32pt>
-File: Images/Runs_170_400_Gain_58.0_0_Channel_compare.png Graphic file (type png)
-<use Images/Runs_170_400_Gain_58.0_0_Channel_compare.png>
-Package pdftex.def Info: Images/Runs_170_400_Gain_58.0_0_Channel_compare.png  used on input line 101.
+<Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png, id=577, 1445.4pt x 1156.32pt>
+File: Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png Graphic file (type png)
+<use Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png>
+Package pdftex.def Info: Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png  used on input line 101.
 (pdftex.def)             Requested size: 455.24411pt x 364.1898pt.
 
 
-[41 <./Images/Runs_170_400_Gain_58.0_0_Channel_compare.png>])
+[40 <./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png>]
+
+[41 <./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png>])
 
 [42]
-
-[43]
 \openout2 = `Chapters/conclusion.aux'.
 
  (./Chapters/conclusion.tex
-
-[44
-
-
-
-
-
-]
 chapter 6.
 
 Class scrbook Warning: Redefinition of \@makechapterhead detected.
@@ -1841,9 +1829,15 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 )
 
-[45]
+[43
 
-[46]
+
+
+
+
+]
+
+[44]
 \openout2 = `Chapters/appendixB.aux'.
 
  (./Chapters/appendixB.tex
@@ -1959,15 +1953,15 @@ Overfull \hbox (39.63762pt too wide) in alignment at lines 19--159
  [] [] [] [] [] 
  []
 
-[47
+[45
 
 
 
 
 
-] [48] [49] [50] [51]
+] [46] [47] [48] [49]
 
-[52]
+[50]
 Overfull \hbox (48.88614pt too wide) in alignment at lines 161--167
  [] [] [] [] [] 
  []
@@ -1994,12 +1988,12 @@ Overfull \hbox (48.88614pt too wide) in alignment at lines 178--213
 
 )
 
-[53]
+[51]
 \openout2 = `Chapters/appendixFitPar.aux'.
 
  (./Chapters/appendixFitPar.tex
 
-[54
+[52
 
 
 
@@ -2020,30 +2014,30 @@ Class scrbook Warning: Redefinition of \@makechapterhead detected.
 
 
 
+[53]
+
+[54])
+
 [55]
 
-[56])
-
-[57]
-
-[58
+[56
 
 
 
 
 ] (./Bachelor_Thesis.lof
 
-[59]
+[57]
 
-[60])
+[58])
 \tf@lof=\write7
 \openout7 = `Bachelor_Thesis.lof'.
 
 
 
-[61]
+[59]
 
-[62
+[60
 
 
 ]
@@ -2053,24 +2047,37 @@ Overfull \hbox (1.78511pt too wide) in paragraph at lines 404--404
 
 
 
-[63]
+[61]
 
-[64]
-\openout2 = `Chapters/statement.aux'.
+[62]
+\openout2 = `Chapters/acknowledgement.aux'.
 
- (./Chapters/statement.tex)
+ (./Chapters/acknowledgement.tex)
 
-[65
-
+[63
 
 
 
 ]
+\openout2 = `Chapters/statement.aux'.
+
+ (./Chapters/statement.tex
+
+[64
+
+
+
+
+
+
+])
+
+[65]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 56.
 See the caption package documentation for explanation.
 
-(./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/conclusion.aux) (./Chapters/appendixB.aux) (./Chapters/appendixFitPar.aux) (./Chapters/statement.aux))
+(./Bachelor_Thesis.aux (./Chapters/abstracteng.aux) (./Chapters/introduction.aux) (./Chapters/theoretical.aux) (./Chapters/experimental.aux) (./Chapters/development.aux) (./Chapters/results.aux) (./Chapters/conclusion.aux) (./Chapters/appendixB.aux) (./Chapters/appendixFitPar.aux) (./Chapters/acknowledgement.aux) (./Chapters/statement.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2020/03/25>
@@ -2082,18 +2089,18 @@ Package logreq Info: Writing requests to 'Bachelor_Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49291 strings out of 473361
- 1053253 string characters out of 5725029
- 2279698 words of memory out of 5000000
- 71487 multiletter control sequences out of 15000+600000
+ 49322 strings out of 473361
+ 1054365 string characters out of 5725029
+ 2282634 words of memory out of 5000000
+ 71509 multiletter control sequences out of 15000+600000
  567569 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  110i,20n,109p,10973b,3588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Bachelor_Thesis.pdf (71 pages, 21765988 bytes).
+Output written on Bachelor_Thesis.pdf (71 pages, 21773621 bytes).
 PDF statistics:
- 1083 PDF objects out of 1200 (max. 8388607)
- 887 compressed objects within 9 object streams
- 181 named destinations out of 1000 (max. 500000)
+ 1087 PDF objects out of 1200 (max. 8388607)
+ 891 compressed objects within 9 object streams
+ 183 named destinations out of 1000 (max. 500000)
  535 words of extra memory for PDF output out of 10000 (max. 10000000)
 
