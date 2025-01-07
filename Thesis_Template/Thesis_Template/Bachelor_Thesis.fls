@@ -500,7 +500,6 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./Chapters/abstracteng.tex
 INPUT ./Chapters/abstracteng.tex
@@ -552,6 +551,7 @@ INPUT ./Chapters/theoretical.tex
 INPUT Chapters/theoretical.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./Images/PreviousmeausrementsProtonradius.png
 INPUT ./Images/PreviousmeausrementsProtonradius.png
 INPUT ./Images/PreviousmeausrementsProtonradius.png
@@ -647,50 +647,50 @@ OUTPUT Chapters/results.aux
 INPUT ./Chapters/results.tex
 INPUT ./Chapters/results.tex
 INPUT Chapters/results.tex
-INPUT ./Images/Gain_58.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_58.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_58.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_58.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_59.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_59.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_59.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_59.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_60.0_ALLCHANNELS.png
-INPUT ./Images/Gain_60.0_ALLCHANNELS.png
-INPUT ./Images/Gain_60.0_ALLCHANNELS.png
-INPUT ./Images/Gain_60.0_ALLCHANNELS.png
-INPUT ./Images/Gain_61.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_61.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_61.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_61.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_62.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_62.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_62.0_ALLCHANNELS copy.png
-INPUT ./Images/Gain_62.0_ALLCHANNELS copy.png
-INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 2.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
-INPUT ./Images/Fit for all Channels with Gain 62 copy 4.png
+INPUT ./Images/Gain_58.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_58.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_58.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_58.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_59.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_59.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_59.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_59.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_60.0_ALLCHANNELS copy.png
+INPUT ./Images/Gain_60.0_ALLCHANNELS copy.png
+INPUT ./Images/Gain_60.0_ALLCHANNELS copy.png
+INPUT ./Images/Gain_60.0_ALLCHANNELS copy.png
+INPUT ./Images/Gain_61.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_61.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_61.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_61.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_62.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_62.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_62.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Gain_62.0_ALLCHANNELS copy 2.png
+INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_60.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_61.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Runs_170_400_Gain_62.0_0_ChannelALL_FPGAS copy 3.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 5.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 5.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 5.png
+INPUT ./Images/Fit for all Channels with Gain 62 copy 5.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
 INPUT ./Images/Individual_Stddev_and_Mean_vs_Gain copy 4.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
-INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy 2.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy 2.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy 2.png
+INPUT ./Images/Runs_170_400_Gain_58.0_0_Channel_compare copy 2.png
 INPUT ./Chapters/conclusion.tex
 INPUT ./Chapters/conclusion.tex
 OUTPUT Chapters/conclusion.aux

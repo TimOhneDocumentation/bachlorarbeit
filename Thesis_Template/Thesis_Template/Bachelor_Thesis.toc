@@ -2,7 +2,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}The AMBER Experiment}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Measurment of the Charge Radius of the Proton (PRM)}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Measurement of the Charge Radius of the Proton (PRM)}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Previous Measurements of the Proton Radius}{3}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Elastic Scattering of Muons on Protons}{3}{subsection.2.1.2}%
 \contentsline {section}{\numberline {2.2}General Setup for PRM at AMBER.}{4}{section.2.2}%
@@ -12,14 +12,14 @@
 \contentsline {section}{\numberline {3.1}Field Programmable Gate Arrays (FPGA)}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Overview of the Frontend Electronics}{9}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Processing of the SFH Signal}{9}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.3}The Citiroc1A ASIC}{12}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Signal Processing of the Citiroc1A}{12}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Configuration of the Citiroc1A}{13}{subsection.3.3.2}%
-\contentsline {subsubsection}{\nonumberline The Slow Control Register}{14}{subsubsection*.12}%
-\contentsline {subsubsection}{\nonumberline The Probe Register}{15}{subsubsection*.15}%
-\contentsline {subsection}{\numberline {3.3.3}The iFTDC}{17}{subsection.3.3.3}%
+\contentsline {subsubsection}{\nonumberline The Slow Control Register}{13}{subsubsection*.12}%
+\contentsline {subsubsection}{\nonumberline The Probe Register}{16}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {3.3.3}The iFTDC}{18}{subsection.3.3.3}%
 \contentsline {chapter}{\numberline {4}Development of the FPGA Firmware for the SFH}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview of the Firmware}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Overview over the Firmware}{19}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}The IPBUS Protocol}{19}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}The Firmware Structure}{20}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}The Address Space}{21}{section.4.2}%

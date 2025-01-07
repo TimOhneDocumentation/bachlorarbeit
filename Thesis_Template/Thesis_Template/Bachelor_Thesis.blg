@@ -1,0 +1,20 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'Bachelor_Thesis.blg'
+[152] biber-MSWIN64:340> INFO - === 
+[204] Biber.pm:420> INFO - Reading 'Bachelor_Thesis.bcf'
+[352] Biber.pm:994> INFO - Found 15 citekeys in bib section 0
+[369] Biber.pm:4463> INFO - Processing section 0
+[383] Biber.pm:4654> INFO - Looking for bibtex file 'BibTeX/bibliography.bib' for section 0
+[459] bibtex.pm:1713> INFO - LaTeX decoding ...
+[489] bibtex.pm:1519> INFO - Found BibTeX data source 'BibTeX/bibliography.bib'
+[1499] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1500] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1500] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[1500] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1570] bbl.pm:676> INFO - Writing 'Bachelor_Thesis.bbl' with encoding 'UTF-8'
+[2347] bbl.pm:779> INFO - Output to Bachelor_Thesis.bbl
+[2347] Biber.pm:131> WARN - legacy month field 'Sep' in entry 'Hofstadter1956' is not an integer - this will probably not sort properly.
+[2347] Biber.pm:131> WARN - legacy month field 'October and November' in entry 'InternalcommunicationIgor' is not an integer - this will probably not sort properly.
+[2347] Biber.pm:131> WARN - legacy month field 'November' in entry 'InternalcommunicationKarl' is not an integer - this will probably not sort properly.
+[2347] Biber.pm:131> WARN - legacy month field 'feb' in entry 'IPBUS_article' is not an integer - this will probably not sort properly.
+[2347] Biber.pm:133> INFO - WARNINGS: 4
